@@ -135,14 +135,11 @@ armazenamento ext4 e as interfaces `vega-cli`, `vegad` e `vega-web`.
 | Beta 3 | 4 semanas | 28 jun 2027 – 26 jul 2027 |
 | RC 1 | 2 semanas | 26 jul 2027 – 09 ago 2027 |
 | RC 2 | 2 semanas | 09 ago 2027 – 23 ago 2027 |
-| **Final estável — Lyra OS Server 27.10 “Tebas”** | buffer 2 semanas | **~06 set 2027** |
+| **Final estável — Lyra OS Server 27.10 “Tebas”** | estabilização final | **~out 2027** |
 
 ## Observação de nomenclatura
 
-"27.02" e "27.10" são os nomes de produto dos ciclos de release, no padrão
-ano.mês (estilo Ubuntu) referente à data prevista do lançamento final. Essa
-numeração é distinta da versão de calendário completa (`AAAA.MM`) usada
-internamente pelo `release.toml`. Não existe hoje um campo formal de versão
-semântica major.minor no schema de release — isso ainda é uma decisão em
-aberto, caso o site precise expor esse número de forma estruturada (ex.: JSON
-de roadmap consumido pela página).
+`27.02` e `27.10` são as versões canônicas dos ciclos de release, no padrão
+ano.mês (estilo Ubuntu), tanto na apresentação do produto quanto nos metadados
+internos. O campo `calendar_version` usa diretamente `AA.MM`; não há uma
+numeração `1.x` paralela.
