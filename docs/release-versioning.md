@@ -23,13 +23,22 @@ aberto no gate de release do estágio), não apenas pela data. Se um estágio
 fechar mais cedo, a próxima fase começa mais cedo — as datas assumem o
 cenário em que todo o teto é usado.
 
-## Política de suporte da família 1.x
+## Novo padrão de versionamento (estilo Ubuntu)
 
-A versão maior Lyra OS 1.x terá suporte até **outubro de 2032**. Cada versão
-menor mantém seu próprio ciclo de suporte e pode exigir a migração para uma
-versão 1.x mais recente.
+O Lyra OS adota o padrão de versionamento por ano e mês usado pelo Ubuntu
+(`AA.MM`, dois dígitos de ano e dois de mês do lançamento final). O antigo
+nome de produto `1.0` passa a ser **`27.02`** (lançamento final em ~fev/2027)
+e o antigo `1.1` passa a ser **`27.10`** (lançamento final em ~out/2027). Não
+existe mais o conceito de "versão maior 1.x" agrupando releases — cada
+release é numerada pelo próprio ano.mês de lançamento, como no Ubuntu.
 
-## Cronograma — Lyra OS 1.0 “Odisseia” (base openSUSE Leap 16.0)
+## Política de suporte
+
+O Lyra OS, na linha baseada em openSUSE Leap 16, terá suporte até **outubro
+de 2032**. Cada release (`27.02`, `27.10`, ...) mantém seu próprio ciclo de
+suporte e pode exigir a migração para um release mais recente.
+
+## Cronograma — Lyra OS 27.02 “Odisseia” (base openSUSE Leap 16.0)
 
 | Estágio | Cadência | Janela | Política |
 |---|---|---|---|
@@ -44,11 +53,11 @@ versão 1.x mais recente.
 | Beta 3 | 4 semanas | 08 dez 2026 – 05 jan 2027 | QA linguístico e correções finais. Corrigir catálogos e traduções existentes; não criar infraestrutura, traduzir novo componente nem adicionar idioma. |
 | RC 1 | 2 semanas | 05 jan 2027 – 19 jan 2027 | Somente bloqueadores P0/P1 e repetição do gate. |
 | RC 2 | 2 semanas | 19 jan 2027 – 02 fev 2027 | Somente bloqueadores P0/P1 e repetição do gate. |
-| **Final — Lyra OS 1.0 “Odisseia”** | buffer 2 semanas | **~16 fev 2027** | Publicação condicionada ao gate de qualidade. |
+| **Final — Lyra OS 27.02 “Odisseia”** | buffer 2 semanas | **~16 fev 2027** | Publicação condicionada ao gate de qualidade. |
 
-O Lyra OS 1.0 oferece somente **en-US, pt-BR e es-ES** no instalador e na
+O Lyra OS 27.02 oferece somente **en-US, pt-BR e es-ES** no instalador e na
 seleção de idioma do sistema. Outros idiomas ficam fora do
-escopo da 1.0 e só podem entrar em um ciclo futuro com catálogo, revisão e gate
+escopo da 27.02 e só podem entrar em um ciclo futuro com catálogo, revisão e gate
 próprios. Para os pacotes próprios cuja interface ainda não cobre os três,
 **pt-BR e en-US** continuam sendo o gate mínimo obrigatório. Alpha 5,
 Alpha 6, Alpha 7 e Alpha 8 são obrigatórias e possuem gates próprios. Um P0/P1
@@ -77,19 +86,19 @@ a fase Alpha continua em vez de iniciar a Beta 1.
   rollback e a matriz de conformidade/regressão do ECA Digital. Nenhuma feature
   nova entra nesta etapa; a semana de 06–13/10 é somente para estabilização.
 
-## Política do Lyra OS Server 1.0 “Delos”
+## Política do Lyra OS Server 27.02 “Delos”
 
 O Server mantém ciclo e gate independentes. Seu inventário de pacotes não é
 derivado automaticamente do Desktop. Na Beta 3, o objetivo é: **QA linguístico
 dos componentes já internacionalizados e correções finais; nenhuma feature
 nova.**
 
-## Cronograma — Lyra OS 1.1 “Ilíada” (rebase para openSUSE Leap 16.1)
+## Cronograma — Lyra OS 27.10 “Ilíada” (rebase para openSUSE Leap 16.1)
 
-Início em março de 2027, cerca de 1 mês após a final do 1.0. A base muda de
+Início em março de 2027, cerca de 1 mês após a final da 27.02. A base muda de
 Leap 16.0 para Leap 16.1 (GA em 3 nov 2026), exigindo revalidação de
 disponibilidade de pacotes, ABI, shim de Secure Boot e matriz de hardware —
-não é um bump cosmético. O funil é mais enxuto que o do 1.0 porque o tooling
+não é um bump cosmético. O funil é mais enxuto que o da 27.02 porque o tooling
 de release e o processo de gate já existem; só a base precisa de
 requalificação.
 
@@ -108,9 +117,9 @@ requalificação.
 | Beta 3 | 4 semanas | 16 ago 2027 – 13 set 2027 |
 | RC 1 | 2 semanas | 13 set 2027 – 27 set 2027 |
 | RC 2 | 2 semanas | 27 set 2027 – 11 out 2027 |
-| **Final estável — Lyra OS 1.1 “Ilíada”** | buffer 2 semanas | **~25 out 2027** |
+| **Final estável — Lyra OS 27.10 “Ilíada”** | buffer 2 semanas | **~25 out 2027** |
 
-## Cronograma — Lyra OS Server 1.1 “Tebas”
+## Cronograma — Lyra OS Server 27.10 “Tebas”
 
 O Server segue um ciclo e um gate independentes do Desktop. O rebase para
 openSUSE Leap 16.1 exige requalificar boot, Secure Boot, rede, firewall,
@@ -126,12 +135,14 @@ armazenamento ext4 e as interfaces `vega-cli`, `vegad` e `vega-web`.
 | Beta 3 | 4 semanas | 28 jun 2027 – 26 jul 2027 |
 | RC 1 | 2 semanas | 26 jul 2027 – 09 ago 2027 |
 | RC 2 | 2 semanas | 09 ago 2027 – 23 ago 2027 |
-| **Final estável — Lyra OS Server 1.1 “Tebas”** | buffer 2 semanas | **~06 set 2027** |
+| **Final estável — Lyra OS Server 27.10 “Tebas”** | buffer 2 semanas | **~06 set 2027** |
 
 ## Observação de nomenclatura
 
-"1.0" e "1.1" são nomes de produto para os ciclos de release, complementares
-à versão de calendário (`AAAA.MM`) usada internamente pelo `release.toml`.
-Não existe hoje um campo formal de versão semântica major.minor no schema de
-release — isso ainda é uma decisão em aberto, caso o site precise expor esse
-número de forma estruturada (ex.: JSON de roadmap consumido pela página).
+"27.02" e "27.10" são os nomes de produto dos ciclos de release, no padrão
+ano.mês (estilo Ubuntu) referente à data prevista do lançamento final. Essa
+numeração é distinta da versão de calendário completa (`AAAA.MM`) usada
+internamente pelo `release.toml`. Não existe hoje um campo formal de versão
+semântica major.minor no schema de release — isso ainda é uma decisão em
+aberto, caso o site precise expor esse número de forma estruturada (ex.: JSON
+de roadmap consumido pela página).
