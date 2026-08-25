@@ -45,7 +45,7 @@ button { color: inherit; font: inherit; }
 .skip-link:focus { top: 12px; }
 .section-shell { overflow: hidden; position: relative; }
 
-.site-header { background: color-mix(in srgb, var(--bg) 90%, transparent); border-bottom: 1px solid var(--line); position: absolute; width: 100%; z-index: 20; }
+.site-header { background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); position: fixed; top: 0; left: 0; width: 100%; z-index: 20; }
 .nav-wrap { align-items: center; display: flex; justify-content: space-between; min-height: 82px; }
 .brand { align-items: center; display: inline-flex; gap: 10px; }
 .brand-mark { height: 38px; width: 38px; }
