@@ -236,19 +236,19 @@
             <p class="roadmap-intro">O número de iterações por estágio é um teto, não uma promessa fixa. A promoção acontece por critério de saída — sem itens críticos abertos no gate de release — e não apenas pela data. As janelas abaixo consideram o uso de todo o tempo previsto.</p>
           </div>
 
-          <aside class="roadmap-note roadmap-policy reveal" aria-label="Política de internacionalização e congelamento funcional">
-            <strong>Alpha 5–8 fecham o Desktop · feature freeze a partir da Beta 1</strong>
-            As Alphas restantes avançam por gates: P0/P1 não passa para a etapa seguinte. Toda implementação funcional fecha até 25/09/2026; a Alpha 8 automatiza os gates e sua última semana é exclusiva para estabilização.
+          <aside class="roadmap-note roadmap-policy reveal" aria-label="Política de melhorias e congelamento funcional">
+            <strong>Melhorias liberadas nas Betas da 27.02 · congelamento estrito na RC1</strong>
+            Desktop e Server podem receber melhorias durante as Betas quando os ganhos compensarem os riscos, com análise, testes de regressão e plano de reversão. P0/P1 não passa para a etapa seguinte.
           </aside>
 
           <aside class="roadmap-note roadmap-policy reveal" aria-label="Política de suporte do Lyra OS">
             <strong>Lyra OS com suporte até outubro de 2032</strong>
-            A linha Lyra OS baseada em openSUSE Leap 16 terá suporte até outubro de 2032. Cada release (27.02, 27.10...) mantém seu próprio ciclo de suporte e pode exigir a migração para um release mais recente.
+            A linha Lyra OS baseada em openSUSE Leap 16 terá suporte até outubro de 2032. Cada release (27.02, 28.02...) mantém seu próprio ciclo de suporte e pode exigir a migração para um release mais recente.
           </aside>
 
           <div class="roadmap-groups">
             <article class="roadmap-group roadmap-desktop-10 reveal">
-              <h3>Lyra OS Desktop 27.02 <strong class="release-codename">Odisseia</strong><small>base openSUSE Leap 16.0</small></h3>
+              <h3>Lyra OS Desktop 27.02 <strong class="release-codename">Odisseia</strong><small>migração para openSUSE Leap 16.1 na Alpha 7</small></h3>
               <ol class="roadmap-list">
                 <li class="is-past"><div><small>LANÇADA</small><h4>Alpha 1</h4><p>Antes rotulada Beta 1.</p></div></li>
                 <li class="is-past"><div><small>LANÇADA</small><h4>Alpha 2</h4><p>Antes rotulada Beta 2.</p></div></li>
@@ -256,40 +256,40 @@
                 <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 4</h4><p>i18n base, instalador em três idiomas e primeira onda de pacotes.</p><p><strong>14 ago 2026</strong></p><span class="sr-only">Descrição: o Lyra OS 27.02 oferece en-US, pt-BR e es-ES; outros idiomas ficam para ciclos futuros. O fluxo NVIDIA segue para a Alpha 5.</span></div></li>
                 <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 5</h4><p>Bloqueadores do instalador e release; contratos do Lyra Upgrade e do controle parental no Vega.</p><p><strong>17 ago 2026</strong></p><span class="sr-only">Descrição: inclui análise jurídica, referência do BigLinux, qualificação upstream, UX e arquitetura do controle parental; a implementação só começa após esses gates.</span></div></li>
                 <li class="is-current"><div><small>VERSÃO ATUAL · ENTREGUE</small><h4>Alpha 6</h4><p>Core e serviço do Lyra Upgrade; serviço de políticas de controle parental.</p><p><strong>25 ago 2026</strong></p></div></li>
-                <li><div><small>2 SEMANAS · PRODUTO COMPLETO</small><h4>Alpha 7</h4><p>Interface e upgrade entre releases; configuração parental e autorização de aplicativos no Vega.</p><p><strong>11 – 25 set 2026</strong></p></div></li>
+                <li><div><small>2 SEMANAS · REBASE + PRODUTO COMPLETO</small><h4>Alpha 7</h4><p>Migração para Leap 16.1 Beta 1 e requalificação integral; interface e upgrade entre releases; configuração parental e autorização de aplicativos no Vega.</p><p><strong>11 – 25 set 2026</strong></p></div></li>
                 <li><div><small>GATE + ESTABILIZAÇÃO</small><h4>Alpha 8</h4><p>Gates automatizados de update, upgrade, rollback e ECA Digital; depois, somente estabilização.</p><p><strong>25 set – 13 out 2026</strong></p></div></li>
-                <li><div><small>FEATURE FREEZE · 4 SEMANAS</small><h4>Beta 1</h4><p>Congelamento funcional e correção de bugs.</p><p><strong>13 out – 10 nov 2026</strong></p><span class="sr-only">Descrição: Nenhuma feature, idioma, componente ou infraestrutura nova. Somente correções de bugs, regressões, segurança, desempenho e traduções existentes.</span></div></li>
-                <li><div><small>4 SEMANAS</small><h4>Beta 2</h4><p>Estabilidade, atualizações e regressões.</p><p><strong>10 nov – 08 dez 2026</strong></p><span class="sr-only">Descrição: Nenhuma feature nova.</span></div></li>
-                <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>QA linguístico e correções finais.</p><p><strong>08 dez 2026 – 05 jan 2027</strong></p><span class="sr-only">Descrição: Corrigir catálogos e traduções existentes; não criar infraestrutura, traduzir novo componente nem adicionar idioma.</span></div></li>
+                <li><div><small>MELHORIAS QUALIFICADAS · 4 SEMANAS</small><h4>Beta 1</h4><p>Estabilização e melhorias com análise de risco, testes e reversão.</p><p><strong>13 out – 10 nov 2026</strong></p></div></li>
+                <li><div><small>4 SEMANAS</small><h4>Beta 2</h4><p>Estabilidade, atualizações e melhorias qualificadas.</p><p><strong>10 nov – 08 dez 2026</strong></p></div></li>
+                <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>QA linguístico, correções finais e últimas melhorias antes da RC1.</p><p><strong>08 dez 2026 – 05 jan 2027</strong></p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 1</h4><p>Somente bloqueadores P0/P1 e repetição do gate.</p><p><strong>05 – 19 jan 2027</strong></p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 2</h4><p>Somente bloqueadores P0/P1 e repetição do gate.</p><p><strong>19 jan – 02 fev 2027</strong></p></div></li>
                 <li class="is-final"><div><small>LANÇAMENTO</small><h4>Lyra OS 27.02 <strong class="release-codename">Odisseia</strong></h4><p>~16 fev 2027</p></div></li>
-                <li><div><small>EOL</small><h4>Fim de suporte da Lyra OS 27.02</h4><p>31 out 2027</p><span class="sr-only">Suporte encerra em 31 de outubro de 2027, junto com o fim de vida da base openSUSE Leap 16.0; a migração para a Lyra OS 27.10 (base Leap 16.1) deve ocorrer antes dessa data.</span></div></li>
+                <li><div><small>EOL · ESTIMATIVA</small><h4>Fim de suporte da Lyra OS 27.02</h4><p>~out 2028</p><span class="sr-only">Estimativa sujeita à confirmação do ciclo de suporte do openSUSE Leap 16.1.</span></div></li>
               </ol>
               <p class="roadmap-note">Alpha 5, Alpha 6, Alpha 7 e Alpha 8 são obrigatórias e possuem gates próprios. Um P0/P1 interrompe a ampliação de escopo da Alpha corrente. A semana de 06–13/10 recebe somente estabilização; sem gate verde, a fase Alpha continua.</p>
             </article>
 
             <article class="roadmap-group roadmap-server-10 reveal">
-              <h3>Lyra OS Server 27.02 <strong class="release-codename">Delos</strong><small>ciclo com gate independente</small></h3>
+              <h3>Lyra OS Server 27.02 <strong class="release-codename">Delos</strong><small>migração para openSUSE Leap 16.1 na Beta 2</small></h3>
               <p class="roadmap-note roadmap-group-intro">O Server possui ciclo e gate independentes, mas segue a mesma cadência e os mesmos critérios de qualidade do Desktop. Desktop e Server não precisam ser publicados no mesmo dia.</p>
               <ol class="roadmap-list">
                 <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 1</h4><span class="sr-only">Objetivo: repetir a instalação completa e produzir candidato rastreável.</span></div></li>
                 <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 2</h4><p>01 – 22 set 2026</p><span class="sr-only">Objetivo: fechar Secure Boot, primeiro boot, DHCP, SSH, firewall, vegad e vega-web com evidências.</span></div></li>
                 <li class="is-past"><div><small>DISPENSADA</small><h4>Alpha 3</h4><p>Não foi necessária: a fase Alpha fechou na Alpha 2.</p><span class="sr-only">Objetivo: resolver bloqueadores restantes e ampliar hardware, sem adicionar novo escopo.</span></div></li>
-                <li class="is-current"><div><small>VERSÃO ATUAL · ENTREGUE</small><h4>Beta 1</h4><p><strong>25 ago 2026</strong></p><span class="sr-only">Objetivo: congelamento funcional do fluxo disco inteiro/ext4.</span></div></li>
-                <li><div><small>4 SEMANAS</small><h4>Beta 2</h4><p>10 nov – 08 dez 2026</p><span class="sr-only">Objetivo: estabilidade, atualizações, rede e administração remota.</span></div></li>
+                <li class="is-current"><div><small>VERSÃO ATUAL · ENTREGUE</small><h4>Beta 1</h4><p><strong>25 ago 2026</strong></p><span class="sr-only">Objetivo: estabilizar o fluxo disco inteiro/ext4 e qualificar melhorias aprovadas.</span></div></li>
+                <li><div><small>4 SEMANAS · REBASE</small><h4>Beta 2</h4><p>10 nov – 08 dez 2026</p><span class="sr-only">Objetivo: migrar para Leap 16.1 e requalificar build, instalação, Secure Boot, atualizações, rede e administração remota.</span></div></li>
                 <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>08 dez 2026 – 05 jan 2027</p><span class="sr-only">Objetivo: QA linguístico dos componentes já internacionalizados e correções finais; nenhuma feature nova.</span></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 1</h4><p>05 – 19 jan 2027</p><span class="sr-only">Objetivo: candidato completo e assinado, validado em máquina virtual e hardware.</span></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 2</h4><p>19 jan – 02 fev 2027</p><span class="sr-only">Objetivo: somente correções bloqueantes e repetição integral do gate.</span></div></li>
                 <li class="is-final"><div><small>LANÇAMENTO</small><h4>Lyra OS Server 27.02 <strong class="release-codename">Delos</strong></h4><p>~16 fev 2027</p><span class="sr-only">Objetivo: publicação e verificação dos artefatos baixados.</span></div></li>
-                <li><div><small>EOL</small><h4>Fim de suporte da Lyra OS Server 27.02</h4><p>31 out 2027</p><span class="sr-only">Suporte encerra em 31 de outubro de 2027, junto com o fim de vida da base openSUSE Leap 16.0; a migração para a Lyra OS Server 27.10 (base Leap 16.1) deve ocorrer antes dessa data.</span></div></li>
+                <li><div><small>EOL · ESTIMATIVA</small><h4>Fim de suporte da Lyra OS Server 27.02</h4><p>~out 2028</p><span class="sr-only">Estimativa sujeita à confirmação do ciclo de suporte do openSUSE Leap 16.1.</span></div></li>
               </ol>
               <p class="roadmap-note">Alvo interno: janeiro; fevereiro é a margem de segurança. Se a fase Alpha terminar na Alpha 2, sem pendências críticas e com todas as evidências do gate, a versão final pode sair por volta de 26 de janeiro de 2027. O Server possui gate independente e não precisa ser publicado no mesmo dia que o Desktop.</p>
             </article>
 
             <article class="roadmap-group roadmap-desktop-11 reveal">
-              <h3>Lyra OS Desktop 27.10 <strong class="release-codename">Ilíada</strong><small>rebase para openSUSE Leap 16.1</small></h3>
-              <p class="roadmap-note roadmap-group-intro">O ciclo começa cerca de um mês após a versão 27.02. A mudança de base exige revalidar pacotes, ABI, shim de Secure Boot e a matriz de hardware.</p>
+              <h3>Lyra OS Desktop 28.02 <strong class="release-codename">Ilíada</strong><small>base openSUSE Leap 16.1 já qualificada</small></h3>
+              <p class="roadmap-note roadmap-group-intro">O ciclo começa cerca de um mês após a versão 27.02 e ganha uma janela prolongada de evolução, hardware e estabilização.</p>
               <ol class="roadmap-list">
                 <li><div><small>2 SEMANAS</small><h4>Alpha 1</h4><p>01 – 15 mar 2027</p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>Alpha 2</h4><p>15 – 29 mar 2027</p></div></li>
@@ -304,13 +304,13 @@
                 <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>16 ago – 13 set 2027</p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 1</h4><p>13 – 27 set 2027</p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 2</h4><p>27 set – 11 out 2027</p></div></li>
-                <li class="is-final"><div><small>VERSÃO ESTÁVEL</small><h4>Lyra OS 27.10 <strong class="release-codename">Ilíada</strong></h4><p>~25 out 2027</p></div></li>
-                <li><div><small>EOL · ESTIMATIVA</small><h4>Fim de suporte da Lyra OS 27.10</h4><p>~out 2028</p><span class="sr-only">O openSUSE Leap 16.1 ainda não tem data oficial de lançamento nem de fim de vida. Esta data é uma projeção baseada no padrão histórico de 24 meses de suporte por versão minor do Leap e está sujeita a confirmação.</span></div></li>
+                <li><div><small>ESTABILIZAÇÃO PROLONGADA</small><h4>Gate contínuo</h4><p>11 out 2027 – 01 fev 2028</p></div></li>
+                <li class="is-final"><div><small>VERSÃO ESTÁVEL</small><h4>Lyra OS 28.02 <strong class="release-codename">Ilíada</strong></h4><p>~15 fev 2028</p></div></li>
               </ol>
             </article>
 
             <article class="roadmap-group roadmap-server-11 reveal">
-              <h3>Lyra OS Server 27.10 <strong class="release-codename">Tebas</strong><small>rebase para openSUSE Leap 16.1</small></h3>
+              <h3>Lyra OS Server 28.02 <strong class="release-codename">Tebas</strong><small>base openSUSE Leap 16.1 já qualificada</small></h3>
               <p class="roadmap-note roadmap-group-intro">Ciclo independente do Desktop, com requalificação da base, do boot seguro, da rede e das ferramentas de administração remota.</p>
               <ol class="roadmap-list">
                 <li><div><small>3 SEMANAS</small><h4>Alpha 1</h4><p>01 – 22 mar 2027</p></div></li>
@@ -321,12 +321,12 @@
                 <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>28 jun – 26 jul 2027</p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 1</h4><p>26 jul – 09 ago 2027</p></div></li>
                 <li><div><small>2 SEMANAS</small><h4>RC 2</h4><p>09 – 23 ago 2027</p></div></li>
-                <li class="is-final"><div><small>VERSÃO ESTÁVEL</small><h4>Lyra OS Server 27.10 <strong class="release-codename">Tebas</strong></h4><p>~out 2027</p></div></li>
-                <li><div><small>EOL · ESTIMATIVA</small><h4>Fim de suporte da Lyra OS Server 27.10</h4><p>~out 2028</p><span class="sr-only">O openSUSE Leap 16.1 ainda não tem data oficial de lançamento nem de fim de vida. Esta data é uma projeção baseada no padrão histórico de 24 meses de suporte por versão minor do Leap e está sujeita a confirmação.</span></div></li>
+                <li><div><small>ESTABILIZAÇÃO PROLONGADA</small><h4>Gate contínuo</h4><p>23 ago 2027 – 01 fev 2028</p></div></li>
+                <li class="is-final"><div><small>VERSÃO ESTÁVEL</small><h4>Lyra OS Server 28.02 <strong class="release-codename">Tebas</strong></h4><p>~15 fev 2028</p></div></li>
               </ol>
             </article>
           </div>
-          <p class="roadmap-footnote reveal">“27.02” e “27.10” são as versões canônicas dos ciclos no padrão ano.mês (estilo Ubuntu), inclusive nos metadados internos de release. O Lyra OS terá suporte até outubro de 2032.</p>
+          <p class="roadmap-footnote reveal">“27.02” e “28.02” são as versões canônicas dos ciclos no padrão ano.mês (estilo Ubuntu), inclusive nos metadados internos de release. O Lyra OS terá suporte até outubro de 2032.</p>
         </div>
       </section>
 
