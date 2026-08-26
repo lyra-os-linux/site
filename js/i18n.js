@@ -8,7 +8,7 @@
   const catalogs = {
     'en-US': {
       'Pular para o conteúdo': 'Skip to content', 'Abrir menu': 'Open menu', 'Sobre': 'About', 'Homenagem': 'Tribute', 'A base': 'Foundation',
-      'Ecossistema': 'Ecosystem', 'Livro': 'Book', 'Cronograma': 'Roadmap', 'Download': 'Download', 'Tema': 'Theme',
+      'Ecossistema': 'Ecosystem', 'Experiência': 'Experience', 'Livro': 'Book', 'Cronograma': 'Roadmap', 'Requisitos': 'Requirements', 'Download': 'Download', 'Tema': 'Theme',
       'Ativar tema claro': 'Enable light theme', 'Ativar tema escuro': 'Enable dark theme', 'Navegação principal': 'Main navigation', 'Idioma do site': 'Site language',
       'Lyra OS, início': 'Lyra OS, home', 'Informações da versão atual': 'Current version information', 'Rolar para a seção Sobre': 'Scroll to the About section',
       'A Alpha 6 já está disponível': 'Alpha 6 is now available', 'Conheça o': 'Meet',
@@ -158,7 +158,7 @@
   // Spanish reuses the complete English catalog as a safe fallback; overrides
   // below cover all primary navigation and public-facing summaries.
   Object.assign(catalogs['es-ES'], catalogs['en-US'], {
-    'Pular para o conteúdo':'Saltar al contenido','Abrir menu':'Abrir menú','Sobre':'Acerca de','Homenagem':'Homenaje','A base':'La base','Ecossistema':'Ecosistema','Livro':'Libro','Cronograma':'Hoja de ruta','Tema':'Tema',
+    'Pular para o conteúdo':'Saltar al contenido','Abrir menu':'Abrir menú','Sobre':'Acerca de','Homenagem':'Homenaje','A base':'La base','Ecossistema':'Ecosistema','Experiência':'Experiencia','Livro':'Libro','Cronograma':'Hoja de ruta','Requisitos':'Requisitos','Tema':'Tema',
     'A Alpha 6 já está disponível':'Alpha 6 ya está disponible','Marca Lyra OS e destaque da versão Alpha 6':'Marca Lyra OS y destaque de la versión Alpha 6','Conheça o':'Conoce','Um sistema LTS feito para encontrar o equilíbrio entre potência, estabilidade e liberdade — no desktop e no servidor.':'Un sistema LTS creado para equilibrar potencia, estabilidad y libertad, tanto en escritorio como en servidor.','Antes rotulada Beta 1.':'Antes denominada Beta 1.','Antes rotulada Beta 2.':'Antes denominada Beta 2.',
     'Harmonia. Performance. Liberdade.':'Armonía. Rendimiento. Libertad.','Harmonia · Performance · Liberdade':'Armonía · Rendimiento · Libertad','Escolher edição':'Elegir edición','Descobrir o projeto':'Descubrir el proyecto','Versão atual':'Versión actual','Base do sistema':'Base del sistema',
     '01 / A ideia':'01 / La idea','Um sistema que':'Un sistema que','não fica no caminho.':'no se interpone.','02 / A fundação':'02 / La base','A estabilidade':'La estabilidad','como ponto de partida.':'como punto de partida.','03 / O coração':'03 / El corazón','Tudo encontra seu centro.':'Todo encuentra su centro.',
@@ -249,6 +249,28 @@
     '2 SEMANAS · REBASE + PRODUTO COMPLETO':'2 SEMANAS · CAMBIO DE BASE + PRODUCTO COMPLETO','Migração para Leap 16.1 Beta 1 e requalificação integral; interface e upgrade entre releases; configuração parental e autorização de aplicativos no Vega.':'Migración a Leap 16.1 Beta 1 y recalificación integral; interfaz y actualización entre versiones; configuración parental y autorización de aplicaciones en Vega.',
     '4 SEMANAS · REBASE':'4 SEMANAS · CAMBIO DE BASE','Objetivo: migrar para Leap 16.1 e requalificar build, instalação, Secure Boot, atualizações, rede e administração remota.':'Objetivo: migrar a Leap 16.1 y recalificar la compilación, instalación, Secure Boot, actualizaciones, red y administración remota.',
     'Estimativa sujeita à confirmação do ciclo de suporte do openSUSE Leap 16.1.':'Estimación sujeta a la confirmación del ciclo de soporte de openSUSE Leap 16.1.'
+  });
+
+  Object.assign(catalogs['en-US'], {
+    'Requisitos de sistema':'System requirements','Antes de instalar.':'Before installing.',
+    'Confira o perfil adequado para cada edição. Os valores mínimos permitem a instalação; os recomendados oferecem margem para atualizações, aplicativos e serviços.':'Check the appropriate profile for each edition. Minimum values allow installation; recommended values leave room for updates, applications, and services.',
+    'Mínimos':'Minimum','Recomendados':'Recommended','CPU:':'CPU:','Memória:':'Memory:','Armazenamento:':'Storage:','Vídeo:':'Display:','Rede:':'Network:',
+    'x86_64, 2 núcleos':'x86_64, 2 cores','4 GiB de RAM':'4 GiB RAM','24 GiB':'24 GiB','tela 1024 × 768':'1024 × 768 display',
+    'x86_64, 4 núcleos':'x86_64, 4 cores','8 GiB de RAM':'8 GiB RAM','SSD de 40 GiB ou mais':'40 GiB SSD or larger','tela Full HD':'Full HD display',
+    'x86_64, 1 núcleo':'x86_64, 1 core','2 GiB de RAM':'2 GiB RAM','8 GiB':'8 GiB','Ethernet com DHCP':'Ethernet with DHCP',
+    'x86_64, 2 ou mais núcleos':'x86_64, 2 or more cores','4 GiB de RAM ou mais':'4 GiB RAM or more','SSD de 20 GiB ou mais':'20 GiB SSD or larger','Ethernet Gigabit':'Gigabit Ethernet',
+    'Para ambas as edições:':'For both editions:','firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 27.02, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à ampliação da matriz de hardware durante a Beta.':'UEFI firmware, a USB installation drive, and an internet connection for updates. Secure Boot is supported. Installation uses the entire disk; in Server 27.02, the installer does not yet offer RAID or LVM. These requirements are provisional and subject to broader hardware qualification during Beta.'
+  });
+
+  Object.assign(catalogs['es-ES'], {
+    'Requisitos de sistema':'Requisitos del sistema','Antes de instalar.':'Antes de instalar.',
+    'Confira o perfil adequado para cada edição. Os valores mínimos permitem a instalação; os recomendados oferecem margem para atualizações, aplicativos e serviços.':'Consulta el perfil adecuado para cada edición. Los valores mínimos permiten la instalación; los recomendados dejan margen para actualizaciones, aplicaciones y servicios.',
+    'Mínimos':'Mínimos','Recomendados':'Recomendados','CPU:':'CPU:','Memória:':'Memoria:','Armazenamento:':'Almacenamiento:','Vídeo:':'Pantalla:','Rede:':'Red:',
+    'x86_64, 2 núcleos':'x86_64, 2 núcleos','4 GiB de RAM':'4 GiB de RAM','24 GiB':'24 GiB','tela 1024 × 768':'pantalla de 1024 × 768',
+    'x86_64, 4 núcleos':'x86_64, 4 núcleos','8 GiB de RAM':'8 GiB de RAM','SSD de 40 GiB ou mais':'SSD de 40 GiB o más','tela Full HD':'pantalla Full HD',
+    'x86_64, 1 núcleo':'x86_64, 1 núcleo','2 GiB de RAM':'2 GiB de RAM','8 GiB':'8 GiB','Ethernet com DHCP':'Ethernet con DHCP',
+    'x86_64, 2 ou mais núcleos':'x86_64, 2 núcleos o más','4 GiB de RAM ou mais':'4 GiB de RAM o más','SSD de 20 GiB ou mais':'SSD de 20 GiB o más','Ethernet Gigabit':'Ethernet Gigabit',
+    'Para ambas as edições:':'Para ambas ediciones:','firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 27.02, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à ampliação da matriz de hardware durante a Beta.':'firmware UEFI, unidad USB de instalación y conexión a internet para actualizaciones. Secure Boot es compatible. La instalación utiliza todo el disco; en Server 27.02, el instalador aún no ofrece RAID ni LVM. Estos requisitos son provisionales y están sujetos a una validación de hardware más amplia durante la Beta.'
   });
 
   const readLocale = () => {

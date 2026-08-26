@@ -40,8 +40,10 @@
           <a href="#homenagem">Homenagem</a>
           <a href="#base">A base</a>
           <a href="#ecossistema">Ecossistema</a>
+          <a href="#experiencia">Experiência</a>
           <a href="#livro">Livro</a>
           <a href="#cronograma">Cronograma</a>
+          <a href="#requisitos">Requisitos</a>
           <a href="#download" class="nav-cta">Download <span aria-hidden="true">↗</span></a>
           <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false">
             <span class="theme-icon" aria-hidden="true">☼</span>
@@ -191,7 +193,7 @@
         </div>
       </section>
 
-      <section class="preview-section section-shell" aria-labelledby="preview-title">
+      <section class="preview-section section-shell" id="experiencia" aria-labelledby="preview-title">
         <div class="container preview-grid">
           <div class="preview-copy reveal">
             <p class="eyebrow">04 / A experiência</p>
@@ -298,6 +300,62 @@
           <p class="eyebrow">07 / Uma nova etapa</p>
           <h2 id="download-title">Escolha sua<br><span class="gradient-text">edição do Lyra.</span></h2>
           <p>O Lyra OS está disponível para desktop e servidor, com imagens para arquitetura x86_64.</p>
+          <section class="requirements" id="requisitos" aria-labelledby="requirements-title">
+            <div class="requirements-heading">
+              <p class="eyebrow">Requisitos de sistema</p>
+              <h3 id="requirements-title">Antes de instalar.</h3>
+              <p>Confira o perfil adequado para cada edição. Os valores mínimos permitem a instalação; os recomendados oferecem margem para atualizações, aplicativos e serviços.</p>
+            </div>
+            <div class="requirements-grid">
+              <article class="requirement-card">
+                <span class="download-edition">Desktop</span>
+                <div class="requirement-columns">
+                  <div>
+                    <h4>Mínimos</h4>
+                    <ul>
+                      <li><strong>CPU:</strong> x86_64, 2 núcleos</li>
+                      <li><strong>Memória:</strong> 4 GiB de RAM</li>
+                      <li><strong>Armazenamento:</strong> 24 GiB</li>
+                      <li><strong>Vídeo:</strong> tela 1024 × 768</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Recomendados</h4>
+                    <ul>
+                      <li><strong>CPU:</strong> x86_64, 4 núcleos</li>
+                      <li><strong>Memória:</strong> 8 GiB de RAM</li>
+                      <li><strong>Armazenamento:</strong> SSD de 40 GiB ou mais</li>
+                      <li><strong>Vídeo:</strong> tela Full HD</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="requirement-card">
+                <span class="download-edition">Server</span>
+                <div class="requirement-columns">
+                  <div>
+                    <h4>Mínimos</h4>
+                    <ul>
+                      <li><strong>CPU:</strong> x86_64, 1 núcleo</li>
+                      <li><strong>Memória:</strong> 2 GiB de RAM</li>
+                      <li><strong>Armazenamento:</strong> 8 GiB</li>
+                      <li><strong>Rede:</strong> Ethernet com DHCP</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Recomendados</h4>
+                    <ul>
+                      <li><strong>CPU:</strong> x86_64, 2 ou mais núcleos</li>
+                      <li><strong>Memória:</strong> 4 GiB de RAM ou mais</li>
+                      <li><strong>Armazenamento:</strong> SSD de 20 GiB ou mais</li>
+                      <li><strong>Rede:</strong> Ethernet Gigabit</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <p class="requirements-note"><strong>Para ambas as edições:</strong> firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 27.02, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à ampliação da matriz de hardware durante a Beta.</p>
+          </section>
           <div class="download-options">
             <article class="download-option">
               <span class="download-edition">Desktop</span>
