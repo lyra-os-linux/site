@@ -27,15 +27,14 @@ cenário em que todo o teto é usado.
 
 O Lyra OS adota o padrão de versionamento por ano e mês usado pelo Ubuntu
 (`AA.MM`, dois dígitos de ano e dois de mês do lançamento final). O antigo
-nome de produto `1.0` passa a ser **`27.02`** (lançamento final em ~fev/2027)
-e o antigo `1.1` passa a ser **`28.02`** (lançamento final em ~fev/2028). Não
-existe mais o conceito de "versão maior 1.x" agrupando releases — cada
+nome de produto `1.0` passa a ser **`27.02`** (lançamento final em ~fev/2027).
+Não existe mais o conceito de "versão maior 1.x" agrupando releases — cada
 release é numerada pelo próprio ano.mês de lançamento, como no Ubuntu.
 
 ## Política de suporte
 
 O Lyra OS, na linha baseada em openSUSE Leap 16, terá suporte até **outubro
-de 2032**. Cada release (`27.02`, `28.02`, ...) mantém seu próprio ciclo de
+de 2032**. Cada release (`27.02`, ...) mantém seu próprio ciclo de
 suporte e pode exigir a migração para um release mais recente.
 
 ## Cronograma — Lyra OS 27.02 “Odisseia” (Desktop em openSUSE Leap 16.1 a partir da Alpha 7)
@@ -104,52 +103,9 @@ os RPMs e repetir integralmente os gates de instalação, Secure Boot, primeiro
 boot, atualização, rollback, rede, firewall e administração remota. Essa
 exceção de infraestrutura não reabre o escopo funcional.
 
-## Cronograma — Lyra OS 28.02 “Ilíada”
-
-Início em março de 2027, cerca de 1 mês após a final da 27.02, e lançamento
-em fevereiro de 2028. O rebase do Desktop para Leap 16.1 foi antecipado para
-a Alpha 7 da 27.02; este ciclo usa a base já qualificada e ganha uma janela
-maior de evolução, hardware e estabilização.
-
-| Estágio | Cadência | Janela |
-|---|---|---|
-| Alpha 1 | 2 semanas | 01 mar 2027 – 15 mar 2027 |
-| Alpha 2 | 2 semanas | 15 mar 2027 – 29 mar 2027 |
-| Alpha 3 | 2 semanas | 29 mar 2027 – 12 abr 2027 |
-| Alpha 4 | 2 semanas | 12 abr 2027 – 26 abr 2027 |
-| Alpha 5 | 2 semanas | 26 abr 2027 – 10 mai 2027 |
-| Alpha 6 | 2 semanas | 10 mai 2027 – 24 mai 2027 |
-| Alpha 7 | 2 semanas | 24 mai 2027 – 07 jun 2027 |
-| Alpha 8 | 2 semanas | 07 jun 2027 – 21 jun 2027 |
-| Beta 1 | 4 semanas | 21 jun 2027 – 19 jul 2027 |
-| Beta 2 | 4 semanas | 19 jul 2027 – 16 ago 2027 |
-| Beta 3 | 4 semanas | 16 ago 2027 – 13 set 2027 |
-| RC 1 | 2 semanas | 13 set 2027 – 27 set 2027 |
-| RC 2 | 2 semanas | 27 set 2027 – 11 out 2027 |
-| Estabilização prolongada | ~4 meses | 11 out 2027 – 01 fev 2028 |
-| **Final estável — Lyra OS 28.02 “Ilíada”** | buffer 2 semanas | **~15 fev 2028** |
-
-## Cronograma — Lyra OS Server 28.02 “Tebas”
-
-O Server segue um ciclo e um gate independentes do Desktop sobre a base
-openSUSE Leap 16.1 já qualificada na 27.02.
-
-| Estágio | Cadência | Janela |
-|---|---|---|
-| Alpha 1 | 3 semanas | 01 mar 2027 – 22 mar 2027 |
-| Alpha 2 | 3 semanas | 22 mar 2027 – 12 abr 2027 |
-| Alpha 3 | 3 semanas | 12 abr 2027 – 03 mai 2027 |
-| Beta 1 | 4 semanas | 03 mai 2027 – 31 mai 2027 |
-| Beta 2 | 4 semanas | 31 mai 2027 – 28 jun 2027 |
-| Beta 3 | 4 semanas | 28 jun 2027 – 26 jul 2027 |
-| RC 1 | 2 semanas | 26 jul 2027 – 09 ago 2027 |
-| RC 2 | 2 semanas | 09 ago 2027 – 23 ago 2027 |
-| Estabilização prolongada | ~5 meses | 23 ago 2027 – 01 fev 2028 |
-| **Final estável — Lyra OS Server 28.02 “Tebas”** | buffer 2 semanas | **~15 fev 2028** |
-
 ## Observação de nomenclatura
 
-`27.02` e `28.02` são as versões canônicas dos ciclos de release, no padrão
+`27.02` é a versão canônica do ciclo de release, no padrão
 ano.mês (estilo Ubuntu), tanto na apresentação do produto quanto nos metadados
 internos. O campo `calendar_version` usa diretamente `AA.MM`; não há uma
 numeração `1.x` paralela.
