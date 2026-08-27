@@ -75,7 +75,7 @@ de reversão registrados. A RC1 inicia o congelamento estrito.
   contratos do Lyra Upgrade. Para o ECA Digital, concluir o enquadramento
   jurídico, auditar a referência do BigLinux, qualificar a base upstream,
   especificar a experiência no Vega e aprovar a ADR. A governança regulatória
-  LTS também recebe sua baseline. A ISO NVIDIA dedicada foi cancelada: existe
+  também recebe sua baseline. A ISO NVIDIA dedicada foi cancelada: existe
   somente uma ISO Desktop e o fluxo pós-instalação pelo Vega já foi validado.
 - **Alpha 6 — backend:** implementar core, preflight, plano, estado durável,
   serviço privilegiado e update seguro dentro da mesma release; implementar
