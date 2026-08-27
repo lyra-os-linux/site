@@ -361,7 +361,10 @@
               <span class="download-edition">Desktop</span>
               <h3>Alpha 6</h3>
               <p>Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.</p>
-              <a class="button button-primary" href="https://sourceforge.net/projects/lyra/files/releases/27.02/desktop/alpha6/" target="_blank" rel="noreferrer">Baixar Desktop <span aria-hidden="true">↗</span></a>
+              <div class="download-card-actions">
+                <a class="button button-primary" href="https://sourceforge.net/projects/lyra/files/releases/27.02/desktop/alpha6/" target="_blank" rel="noreferrer">Baixar Desktop <span aria-hidden="true">↗</span></a>
+                <button class="experimental-trigger" type="button" data-open-experimental aria-haspopup="dialog">Versões experimentais <span aria-hidden="true">✦</span></button>
+              </div>
             </article>
             <article class="download-option">
               <span class="download-edition">Server</span>
@@ -390,6 +393,38 @@
         </div>
       </section>
     </main>
+
+    <dialog class="experimental-modal" id="experimental-modal" aria-labelledby="experimental-title" aria-describedby="experimental-description">
+      <div class="experimental-panel">
+        <button class="modal-close" type="button" data-close-experimental aria-label="Fechar versões experimentais"><span aria-hidden="true">×</span></button>
+        <div class="modal-heading">
+          <p class="eyebrow"><span class="status-dot"></span> Laboratório Lyra</p>
+          <h2 id="experimental-title">Outros desktops,<br><span class="gradient-text">novas possibilidades.</span></h2>
+          <p id="experimental-description">KDE Plasma e XFCE estão sendo preparados como flavors experimentais. Ainda não há imagens disponíveis para download.</p>
+        </div>
+        <div class="experimental-grid">
+          <article class="experimental-card experimental-card-kde">
+            <div class="desktop-glyph" aria-hidden="true"><span></span><i></i><b></b></div>
+            <div class="experimental-card-copy">
+              <span class="experimental-status">Em preparação</span>
+              <h3>KDE Plasma</h3>
+              <p>Uma experiência moderna e flexível, desenvolvida em ciclo separado da edição oficial.</p>
+            </div>
+            <button class="button unavailable-button" type="button" disabled>Não disponível</button>
+          </article>
+          <article class="experimental-card experimental-card-xfce">
+            <div class="desktop-glyph" aria-hidden="true"><span></span><i></i><b></b></div>
+            <div class="experimental-card-copy">
+              <span class="experimental-status">Em preparação</span>
+              <h3>XFCE</h3>
+              <p>Um flavor leve e direto, planejado com os mesmos critérios de estabilidade e validação.</p>
+            </div>
+            <button class="button unavailable-button" type="button" disabled>Não disponível</button>
+          </article>
+        </div>
+        <p class="experimental-footnote">A edição Desktop com GNOME continua sendo a opção oficial e recomendada.</p>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="container footer-grid">
