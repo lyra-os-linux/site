@@ -120,7 +120,7 @@
       'Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.': 'For personal computers, with a graphical desktop and the complete Lyra OS experience.',
       'Baixar Desktop': 'Download Desktop', 'Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.': 'For servers and infrastructure, with a lean base focused on service administration.',
       'Versões experimentais': 'Experimental versions', 'Fechar versões experimentais': 'Close experimental versions', 'Pedidos da comunidade': 'Community requests',
-      'Flavors experimentais,': 'Experimental flavors,', 'com escopo mínimo.': 'with minimal scope.',
+      'Flavors experimentais,': 'Experimental flavors,', 'em desenvolvimento.': 'in development.',
       'GNOME é a edição principal e concentra a experiência completa do Lyra OS. KDE Plasma e XFCE existirão como opções experimentais enxutas, solicitadas por usuários. Ainda não há imagens disponíveis.': 'GNOME is the flagship edition and receives the complete Lyra OS experience. KDE Plasma and XFCE will exist as lean experimental options requested by users. No images are available yet.',
       'Em preparação': 'In preparation', 'Não disponível': 'Unavailable',
       'Plasma próximo dos padrões do openSUSE, com apenas a integração essencial do Lyra.': 'Plasma close to openSUSE defaults, with only essential Lyra integration.',
