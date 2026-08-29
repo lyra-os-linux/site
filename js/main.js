@@ -11,9 +11,9 @@
   const themeToggle = document.querySelector('.theme-toggle');
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-  const experimentalModal = document.querySelector('#experimental-modal');
-  const experimentalTrigger = document.querySelector('[data-open-experimental]');
-  const experimentalClose = document.querySelector('[data-close-experimental]');
+  const flavorsModal = document.querySelector('#flavors-modal');
+  const flavorsTrigger = document.querySelector('[data-open-flavors]');
+  const flavorsClose = document.querySelector('[data-close-flavors]');
 
   const updateThemeButton = () => {
     const isLight = root.dataset.theme === 'light';
@@ -40,12 +40,12 @@
     menuToggle?.setAttribute('aria-expanded', 'false');
   }));
 
-  experimentalTrigger?.addEventListener('click', () => experimentalModal?.showModal());
-  experimentalClose?.addEventListener('click', () => experimentalModal?.close());
-  experimentalModal?.addEventListener('click', (event) => {
-    if (event.target === experimentalModal) experimentalModal.close();
+  flavorsTrigger?.addEventListener('click', () => flavorsModal?.showModal());
+  flavorsClose?.addEventListener('click', () => flavorsModal?.close());
+  flavorsModal?.addEventListener('click', (event) => {
+    if (event.target === flavorsModal) flavorsModal.close();
   });
-  experimentalModal?.addEventListener('close', () => experimentalTrigger?.focus());
+  flavorsModal?.addEventListener('close', () => flavorsTrigger?.focus());
 
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
