@@ -87,6 +87,8 @@ h1 { font-size: clamp(4rem, 9vw, 7.6rem); letter-spacing: -.09em; line-height: .
 .desktop-download-button .lyra-button-icon { fill: none; flex: 0 0 auto; height: 22px; stroke: currentColor; stroke-linecap: round; stroke-width: 2.5; width: 22px; }
 .desktop-download-button .lyra-button-star { fill: currentColor; stroke: none; }
 .desktop-download-button .button-label { font-size: inherit; line-height: inherit; }
+.server-download-button { gap: 11px; }
+.server-download-button .server-button-icon { fill: none; flex: 0 0 auto; height: 22px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; width: 22px; }
 .text-link, .arrow-link { border-bottom: 1px solid var(--line-strong); color: var(--text-soft); font-size: .76rem; padding-bottom: 4px; }
 .text-link span, .arrow-link span { color: var(--lavender); margin-left: 7px; }
 .hero-meta { border-top: 1px solid var(--line); display: flex; gap: 38px; margin-top: 52px; padding-top: 18px; }
