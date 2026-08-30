@@ -47,6 +47,33 @@
   });
   flavorsModal?.addEventListener('close', () => flavorsTrigger?.focus());
 
+  document.querySelectorAll('.desktop-carousel').forEach((carousel) => {
+    const slides = [...carousel.querySelectorAll('[data-carousel-slide]')];
+    const dots = [...carousel.querySelectorAll('[data-carousel-dot]')];
+    let current = 0;
+    const show = (index) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        const active = slideIndex === current;
+        slide.hidden = !active;
+        slide.classList.toggle('is-active', active);
+      });
+      dots.forEach((dot, dotIndex) => {
+        const active = dotIndex === current;
+        dot.classList.toggle('is-active', active);
+        dot.setAttribute('aria-selected', String(active));
+      });
+    };
+    carousel.querySelector('[data-carousel-previous]')?.addEventListener('click', () => show(current - 1));
+    carousel.querySelector('[data-carousel-next]')?.addEventListener('click', () => show(current + 1));
+    dots.forEach((dot, index) => dot.addEventListener('click', () => show(index)));
+    carousel.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1); }
+    });
+    show(0);
+  });
+
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, instance) => {

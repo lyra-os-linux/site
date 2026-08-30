@@ -198,19 +198,31 @@
           <div class="preview-copy reveal">
             <p class="eyebrow">04 / A experiência</p>
             <h2 id="preview-title">Familiar por natureza.<br><span class="muted-gradient">Lyra por escolha.</span></h2>
-            <p>Um GNOME limpo, com o branding do Lyra aplicado com intenção. Menos ruído visual, mais espaço para aquilo que você quer fazer.</p>
+            <p>GNOME e KDE Plasma com o branding do Lyra aplicado com intenção. Duas experiências oficiais, com a mesma identidade e liberdade de escolha.</p>
             <div class="feature-list">
               <div><span>01</span><p>Interface clara e consistente</p></div>
               <div><span>02</span><p>Base sólida para o seu dia a dia</p></div>
               <div><span>03</span><p>Liberdade para personalizar</p></div>
             </div>
           </div>
-          <figure class="desktop-shot reveal">
+          <div class="desktop-shot desktop-carousel reveal" role="region" aria-roledescription="carrossel" aria-label="Ambientes de trabalho do Lyra OS">
             <div class="desktop-frame">
-              <img src="assets/lyra-desktop-gnome.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Área de trabalho do Lyra OS Desktop Alpha 6: GNOME com painel superior, dock lateral de aplicativos e o papel de parede Odisseia.">
+              <figure class="carousel-slide is-active" data-carousel-slide>
+                <img src="assets/lyra-desktop-gnome.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Área de trabalho do Lyra OS Desktop Alpha 6: GNOME com painel superior, dock lateral de aplicativos e o papel de parede Odisseia.">
+                <figcaption>Lyra OS Desktop · GNOME com o papel de parede Odisseia</figcaption>
+              </figure>
+              <figure class="carousel-slide" data-carousel-slide hidden>
+                <img src="assets/kde.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Área de trabalho do Lyra OS KDE Plasma com o menu de aplicativos aberto e o papel de parede Odisseia.">
+                <figcaption>Lyra OS Desktop · KDE Plasma com o papel de parede Odisseia</figcaption>
+              </figure>
+              <button class="carousel-control carousel-previous" type="button" aria-label="Imagem anterior" data-carousel-previous><span aria-hidden="true">←</span></button>
+              <button class="carousel-control carousel-next" type="button" aria-label="Próxima imagem" data-carousel-next><span aria-hidden="true">→</span></button>
             </div>
-            <figcaption>Lyra OS Desktop Alpha 6 · GNOME com o papel de parede Odisseia</figcaption>
-          </figure>
+            <div class="carousel-dots" role="tablist" aria-label="Escolher ambiente de trabalho">
+              <button class="carousel-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Mostrar GNOME" data-carousel-dot="0"></button>
+              <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Mostrar KDE Plasma" data-carousel-dot="1"></button>
+            </div>
+          </div>
         </div>
       </section>
 
