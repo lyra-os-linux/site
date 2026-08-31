@@ -359,17 +359,14 @@
                 </div>
               </article>
             </div>
-            <p class="requirements-note"><strong>Para todas as edições e flavors:</strong> firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. GNOME e KDE Plasma usam o mesmo perfil-base; o XFCE reduz o consumo esperado, mas mantém margem para atualizações. A instalação usa o disco inteiro; no Server 1.0, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à validação do gate e da matriz de hardware.</p>
+            <p class="requirements-note"><strong>Para todas as edições do Desktop:</strong> firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. GNOME e KDE Plasma usam o mesmo perfil-base; o XFCE reduz o consumo esperado, mas mantém margem para atualizações. A instalação usa o disco inteiro; no Server 1.0, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à validação do gate e da matriz de hardware.</p>
           </section>
           <div class="download-options">
             <article class="download-option">
               <span class="download-edition">Desktop</span>
-              <h3>Alpha 6 <small>— última imagem publicada</small></h3>
+              <h3>Alpha 6</h3>
               <p>Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.</p>
-              <div class="download-card-actions">
-                <a class="button button-primary desktop-download-button" href="https://sourceforge.net/projects/lyra/files/releases/27.02/desktop/alpha6/" target="_blank" rel="noreferrer"><svg class="lyra-button-icon" viewBox="0 0 44 46" aria-hidden="true"><path d="M10 11v17.4c0 7 5.7 12.6 12.7 12.6s12.7-5.6 12.7-12.6V11M7.5 31.4c3.6 5.5 8.8 8.4 15.2 8.4 6.4 0 11.7-2.9 15.3-8.4"/><path d="M16 12v16M23 12v16M30 12v16"/><path class="lyra-button-star" d="m38 5 .9 2.8 3.1.9-3.1.9-.9 2.9-.9-2.9-3.1-.9 3.1-.9z"/></svg><span class="button-label">Baixar Desktop</span> <span aria-hidden="true">↗</span></a>
-                <button class="flavors-trigger" type="button" data-open-flavors aria-haspopup="dialog">Flavors oficiais <span aria-hidden="true">✦</span></button>
-              </div>
+              <button class="button button-primary desktop-download-button" type="button" data-open-desktop-download aria-haspopup="dialog"><svg class="lyra-button-icon" viewBox="0 0 44 46" aria-hidden="true"><path d="M10 11v17.4c0 7 5.7 12.6 12.7 12.6s12.7-5.6 12.7-12.6V11M7.5 31.4c3.6 5.5 8.8 8.4 15.2 8.4 6.4 0 11.7-2.9 15.3-8.4"/><path d="M16 12v16M23 12v16M30 12v16"/><path class="lyra-button-star" d="m38 5 .9 2.8 3.1.9-3.1.9-.9 2.9-.9-2.9-3.1-.9 3.1-.9z"/></svg><span class="button-label">Baixar Desktop</span> <span aria-hidden="true">↗</span></button>
             </article>
             <article class="download-option">
               <span class="download-edition">Server · Delos</span>
@@ -399,32 +396,41 @@
       </section>
     </main>
 
-    <dialog class="flavors-modal" id="flavors-modal" aria-labelledby="flavors-title" aria-describedby="flavors-description">
+    <dialog class="flavors-modal" id="desktop-download-modal" aria-labelledby="desktop-download-title" aria-describedby="desktop-download-description">
       <div class="flavors-panel">
-        <button class="modal-close" type="button" data-close-flavors aria-label="Fechar flavors oficiais"><span aria-hidden="true">×</span></button>
+        <button class="modal-close" type="button" data-close-desktop-download aria-label="Fechar opções de download"><span aria-hidden="true">×</span></button>
         <div class="modal-heading">
-          <p class="eyebrow"><span class="status-dot"></span> Flavors do Lyra OS</p>
-          <h2 id="flavors-title">Flavors oficiais,<br><span class="gradient-text">em desenvolvimento.</span></h2>
-          <p id="flavors-description">KDE Plasma e XFCE serão flavors oficiais do Lyra OS. As imagens ainda estão em preparação.</p>
+          <p class="eyebrow"><span class="status-dot"></span> Lyra OS Desktop</p>
+          <h2 id="desktop-download-title">Escolha seu<br><span class="gradient-text">ambiente de trabalho.</span></h2>
+          <p id="desktop-download-description">As três opções oferecem a mesma base do Lyra OS, com experiências de uso diferentes.</p>
         </div>
         <div class="flavors-grid">
+          <article class="flavor-card flavor-card-gnome">
+            <div class="desktop-logo desktop-logo-gnome"><img src="assets/gnome-logo.svg" alt="Logo do GNOME" width="60" height="64"></div>
+            <div class="flavor-card-copy">
+              <span class="flavor-status">Alpha 6</span>
+              <h3>GNOME</h3>
+              <p>Moderno e direto, com uma experiência focada, fluida e integrada ao Lyra OS.</p>
+            </div>
+            <a class="button button-primary flavor-download-button" href="https://sourceforge.net/projects/lyra/files/releases/27.02/desktop/alpha6/" target="_blank" rel="noreferrer">Baixar GNOME <span aria-hidden="true">↗</span></a>
+          </article>
           <article class="flavor-card flavor-card-kde">
             <div class="desktop-logo desktop-logo-kde"><img src="assets/plasma-logo.svg" alt="Logo do KDE Plasma" width="64" height="64"></div>
             <div class="flavor-card-copy">
-              <span class="flavor-status">Em preparação</span>
+              <span class="flavor-status">Alpha 6</span>
               <h3>KDE Plasma</h3>
-              <p>Plasma próximo dos padrões do openSUSE, com apenas a integração essencial do Lyra.</p>
+              <p>Visual flexível e familiar, com ampla personalização e integração essencial do Lyra.</p>
             </div>
-            <button class="button unavailable-button" type="button" disabled>Não disponível</button>
+            <button class="button button-primary flavor-download-button" type="button" disabled>Baixar KDE <span aria-hidden="true">↗</span></button>
           </article>
           <article class="flavor-card flavor-card-xfce">
             <div class="desktop-logo desktop-logo-xfce"><img src="assets/xfce-logo.svg" alt="Logo do XFCE" width="132" height="64"></div>
             <div class="flavor-card-copy">
-              <span class="flavor-status">Em preparação</span>
+              <span class="flavor-status">Alpha 6</span>
               <h3>XFCE</h3>
-              <p>XFCE próximo dos padrões do openSUSE, com uma seleção pequena e manutenção simples.</p>
+              <p>Leve e eficiente, ideal para máquinas modestas ou para quem prefere simplicidade.</p>
             </div>
-            <button class="button unavailable-button" type="button" disabled>Não disponível</button>
+            <button class="button button-primary flavor-download-button" type="button" disabled>Baixar XFCE <span aria-hidden="true">↗</span></button>
           </article>
         </div>
       </div>

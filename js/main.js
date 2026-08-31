@@ -11,9 +11,9 @@
   const themeToggle = document.querySelector('.theme-toggle');
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-  const flavorsModal = document.querySelector('#flavors-modal');
-  const flavorsTrigger = document.querySelector('[data-open-flavors]');
-  const flavorsClose = document.querySelector('[data-close-flavors]');
+  const desktopDownloadModal = document.querySelector('#desktop-download-modal');
+  const desktopDownloadTrigger = document.querySelector('[data-open-desktop-download]');
+  const desktopDownloadClose = document.querySelector('[data-close-desktop-download]');
 
   const updateThemeButton = () => {
     const isLight = root.dataset.theme === 'light';
@@ -40,12 +40,12 @@
     menuToggle?.setAttribute('aria-expanded', 'false');
   }));
 
-  flavorsTrigger?.addEventListener('click', () => flavorsModal?.showModal());
-  flavorsClose?.addEventListener('click', () => flavorsModal?.close());
-  flavorsModal?.addEventListener('click', (event) => {
-    if (event.target === flavorsModal) flavorsModal.close();
+  desktopDownloadTrigger?.addEventListener('click', () => desktopDownloadModal?.showModal());
+  desktopDownloadClose?.addEventListener('click', () => desktopDownloadModal?.close());
+  desktopDownloadModal?.addEventListener('click', (event) => {
+    if (event.target === desktopDownloadModal) desktopDownloadModal.close();
   });
-  flavorsModal?.addEventListener('close', () => flavorsTrigger?.focus());
+  desktopDownloadModal?.addEventListener('close', () => desktopDownloadTrigger?.focus());
 
   document.querySelectorAll('.desktop-carousel').forEach((carousel) => {
     const slides = [...carousel.querySelectorAll('[data-carousel-slide]')];
