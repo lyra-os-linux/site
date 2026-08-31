@@ -22,10 +22,10 @@
       {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Lyra OS","softwareVersion":"1.0","alternateName":"Lyra OS 1 — Odisseia","operatingSystem":"x86_64","applicationCategory":"OperatingSystem","description":"Primeira geração do Lyra OS, baseada no openSUSE Leap 16.x."}
     </script>
   </head>
-  <body>
+  <body id="topo">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <header class="site-header" id="topo">
+    <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="#topo" aria-label="Lyra OS, início">
           <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
@@ -254,6 +254,21 @@
           <p class="eyebrow">07 / Uma nova etapa</p>
           <h2 id="download-title">Escolha sua<br><span class="gradient-text">edição do Lyra.</span></h2>
           <p>O Lyra OS está disponível para desktop e servidor, com imagens para arquitetura x86_64.</p>
+          <div class="download-options">
+            <article class="download-option">
+              <span class="download-edition">Desktop</span>
+              <h3>Alpha 6</h3>
+              <p>Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.</p>
+              <button class="button button-primary desktop-download-button" type="button" data-open-desktop-download aria-haspopup="dialog"><svg class="lyra-button-icon" viewBox="0 0 44 46" aria-hidden="true"><path d="M10 11v17.4c0 7 5.7 12.6 12.7 12.6s12.7-5.6 12.7-12.6V11M7.5 31.4c3.6 5.5 8.8 8.4 15.2 8.4 6.4 0 11.7-2.9 15.3-8.4"/><path d="M16 12v16M23 12v16M30 12v16"/><path class="lyra-button-star" d="m38 5 .9 2.8 3.1.9-3.1.9-.9 2.9-.9-2.9-3.1-.9 3.1-.9z"/></svg><span class="button-label">Baixar Desktop</span> <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="download-option">
+              <span class="download-edition">Server · Delos</span>
+              <h3>Beta 1</h3>
+              <p>Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.</p>
+              <a class="button button-primary server-download-button" href="https://sourceforge.net/projects/lyra/files/releases/27.02/server/beta1/" target="_blank" rel="noreferrer"><svg class="server-button-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg>Baixar Server <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <p class="download-note">Downloads hospedados no SourceForge.</p>
           <section class="requirements" id="requisitos" aria-labelledby="requirements-title">
             <div class="requirements-heading">
               <p class="eyebrow">Requisitos de sistema</p>
@@ -356,21 +371,6 @@
             </div>
             <p class="requirements-note"><strong>Para todas as edições do Desktop:</strong> firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. GNOME e KDE Plasma usam o mesmo perfil-base; o XFCE reduz o consumo esperado, mas mantém margem para atualizações. A instalação usa o disco inteiro; no Server 1.0, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à validação do gate e da matriz de hardware.</p>
           </section>
-          <div class="download-options">
-            <article class="download-option">
-              <span class="download-edition">Desktop</span>
-              <h3>Alpha 6</h3>
-              <p>Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.</p>
-              <button class="button button-primary desktop-download-button" type="button" data-open-desktop-download aria-haspopup="dialog"><svg class="lyra-button-icon" viewBox="0 0 44 46" aria-hidden="true"><path d="M10 11v17.4c0 7 5.7 12.6 12.7 12.6s12.7-5.6 12.7-12.6V11M7.5 31.4c3.6 5.5 8.8 8.4 15.2 8.4 6.4 0 11.7-2.9 15.3-8.4"/><path d="M16 12v16M23 12v16M30 12v16"/><path class="lyra-button-star" d="m38 5 .9 2.8 3.1.9-3.1.9-.9 2.9-.9-2.9-3.1-.9 3.1-.9z"/></svg><span class="button-label">Baixar Desktop</span> <span aria-hidden="true">↗</span></button>
-            </article>
-            <article class="download-option">
-              <span class="download-edition">Server · Delos</span>
-              <h3>Beta 1</h3>
-              <p>Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.</p>
-              <a class="button button-primary server-download-button" href="https://sourceforge.net/projects/lyra/files/releases/27.02/server/beta1/" target="_blank" rel="noreferrer"><svg class="server-button-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg>Baixar Server <span aria-hidden="true">↗</span></a>
-            </article>
-          </div>
-          <p class="download-note">Downloads hospedados no SourceForge.</p>
           <div class="release-line"><span>Desktop · Alpha / 06</span><span>25.08.2026</span><span>x86_64</span></div>
           <div class="release-line"><span>Server · Beta / 01</span><span>25.08.2026</span><span>x86_64</span></div>
           <div class="install-videos">
