@@ -67,7 +67,7 @@ button { color: inherit; font: inherit; }
 .menu-toggle { background: none; border: 0; cursor: pointer; display: none; padding: 7px; }
 .menu-toggle > span:not(.sr-only) { background: var(--text); display: block; height: 2px; margin: 4px 0; width: 22px; }
 
-.hero { background-color: var(--bg); background-image: radial-gradient(circle at 70% 32%, color-mix(in srgb, var(--blue) 14%, transparent), transparent 25%), linear-gradient(115deg, transparent 20%, color-mix(in srgb, var(--surface-blue) 46%, transparent) 100%), url("../assets/Lyra-NasceumaEstrela.png"); min-height: min(850px, 100vh); padding: 170px 0 100px; }
+.hero { background-color: var(--bg); background-image: radial-gradient(circle at 70% 32%, color-mix(in srgb, var(--blue) 14%, transparent), transparent 25%), linear-gradient(115deg, transparent 20%, color-mix(in srgb, var(--surface-blue) 46%, transparent) 100%), url("../assets/Lyra-NasceumaEstrela.png"); background-position: center; background-repeat: no-repeat; background-size: cover; min-height: min(850px, 100vh); padding: 170px 0 100px; }
 .hero::after { background-image: linear-gradient(130deg, transparent 0 48%, color-mix(in srgb, var(--lavender) 4%, transparent) 48.2% 48.5%, transparent 48.7% 100%), linear-gradient(35deg, transparent 0 66%, color-mix(in srgb, var(--blue) 5%, transparent) 66.2% 66.5%, transparent 66.7% 100%); content: ""; inset: 0; opacity: .9; pointer-events: none; position: absolute; }
 .hero-grid { align-items: center; display: grid; gap: 45px; grid-template-columns: 1fr .9fr; min-height: 550px; position: relative; z-index: 1; }
 .hero-copy { max-width: 570px; }
