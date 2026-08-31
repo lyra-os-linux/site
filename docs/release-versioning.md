@@ -4,7 +4,7 @@
 
 - Produto: **Lyra OS 1 — Odisseia**
 - Primeira versão estável planejada: **Lyra OS 1.0**
-- Base tecnológica da 1.0: **openSUSE Leap 16.1**
+- Base tecnológica da 1.0: **openSUSE Leap 16.x**
 - Estado: em desenvolvimento
 
 Desktop e Server pertencem à mesma geração Odisseia. Cada edição conserva seu
@@ -31,7 +31,7 @@ identificam builds e janelas do roadmap, nunca a versão comercial.
 
 | Lyra OS | Geração | Base | Status |
 |---|---|---|---|
-| 1.0 | Odisseia | openSUSE Leap 16.1 | Em desenvolvimento |
+| 1.0 | Odisseia | openSUSE Leap 16.x | Em desenvolvimento |
 
 Não há versões posteriores anunciadas. Elas não serão inferidas a partir das
 futuras versões do Leap.
