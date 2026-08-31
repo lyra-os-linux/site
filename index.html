@@ -49,7 +49,6 @@
           <a href="#ecossistema">Ecossistema</a>
           <a href="#experiencia">Experiência</a>
           <a href="#livro">Livro</a>
-          <a href="#cronograma">Cronograma</a>
           <a href="#requisitos">Requisitos</a>
           <a href="#download" class="nav-cta">Download <span aria-hidden="true">↗</span></a>
           <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false">
@@ -251,68 +250,6 @@
             <p class="book-languages"><strong>Idiomas da publicação</strong> Português e inglês.</p>
             <div class="book-status"><span class="status-dot"></span> Em desenvolvimento — lançamento em breve</div>
           </div>
-        </div>
-      </section>
-
-      <section class="roadmap-section section-shell" id="cronograma" aria-labelledby="cronograma-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">06 / Roadmap</p>
-            <h2 id="cronograma-title">Cronograma completo<br><span class="muted-gradient">de releases.</span></h2>
-            <p class="roadmap-intro">O número de iterações por estágio é um teto, não uma promessa fixa. A promoção acontece por critério de saída — sem itens críticos abertos no gate de release — e não apenas pela data. As janelas abaixo consideram o uso de todo o tempo previsto.</p>
-          </div>
-
-          <aside class="roadmap-note roadmap-policy reveal" aria-label="Política de melhorias e congelamento funcional">
-            <strong>Melhorias liberadas nas Betas da 1.0 · congelamento estrito na RC1</strong>
-            Desktop e Server podem receber melhorias durante as Betas quando os ganhos compensarem os riscos, com análise, testes de regressão e plano de reversão. P0/P1 não passa para a etapa seguinte.
-          </aside>
-
-          <aside class="roadmap-note roadmap-policy reveal" aria-label="Política de suporte do Lyra OS">
-            <strong>Suporte comunitário</strong>
-            O Lyra OS 1.0 terá suporte comunitário. A geração pode evoluir por releases 1.x com caminhos suportados de atualização. O suporte da base openSUSE e o ciclo de cada release Lyra são informações distintas; não há promessa de prazo ou EOL sem uma política formal.
-          </aside>
-
-          <div class="roadmap-groups">
-            <article class="roadmap-group roadmap-desktop-10 reveal">
-              <h3>Lyra OS Desktop 1.0 <strong class="release-codename">Odisseia</strong><small>migração para openSUSE Leap 16.1 na Alpha 7</small></h3>
-              <ol class="roadmap-list">
-                <li class="is-past"><div><small>LANÇADA</small><h4>Alpha 1</h4><p>Antes rotulada Beta 1.</p></div></li>
-                <li class="is-past"><div><small>LANÇADA</small><h4>Alpha 2</h4><p>Antes rotulada Beta 2.</p></div></li>
-                <li class="is-past"><div><small>LANÇADA</small><h4>Alpha 3</h4><p>Fechamento do instalador e da publicação.</p></div></li>
-                <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 4</h4><p>i18n base, instalador em três idiomas e primeira onda de pacotes.</p><p><strong>14 ago 2026</strong></p><span class="sr-only">Descrição: o Lyra OS 1.0 oferece en-US, pt-BR e es-ES; outros idiomas ficam para ciclos futuros. O fluxo NVIDIA segue para a Alpha 5.</span></div></li>
-                <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 5</h4><p>Bloqueadores do instalador e release; contratos do Lyra Upgrade e do controle parental no Vega.</p><p><strong>17 ago 2026</strong></p><span class="sr-only">Descrição: inclui análise jurídica, referência do BigLinux, qualificação upstream, UX e arquitetura do controle parental; a implementação só começa após esses gates.</span></div></li>
-                <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 6</h4><p>Core e serviço do Lyra Upgrade; serviço de políticas de controle parental.</p><p><strong>25 ago 2026</strong></p></div></li>
-                <li class="is-current"><div><small>EM DESENVOLVIMENTO · REBASE + PRODUTO COMPLETO</small><h4>Alpha 7</h4><p>Migração para Leap 16.1 Beta 1 e requalificação integral; interface e upgrade entre releases; configuração parental e autorização de aplicativos no Vega.</p><p><strong>11 – 25 set 2026</strong></p></div></li>
-                <li><div><small>GATE + ESTABILIZAÇÃO</small><h4>Alpha 8</h4><p>Gates automatizados de update, upgrade, rollback e ECA Digital; depois, somente estabilização.</p><p><strong>25 set – 13 out 2026</strong></p></div></li>
-                <li><div><small>MELHORIAS QUALIFICADAS · 4 SEMANAS</small><h4>Beta 1</h4><p>Estabilização e melhorias com análise de risco, testes e reversão.</p><p><strong>13 out – 10 nov 2026</strong></p></div></li>
-                <li><div><small>4 SEMANAS</small><h4>Beta 2</h4><p>Estabilidade, atualizações e melhorias qualificadas.</p><p><strong>10 nov – 08 dez 2026</strong></p></div></li>
-                <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>QA linguístico, correções finais e últimas melhorias antes da RC1.</p><p><strong>08 dez 2026 – 05 jan 2027</strong></p></div></li>
-                <li><div><small>2 SEMANAS</small><h4>RC 1</h4><p>Somente bloqueadores P0/P1 e repetição do gate.</p><p><strong>05 – 19 jan 2027</strong></p></div></li>
-                <li><div><small>2 SEMANAS</small><h4>RC 2</h4><p>Somente bloqueadores P0/P1 e repetição do gate.</p><p><strong>19 jan – 02 fev 2027</strong></p></div></li>
-                <li class="is-final"><div><small>LANÇAMENTO PREVISTO · SUJEITO AO GATE</small><h4>Lyra OS 1.0 <strong class="release-codename">Odisseia</strong></h4><p>20 fev 2027</p></div></li>
-              </ol>
-              <p class="roadmap-note">Alpha 5, Alpha 6, Alpha 7 e Alpha 8 são obrigatórias e possuem gates próprios. Um P0/P1 interrompe a ampliação de escopo da Alpha corrente. A semana de 06–13/10 recebe somente estabilização; sem gate verde, a fase Alpha continua.</p>
-            </article>
-
-            <article class="roadmap-group roadmap-server-10 reveal">
-              <h3>Lyra OS Server 1.0 <strong class="release-codename">Delos</strong><small>geração Server 1.x · base openSUSE Leap 16.1</small></h3>
-              <p class="roadmap-note roadmap-group-intro">O Server possui ciclo e gate independentes, mas segue a mesma cadência e os mesmos critérios de qualidade do Desktop. Desktop e Server não precisam ser publicados no mesmo dia.</p>
-              <ol class="roadmap-list">
-                <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 1</h4><span class="sr-only">Objetivo: repetir a instalação completa e produzir candidato rastreável.</span></div></li>
-                <li class="is-past"><div><small>ENTREGUE</small><h4>Alpha 2</h4><p>01 – 22 set 2026</p><span class="sr-only">Objetivo: fechar Secure Boot, primeiro boot, DHCP, SSH, firewall, vegad e vega-web com evidências.</span></div></li>
-                <li class="is-past"><div><small>DISPENSADA</small><h4>Alpha 3</h4><p>Não foi necessária: a fase Alpha fechou na Alpha 2.</p><span class="sr-only">Objetivo: resolver bloqueadores restantes e ampliar hardware, sem adicionar novo escopo.</span></div></li>
-                <li class="is-current"><div><small>VERSÃO ATUAL · ENTREGUE</small><h4>Beta 1</h4><p><strong>25 ago 2026</strong></p><span class="sr-only">Objetivo: estabilizar o fluxo disco inteiro/ext4 e qualificar melhorias aprovadas.</span></div></li>
-                <li><div><small>4 SEMANAS · REBASE</small><h4>Beta 2</h4><p>10 nov – 08 dez 2026</p><span class="sr-only">Objetivo: migrar para Leap 16.1 e requalificar build, instalação, Secure Boot, atualizações, rede e administração remota.</span></div></li>
-                <li><div><small>4 SEMANAS</small><h4>Beta 3</h4><p>08 dez 2026 – 05 jan 2027</p><span class="sr-only">Objetivo: QA linguístico dos componentes já internacionalizados e correções finais; nenhuma feature nova.</span></div></li>
-                <li><div><small>2 SEMANAS</small><h4>RC 1</h4><p>05 – 19 jan 2027</p><span class="sr-only">Objetivo: candidato completo e assinado, validado em máquina virtual e hardware.</span></div></li>
-                <li><div><small>2 SEMANAS</small><h4>RC 2</h4><p>19 jan – 02 fev 2027</p><span class="sr-only">Objetivo: somente correções bloqueantes e repetição integral do gate.</span></div></li>
-                <li class="is-final"><div><small>LANÇAMENTO PREVISTO · SUJEITO AO GATE</small><h4>Lyra OS Server 1.0 <strong class="release-codename">Delos</strong></h4><p>20 fev 2027</p><span class="sr-only">Delos identifica a geração Lyra OS Server 1.x. Objetivo: publicação e verificação dos artefatos baixados.</span></div></li>
-              </ol>
-              <p class="roadmap-note">Alvo interno: janeiro; fevereiro é a margem de segurança. Se a fase Alpha terminar na Alpha 2, sem pendências críticas e com todas as evidências do gate, a versão final pode sair por volta de 26 de janeiro de 2027. O Server possui gate independente e não precisa ser publicado no mesmo dia que o Desktop.</p>
-            </article>
-
-          </div>
-          <p class="roadmap-footnote reveal">O Lyra OS usa versionamento próprio MAJOR.MINOR.PATCH. A numeração é independente da versão do openSUSE Leap; Odisseia identifica toda a geração Lyra OS 1.x. Uma versão é publicada quando atende aos critérios de qualidade, não porque uma data chegou.</p>
         </div>
       </section>
 
