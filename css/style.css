@@ -77,8 +77,9 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { font-size: clamp(4rem, 9vw, 7.6rem); letter-spacing: -.09em; line-height: .88; margin: 0 0 27px; }
 .gradient-text { background: linear-gradient(105deg, var(--lavender), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero-lede { color: #fff; font-size: clamp(1rem, 1.5vw, 1.18rem); max-width: 435px; text-shadow: 0 2px 10px rgba(0, 0, 0, .9), 0 1px 2px rgba(0, 0, 0, .95); }
-.slogan { color: var(--text); font-family: var(--serif); font-size: 1rem; font-style: italic; letter-spacing: .03em; margin: 26px 0 34px; }
+.slogan { color: var(--text); font-size: 1rem; font-style: italic; letter-spacing: .03em; margin: 26px 0 34px; }
 .hero-actions, .download-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 24px; }
+.hero-actions .button-secondary { background: color-mix(in srgb, var(--surface) 82%, transparent); }
 .button { align-items: center; border-radius: 100px; display: inline-flex; font-size: .78rem; font-weight: 700; gap: 15px; padding: 15px 21px; transition: transform .2s ease, box-shadow .2s ease; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: linear-gradient(100deg, var(--lavender), var(--blue)); box-shadow: 0 12px 30px color-mix(in srgb, var(--blue) 24%, transparent); color: #171a24; }
