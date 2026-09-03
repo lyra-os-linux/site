@@ -135,7 +135,7 @@
       'Moderno e direto, com uma experiência focada, fluida e integrada ao Lyra OS.': 'Modern and direct, with a focused, fluid experience integrated into Lyra OS.',
       'Visual flexível e familiar, com ampla personalização e integração essencial do Lyra.': 'A flexible, familiar interface with extensive customization and essential Lyra integration.',
       'Leve e eficiente, ideal para máquinas modestas ou para quem prefere simplicidade.': 'Lightweight and efficient, ideal for modest hardware or anyone who prefers simplicity.',
-      'Baixar GNOME': 'Download GNOME', 'Baixar KDE': 'Download KDE', 'Baixar XFCE': 'Download XFCE',
+      'Baixar o Lyra OS': 'Download Lyra OS', 'Baixar GNOME': 'Download GNOME', 'Baixar KDE': 'Download KDE', 'Baixar XFCE': 'Download XFCE',
       'Baixar Server': 'Download Server', 'Downloads hospedados no SourceForge.': 'Downloads hosted on SourceForge.', 'Tutorial de instalação': 'Installation tutorial',
       'Instale a Alpha 2 passo a passo.': 'Install Alpha 2 step by step.', 'Assistir no YouTube': 'Watch on YouTube',
       'Instale o Desktop Alpha 4 passo a passo.': 'Install Desktop Alpha 4 step by step.', 'Como instalar o Lyra OS Desktop Alpha 2': 'How to install Lyra OS Desktop Alpha 2',
@@ -321,7 +321,7 @@
     'Visual flexível e familiar, com ampla personalização e integração essencial do Lyra.':'Una interfaz flexible y familiar, con amplia personalización e integración esencial de Lyra.',
     'Leve e eficiente, ideal para máquinas modestas ou para quem prefere simplicidade.':'Ligero y eficiente, ideal para equipos modestos o para quien prefiere la simplicidad.',
     'O Lyra OS Desktop Alpha 7 com GNOME já está disponível. As demais imagens continuam em publicação.':'Lyra OS Desktop Alpha 7 con GNOME ya está disponible. Las demás imágenes siguen en proceso de publicación.',
-    'Baixar GNOME':'Descargar GNOME','Baixar KDE':'Descargar KDE','Baixar XFCE':'Descargar XFCE',
+    'Baixar o Lyra OS':'Descargar Lyra OS','Baixar GNOME':'Descargar GNOME','Baixar KDE':'Descargar KDE','Baixar XFCE':'Descargar XFCE',
     'firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. GNOME e KDE Plasma usam o mesmo perfil-base; XFCE reduz o consumo esperado, mas mantém margem para atualizações. A instalação usa o disco inteiro; no Server 1.0, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à validação do gate e da matriz de hardware.':'firmware UEFI, unidad USB de instalación y conexión a internet para actualizaciones. Secure Boot es compatible. GNOME y KDE Plasma usan el mismo perfil base; XFCE reduce el consumo esperado y conserva margen para actualizaciones. La instalación utiliza todo el disco; Server 1.0 aún no ofrece RAID ni LVM. Los requisitos son provisionales y están sujetos al gate y a la matriz de hardware.',
     'O Lyra OS usa versionamento próprio MAJOR.MINOR.PATCH. A numeração é independente da versão do openSUSE Leap; Odisseia identifica toda a geração Lyra OS 1.x. Uma versão é publicada quando atende aos critérios de qualidade, não porque uma data chegou.':'Lyra OS utiliza su propio versionado MAJOR.MINOR.PATCH. Su numeración es independiente de openSUSE Leap; Odisseia identifica toda la generación Lyra OS 1.x. Una versión se publica cuando cumple los criterios de calidad, no porque llegue una fecha.',
     'quando o gate estiver verde':'cuando el gate esté verde'
