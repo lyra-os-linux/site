@@ -95,9 +95,9 @@
               </svg>
             </div>
             <div class="release-card">
-              <strong>Disponível <small>agora</small></strong>
+              <strong>Em publicação</strong>
               <div class="countdown">
-                <a class="text-link" href="#download">Ver downloads <span aria-hidden="true">↓</span></a>
+                <span class="publication-retry">Tente novamente em instantes.</span>
               </div>
             </div>
           </div>
@@ -253,22 +253,21 @@
         <div class="container download-inner reveal">
           <p class="eyebrow">07 / Uma nova etapa</p>
           <h2 id="download-title">Escolha sua<br><span class="gradient-text">edição do Lyra.</span></h2>
-          <p>O Lyra OS está disponível para desktop e servidor, com imagens para arquitetura x86_64.</p>
+          <p>As imagens do Lyra OS para desktop e servidor estão em publicação. Tente novamente em instantes.</p>
           <div class="download-options">
             <article class="download-option">
               <span class="download-edition">Desktop</span>
               <h3>Alpha 6</h3>
               <p>Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.</p>
-              <button class="button button-primary desktop-download-button" type="button" data-open-desktop-download aria-haspopup="dialog"><svg class="lyra-button-icon" viewBox="0 0 44 46" aria-hidden="true"><path d="M10 11v17.4c0 7 5.7 12.6 12.7 12.6s12.7-5.6 12.7-12.6V11M7.5 31.4c3.6 5.5 8.8 8.4 15.2 8.4 6.4 0 11.7-2.9 15.3-8.4"/><path d="M16 12v16M23 12v16M30 12v16"/><path class="lyra-button-star" d="m38 5 .9 2.8 3.1.9-3.1.9-.9 2.9-.9-2.9-3.1-.9 3.1-.9z"/></svg><span class="button-label">Baixar Desktop</span> <span aria-hidden="true">↗</span></button>
+              <p class="publication-status" role="status"><span><span class="status-dot"></span> Em publicação</span><strong>Tente novamente em instantes.</strong></p>
             </article>
             <article class="download-option">
               <span class="download-edition">Server · Delos</span>
               <h3>Beta 1</h3>
               <p>Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.</p>
-              <a class="button button-primary server-download-button" href="https://sourceforge.net/projects/lyra/files/releases/27.02/server/beta1/" target="_blank" rel="noreferrer"><svg class="server-button-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg>Baixar Server <span aria-hidden="true">↗</span></a>
+              <p class="publication-status" role="status"><span><span class="status-dot"></span> Em publicação</span><strong>Tente novamente em instantes.</strong></p>
             </article>
           </div>
-          <p class="download-note">Downloads hospedados no SourceForge.</p>
           <section class="requirements" id="requisitos" aria-labelledby="requirements-title">
             <div class="requirements-heading">
               <p class="eyebrow">Requisitos de sistema</p>
@@ -367,46 +366,6 @@
         </div>
       </section>
     </main>
-
-    <dialog class="flavors-modal" id="desktop-download-modal" aria-labelledby="desktop-download-title" aria-describedby="desktop-download-description">
-      <div class="flavors-panel">
-        <button class="modal-close" type="button" data-close-desktop-download aria-label="Fechar opções de download"><span aria-hidden="true">×</span></button>
-        <div class="modal-heading">
-          <p class="eyebrow"><span class="status-dot"></span> Lyra OS Desktop</p>
-          <h2 id="desktop-download-title">Escolha seu<br><span class="gradient-text">ambiente de trabalho.</span></h2>
-          <p id="desktop-download-description">As três opções oferecem a mesma base do Lyra OS, com experiências de uso diferentes.</p>
-        </div>
-        <div class="flavors-grid">
-          <article class="flavor-card flavor-card-gnome">
-            <div class="desktop-logo desktop-logo-gnome"><img src="assets/gnome-logo.svg" alt="Logo do GNOME" width="60" height="64"></div>
-            <div class="flavor-card-copy">
-              <span class="flavor-status">Alpha 6</span>
-              <h3>GNOME</h3>
-              <p>Moderno e direto, com uma experiência focada, fluida e integrada ao Lyra OS.</p>
-            </div>
-            <a class="button button-primary flavor-download-button" href="https://sourceforge.net/projects/lyra/files/releases/27.02/desktop/alpha6/" target="_blank" rel="noreferrer">Baixar GNOME <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="flavor-card flavor-card-kde">
-            <div class="desktop-logo desktop-logo-kde"><img src="assets/plasma-logo.svg" alt="Logo do KDE Plasma" width="64" height="64"></div>
-            <div class="flavor-card-copy">
-              <span class="flavor-status">Alpha 6</span>
-              <h3>KDE Plasma</h3>
-              <p>Visual flexível e familiar, com ampla personalização e integração essencial do Lyra.</p>
-            </div>
-            <button class="button button-primary flavor-download-button" type="button" disabled>Baixar KDE <span aria-hidden="true">↗</span></button>
-          </article>
-          <article class="flavor-card flavor-card-xfce">
-            <div class="desktop-logo desktop-logo-xfce"><img src="assets/xfce-logo.svg" alt="Logo do XFCE" width="132" height="64"></div>
-            <div class="flavor-card-copy">
-              <span class="flavor-status">Alpha 6</span>
-              <h3>XFCE</h3>
-              <p>Leve e eficiente, ideal para máquinas modestas ou para quem prefere simplicidade.</p>
-            </div>
-            <button class="button button-primary flavor-download-button" type="button" disabled>Baixar XFCE <span aria-hidden="true">↗</span></button>
-          </article>
-        </div>
-      </div>
-    </dialog>
 
     <footer class="site-footer">
       <div class="container footer-grid">
