@@ -3,8 +3,8 @@
 ## Identidade da geração atual
 
 - Produto: **Lyra OS 1 — Odisseia**
-- Primeira versão estável planejada: **Lyra OS 1.0**
-- Base tecnológica da 1.0: **openSUSE Leap 16.x**
+- Primeira versão estável planejada: **Lyra OS 1.1**
+- Base tecnológica da 1.1: **openSUSE Leap 16.x**
 - Estado: em desenvolvimento
 
 Desktop e Server pertencem à mesma geração Odisseia. Cada edição conserva seu
@@ -23,15 +23,15 @@ A versão do openSUSE Leap é registrada separadamente como base tecnológica.
 Uma atualização do Leap pode motivar uma release minor, mas não determina
 automaticamente o número do Lyra OS.
 
-Pré-releases usam `1.0-alpha.1`, `1.0-beta.1` e `1.0-rc.1` em identificadores
-técnicos; a comunicação usa “Lyra OS 1.0 Alpha 1”, “Beta 1” e “RC1”. Datas
+Pré-releases usam `1.1-alpha.1`, `1.1-beta.1` e `1.1-rc.1` em identificadores
+técnicos; a comunicação usa “Lyra OS 1.1 Alpha 1”, “Beta 1” e “RC1”. Datas
 identificam builds e janelas do roadmap, nunca a versão comercial.
 
 ## Roadmap atual
 
 | Lyra OS | Geração | Base | Status |
 |---|---|---|---|
-| 1.0 | Odisseia | openSUSE Leap 16.x | Em desenvolvimento |
+| 1.1 | Odisseia | openSUSE Leap 16.x | Em desenvolvimento |
 
 Não há versões posteriores anunciadas. Elas não serão inferidas a partir das
 futuras versões do Leap.
@@ -48,7 +48,7 @@ de suporte prolongado para o Lyra OS enquanto a capacidade correspondente não
 estiver formalmente definida. A geração poderá evoluir por releases 1.x com
 caminhos suportados de atualização.
 
-O Lyra OS 1.0 terá suporte comunitário, sem prazo contratual ou EOL prometido.
+O Lyra OS 1.1 terá suporte comunitário, sem prazo contratual ou EOL prometido.
 Seu lançamento está previsto para **20 de fevereiro de 2027**, condicionado ao
 gate completo; a data não promove uma candidata que ainda tenha bloqueadores.
 
