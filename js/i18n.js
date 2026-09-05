@@ -138,6 +138,8 @@
       'Baixar o Lyra OS': 'Download Lyra OS', 'Baixar GNOME': 'Download GNOME', 'Baixar KDE': 'Download KDE', 'Baixar XFCE': 'Download XFCE',
       'Baixar Server': 'Download Server', 'Downloads hospedados no SourceForge.': 'Downloads hosted on SourceForge.', 'Tutorial de instalação': 'Installation tutorial',
       'Instale a Alpha 2 passo a passo.': 'Install Alpha 2 step by step.', 'Assistir no YouTube': 'Watch on YouTube',
+      'Lyra OS KDE Alpha 7: instalação e primeiro boot.': 'Lyra OS KDE Alpha 7: installation and first boot.',
+      'Lyra OS KDE: instalação e primeiro boot | Odisseia 1.1 Alpha 7': 'Lyra OS KDE: installation and first boot | Odisseia 1.1 Alpha 7',
       'Instale o Desktop Alpha 4 passo a passo.': 'Install Desktop Alpha 4 step by step.', 'Como instalar o Lyra OS Desktop Alpha 2': 'How to install Lyra OS Desktop Alpha 2',
       'Instale o Server Alpha 2 passo a passo.': 'Install Server Alpha 2 step by step.', 'Como instalar o Lyra OS Server Alpha 2': 'How to install Lyra OS Server Alpha 2',
       'Projeto pessoal independente de Rodrigo Brito.': 'An independent personal project by Rodrigo Brito.', 'Feito com curiosidade, cuidado e software livre.': 'Made with curiosity, care, and free software.',
@@ -245,6 +247,8 @@
     'Ciclo independente do Desktop, com requalificação da base, do boot seguro, da rede e das ferramentas de administração remota.':'Ciclo independiente de Desktop, con recalificación de la base, el arranque seguro, la red y las herramientas de administración remota.','3 SEMANAS':'3 SEMANAS','Fim de suporte da Lyra OS Server uma release futura':'Fin del soporte de Lyra OS Server uma release futura',
     'O Lyra OS está disponível para desktop e servidor, com imagens para arquitetura x86_64.':'Lyra OS está disponible para escritorio y servidor, con imágenes para la arquitectura x86_64.','Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.':'Para computadoras personales, con entorno gráfico y la experiencia completa de Lyra OS.','Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.':'Para servidores e infraestructura, con una base ligera orientada a la administración de servicios.',
     'Downloads hospedados no SourceForge.':'Descargas alojadas en SourceForge.','Tutorial de instalação':'Tutorial de instalación','Instale o Desktop Alpha 4 passo a passo.':'Instala Desktop Alpha 4 paso a paso.','Como instalar o Lyra OS Desktop Alpha 2':'Cómo instalar Lyra OS Desktop Alpha 2','Assistir no YouTube':'Ver en YouTube','Instale o Server Alpha 2 passo a passo.':'Instala Server Alpha 2 paso a paso.','Como instalar o Lyra OS Server Alpha 2':'Cómo instalar Lyra OS Server Alpha 2',
+    'Lyra OS KDE Alpha 7: instalação e primeiro boot.': 'Lyra OS KDE Alpha 7: instalación y primer arranque.',
+    'Lyra OS KDE: instalação e primeiro boot | Odisseia 1.1 Alpha 7': 'Lyra OS KDE: instalación y primer arranque | Odisseia 1.1 Alpha 7',
     'Voltar ao início':'Volver al inicio','Projeto pessoal independente de Rodrigo Brito.':'Proyecto personal independiente de Rodrigo Brito.','Feito com curiosidade, cuidado e software livre.':'Hecho con curiosidad, cuidado y software libre.','Voltar ao topo':'Volver arriba','06 ago 2026':'6 ago 2026','base openSUSE Leap 16.x':'base openSUSE Leap 16.x'
   });
 
