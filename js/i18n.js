@@ -1,8 +1,8 @@
 (() => {
   const DEFAULT_LOCALE = 'pt-BR';
-  const LOCALES = ['pt-BR', 'en-US', 'es-ES'];
+  const LOCALES = ['pt-BR', 'en-US', 'es-ES', 'it-IT'];
   const labels = {
-    'pt-BR': 'Português', 'en-US': 'English', 'es-ES': 'Español',
+    'pt-BR': 'Português', 'en-US': 'English', 'es-ES': 'Español', 'it-IT': 'Italiano',
   };
 
   const catalogs = {
@@ -158,7 +158,8 @@
       'Email': 'Email', 'País': 'Country', 'Brasil': 'Brazil', 'Obrigado pelo interesse no Lyra OS.': 'Thank you for your interest in Lyra OS.',
       'Compartilhar publicação': 'Share coverage'
     },
-    'es-ES': {}
+    'es-ES': {},
+    'it-IT': {}
   };
 
   // Spanish reuses the complete English catalog as a safe fallback; overrides
@@ -310,6 +311,194 @@
     'quando o gate estiver verde':'cuando el gate esté verde'
   });
 
+  // Complete Italian coverage for every source string currently visible on the site.
+  Object.assign(catalogs['it-IT'], {
+    'Pular para o conteúdo':"Vai al contenuto",'Abrir menu':"Apri il menu",'Sobre':"Il progetto",'Homenagem':"Omaggio",'A base':"La base",'Ecossistema':"Ecosistema",'Experiência':"Esperienza",'Livro':"Libro",'Cronograma':"Roadmap",'Requisitos':"Requisiti",'Download':"Download",'Tema':"Tema",
+    'Ativar tema claro':"Attiva il tema chiaro",'Ativar tema escuro':"Attiva il tema scuro",'Navegação principal':"Navigazione principale",'Idioma do site':"Lingua del sito",'Lyra OS, início':"Lyra OS, home",
+    'Informações da versão atual':"Informazioni sulla versione attuale",'Rolar para a seção Sobre':"Vai alla sezione Il progetto",'A Alpha 6 já está disponível':"Alpha 6 è disponibile",'Conheça o':"Scopri",
+    'Marca Lyra OS e destaque da versão Alpha 6':"Marchio Lyra OS ed evidenza della versione Alpha 6",
+    'Um sistema feito para encontrar o equilíbrio entre potência, estabilidade e liberdade — no desktop e no servidor.':"Un sistema creato per trovare l'equilibrio tra potenza, stabilità e libertà — sul desktop e sul server.",
+    'Harmonia. Performance. Liberdade.':"Armonia. Prestazioni. Libertà.",'Harmonia · Performance · Liberdade':"Armonia · Prestazioni · Libertà",
+    'Escolher edição':"Scegli l'edizione",'Descobrir o projeto':"Scopri il progetto",'Versão atual':"Versione attuale",'Base do sistema':"Base del sistema",
+    'Disponível':"Disponibile",'agora':"ora",'Ver downloads':"Vedi i download",'role para explorar':"scorri per esplorare",
+
+    '01 / A ideia':"01 / L'idea",'Um sistema que':"Un sistema che",'não fica no caminho.':"non ti intralcia.",
+    'Lyra OS é um projeto pessoal independente de':"Lyra OS è un progetto personale indipendente di",
+    ', criado para transformar o desktop Linux em um lugar mais coerente, acolhedor e confiável.':", creato per rendere il desktop Linux un luogo più coerente, accogliente e affidabile.",
+    'O nome vem da constelação de Lyra: um pequeno desenho no céu com uma identidade marcante. É dessa mesma ideia de clareza e proporção que nasce cada escolha do sistema.':"Il nome viene dalla costellazione della Lira: un piccolo disegno nel cielo con un'identità inconfondibile. Da quella stessa idea di chiarezza e proporzione nasce ogni scelta del sistema.",
+
+    'Uma faísca em 2005':"Una scintilla nel 2005",'Algumas ideias levam anos':"Alcune idee impiegano anni",'para encontrar sua forma.':"per trovare la loro forma.",
+    'Em 2005, assisti a uma palestra de':"Nel 2005 ho assistito a una conferenza di",
+    '. Sua defesa apaixonada do software livre mudou a maneira como eu enxergava tecnologia, comunidade e liberdade.':". La sua appassionata difesa del software libero ha cambiato il mio modo di vedere la tecnologia, la comunità e la libertà.",
+    'Sua defesa apaixonada do software livre mudou a maneira como eu enxergava tecnologia, comunidade e liberdade.':"La sua appassionata difesa del software libero ha cambiato il mio modo di vedere la tecnologia, la comunità e la libertà.",
+    'O Lyra OS nasceu muitos anos depois, mas carrega algo daquele encontro.':"Lyra OS è nato molti anni dopo, ma conserva qualcosa di quell'incontro.",
+    'Obrigado, maddog, por acender essa estrela.':"Grazie, maddog, per aver acceso questa stella.",
+    'Conhecer a trajetória de Jon “maddog” Hall':"Scopri il percorso di Jon “maddog” Hall",
+    'Jon “maddog” Hall no palco diante do público durante uma palestra na CaFeCONF 2005':"Jon “maddog” Hall sul palco davanti al pubblico durante una conferenza al CaFeCONF 2005",
+    'Jon “maddog” Hall na CaFeCONF 2005':"Jon “maddog” Hall al CaFeCONF 2005",'Foto:':"Foto:",'· imagem redimensionada':"· immagine ridimensionata",'imagem redimensionada':"immagine ridimensionata",
+
+    'ciclo previsível':"ciclo prevedibile",'estabilidade':"stabilità",'open source':"open source",
+    '02 / A fundação':"02 / Le fondamenta",'A estabilidade':"La stabilità",'como ponto de partida.':"come punto di partenza.",'Lyra OS escolhe o':"Lyra OS sceglie",
+    'como sua base. Uma decisão intencional por uma fundação madura, com ciclo de lançamento previsível e foco em consistência.':"come base. Una scelta intenzionale per fondamenta mature, con un ciclo di rilascio prevedibile e attenzione alla coerenza.",
+    'Em um cenário dominado por bases Arch, Ubuntu e Fedora, o Leap traz uma alternativa sólida para quem quer usar o desktop com tranquilidade — sem abrir mão de performance ou liberdade.':"In uno scenario dominato dalle basi Arch, Ubuntu e Fedora, Leap offre un'alternativa solida a chi vuole usare il desktop con tranquillità, senza rinunciare a prestazioni o libertà.",
+    'Conhecer o openSUSE':"Scopri openSUSE",
+
+    '03 / O coração':"03 / Il cuore",'Tudo encontra seu centro.':"Tutto trova il suo centro.",
+    'O Vega organiza o essencial e dá ao sistema um ponto de partida simples, claro e humano.':"Vega organizza l'essenziale e offre al sistema un punto di partenza semplice, chiaro e umano.",
+    'O centro de controle do Lyra OS, pré-instalado e desenhado para deixar as decisões importantes sempre ao alcance.':"Il centro di controllo di Lyra OS, preinstallato e progettato per tenere sempre a portata di mano le decisioni importanti.",
+    'Vega é a estrela mais brilhante da constelação de Lyra — o coração que orienta todo o sistema.':"Vega è la stella più luminosa della costellazione della Lira — il cuore che guida tutto il sistema.",
+    'O Lyra OS vem com o':"Lyra OS include",
+    'pré-instalado: uma coleção de ferramentas em uma interface gráfica simples e prática, pronta para facilitar tarefas e configurações do dia a dia.':"preinstallato: una raccolta di strumenti in un'interfaccia grafica semplice e pratica, pronta a facilitare le attività e le configurazioni di ogni giorno.",
+    'Conhecer o LinuxToys':"Scopri LinuxToys",
+    'O ecossistema cresce com cuidado. Os demais componentes seguem em desenvolvimento e validação para versões futuras.':"L'ecosistema cresce con cura. Gli altri componenti restano in sviluppo e validazione per le versioni future.",
+
+    '04 / A experiência':"04 / L'esperienza",'Familiar por natureza.':"Familiare per natura.",'Lyra por escolha.':"Lyra per scelta.",
+    'Um GNOME limpo, com o branding do Lyra aplicado com intenção. Menos ruído visual, mais espaço para aquilo que você quer fazer.':"Un GNOME pulito, con il branding di Lyra applicato con intenzione. Meno rumore visivo, più spazio per ciò che vuoi fare.",
+    'Interface clara e consistente':"Interfaccia chiara e coerente",'Base sólida para o seu dia a dia':"Una base solida per ogni giorno",'Liberdade para personalizar':"Libertà di personalizzare",
+    'Bom dia, Rodrigo':"Buongiorno, Rodrigo",'Seu sistema,':"Il tuo sistema,",'em harmonia.':"in armonia.",'Em breve':"Prossimamente",'VEGA / CENTRO DE CONTROLE':"VEGA / CENTRO DI CONTROLLO",
+    'Área de trabalho do Lyra OS Desktop Alpha 6: GNOME com painel superior, dock lateral de aplicativos e o papel de parede Odisseia.':"Scrivania di Lyra OS Desktop Alpha 6: GNOME con pannello superiore, dock laterale delle applicazioni e sfondo Odisseia.",
+    'Lyra OS Desktop Alpha 6 · GNOME com o papel de parede Odisseia':"Lyra OS Desktop Alpha 6 · GNOME con lo sfondo Odisseia",
+    'Lyra OS Desktop · GNOME com o papel de parede Odisseia':"Lyra OS Desktop · GNOME con lo sfondo Odisseia",
+
+    '05 / Para ir além':"05 / Per andare oltre",'O livro oficial':"Il libro ufficiale",'do Lyra OS.':"di Lyra OS.",
+    'Um guia completo de instalação, utilização e administração — do primeiro contato ao domínio do sistema, escrito por Rodrigo Brito.':"Una guida completa all'installazione, all'uso e all'amministrazione — dal primo contatto alla padronanza del sistema, scritta da Rodrigo Brito.",
+    'Capa do livro Lyra OS: Do primeiro contato ao domínio do sistema, por Rodrigo Brito':"Copertina del libro Lyra OS: Dal primo contatto alla padronanza del sistema, di Rodrigo Brito",
+    'Idiomas da publicação':"Lingue della pubblicazione",'Português e inglês.':"Solo portoghese e inglese.",'Em desenvolvimento — lançamento em breve':"In sviluppo — pubblicazione a breve",
+
+    '06 / Roadmap':"06 / Roadmap",'Cronograma completo':"Roadmap completa",'de releases.':"delle versioni.",
+    'O número de iterações por estágio é um teto, não uma promessa fixa. A promoção acontece por critério de saída — sem itens críticos abertos no gate de release — e não apenas pela data. As janelas abaixo consideram o uso de todo o tempo previsto.':"Il numero di iterazioni per fase è un tetto massimo, non una promessa fissa. L'avanzamento dipende dai criteri di uscita — nessun elemento critico aperto nel gate di rilascio — e non solo dalla data. Le finestre indicate di seguito considerano l'uso di tutto il tempo previsto.",
+    'Alpha 5–8 fecham o Desktop · feature freeze a partir da Beta 1':"Alpha 5–8 completano Desktop · feature freeze dalla Beta 1",
+    'As Alphas restantes avançam por gates: P0/P1 não passa para a etapa seguinte. Toda implementação funcional fecha até 25/09/2026; a Alpha 8 automatiza os gates e sua última semana é exclusiva para estabilização.':"Le Alpha restanti avanzano tramite gate: i P0/P1 non passano alla tappa successiva. Ogni implementazione funzionale si chiude entro il 25/09/2026; Alpha 8 automatizza i gate e la sua ultima settimana è riservata alla stabilizzazione.",
+    'Política de internacionalização e congelamento funcional':"Politica di internazionalizzazione e feature freeze",
+    'Política de suporte do Lyra OS':"Politica di supporto di Lyra OS",'Lyra OS com suporte até uma política formal':"Lyra OS supportato fino a una politica formale",
+    'A linha Lyra OS baseada em openSUSE Leap 16 terá suporte até uma política formal. Cada release (1.1, uma release futura...) mantém seu próprio ciclo de suporte e pode exigir a migração para um release mais recente.':"La linea Lyra OS basata su openSUSE Leap 16 sarà supportata fino a una politica formale. Ogni versione (1.1, uma release futura...) mantiene il proprio ciclo di supporto e può richiedere la migrazione a una versione più recente.",
+    '“1.1” e “uma release futura” são as versões canônicas dos ciclos no padrão MAJOR.MINOR.PATCH (estilo Ubuntu), inclusive nos metadados internos de release. O Lyra OS terá suporte até uma política formal.':"“1.1” e “uma release futura” sono le versioni canoniche dei cicli secondo lo schema MAJOR.MINOR.PATCH (in stile Ubuntu), inclusi i metadati interni di rilascio. Lyra OS sarà supportato fino a una politica formale.",
+
+    'LANÇADA':"RILASCIATA",'ENTREGUE':"CONSEGNATA",'PUBLICAÇÃO · 14 AGO':"RILASCIO · 14 AGO",'2 SEMANAS':"2 SETTIMANE",'2 SEMANAS · ESTABILIZAÇÃO':"2 SETTIMANE · STABILIZZAZIONE",
+    'VERSÃO ATUAL · ENTREGUE':"VERSIONE ATTUALE · CONSEGNATA",'2 SEMANAS + HARDENING':"2 SETTIMANE + HARDENING",'4 SEMANAS':"4 SETTIMANE",'3 SEMANAS':"3 SETTIMANE",'VERSÃO ESTÁVEL':"VERSIONE STABILE",
+    'DISPENSADA':"NON NECESSARIA",'Não foi necessária: a fase Alpha fechou na Alpha 2.':"Non è stata necessaria: la fase Alpha si è chiusa con Alpha 2.",
+    '3 SEMANAS · SE NECESSÁRIA':"3 SETTIMANE · SE NECESSARIA",'FEATURE FREEZE · 4 SEMANAS':"FEATURE FREEZE · 4 SETTIMANE",'UPGRADE + HARDENING':"UPGRADE + HARDENING",'LANÇAMENTO':"RILASCIO",
+    'Fechamento do instalador e da publicação.':"Completamento dell'installer e della pubblicazione.",'Antes rotulada Beta 1.':"In precedenza indicata come Beta 1.",'Antes rotulada Beta 2.':"In precedenza indicata come Beta 2.",
+    'i18n base, instalador em três idiomas e primeira onda de pacotes.':"i18n di base, installer in tre lingue e prima ondata di pacchetti.",
+    'Descrição: o Lyra OS 1.1 oferece en-US, pt-BR e es-ES; outros idiomas ficam para ciclos futuros. O fluxo NVIDIA segue para a Alpha 5.':"Descrizione: Lyra OS 1.1 offre en-US, pt-BR ed es-ES; le altre lingue restano ai cicli futuri. Il flusso NVIDIA passa ad Alpha 5.",
+    'Bloqueadores do instalador e release; contratos do Lyra Upgrade e do controle parental no Vega.':"Blocchi dell'installer e del rilascio; contratti di Lyra Upgrade e del controllo parentale in Vega.",
+    'Descrição: inclui análise jurídica, referência do BigLinux, qualificação upstream, UX e arquitetura do controle parental; a implementação só começa após esses gates.':"Descrizione: include analisi giuridica, riferimento a BigLinux, qualificazione upstream, UX e architettura del controllo parentale; l'implementazione inizia solo dopo questi gate.",
+    'Core e serviço do Lyra Upgrade; serviço de políticas de controle parental.':"Core e servizio di Lyra Upgrade; servizio delle politiche di controllo parentale.",
+    'Interface e upgrade entre releases; configuração parental e autorização de aplicativos no Vega.':"Interfaccia e upgrade tra versioni; configurazione parentale e autorizzazione delle applicazioni in Vega.",
+    'Gates automatizados de update, upgrade, rollback e ECA Digital; depois, somente estabilização.':"Gate automatizzati di update, upgrade, rollback ed ECA Digital; poi solo stabilizzazione.",
+    '2 SEMANAS · BACKEND':"2 SETTIMANE · BACKEND",'2 SEMANAS · PRODUTO COMPLETO':"2 SETTIMANE · PRODOTTO COMPLETO",'GATE + ESTABILIZAÇÃO':"GATE + STABILIZZAZIONE",
+    'Congelamento funcional e correção de bugs.':"Feature freeze e correzione dei bug.",'Estabilidade, atualizações e regressões.':"Stabilità, aggiornamenti e regressioni.",
+    'QA linguístico e correções finais.':"QA linguistico e correzioni finali.",'Somente bloqueadores P0/P1 e repetição do gate.':"Solo blocchi P0/P1 e ripetizione del gate.",
+    'Descrição: Nenhuma feature, idioma, componente ou infraestrutura nova. Somente correções de bugs, regressões, segurança, desempenho e traduções existentes.':"Descrizione: nessuna nuova funzionalità, lingua, componente o infrastruttura. Solo correzioni di bug, regressioni, sicurezza, prestazioni e traduzioni esistenti.",
+    'Descrição: Nenhuma feature nova.':"Descrizione: nessuna nuova funzionalità.",
+    'Descrição: Corrigir catálogos e traduções existentes; não criar infraestrutura, traduzir novo componente nem adicionar idioma.':"Descrizione: correggere cataloghi e traduzioni esistenti; non creare infrastruttura, non tradurre nuovi componenti né aggiungere lingue.",
+
+    'ciclo com gate independente':"ciclo con gate indipendente",
+    'Alpha 5, Alpha 6, Alpha 7 e Alpha 8 são obrigatórias e possuem gates próprios. Um P0/P1 interrompe a ampliação de escopo da Alpha corrente. A semana de 06–13/10 recebe somente estabilização; sem gate verde, a fase Alpha continua.':"Alpha 5, Alpha 6, Alpha 7 e Alpha 8 sono obbligatorie e hanno gate propri. Un P0/P1 interrompe l'ampliamento dell'ambito dell'Alpha corrente. La settimana dal 6 al 13 ottobre è dedicata solo alla stabilizzazione; senza un gate verde, la fase Alpha prosegue.",
+    'O Server possui ciclo e gate independentes, mas segue a mesma cadência e os mesmos critérios de qualidade do Desktop. Desktop e Server não precisam ser publicados no mesmo dia.':"Server ha un ciclo e un gate indipendenti, ma segue la stessa cadenza e gli stessi criteri di qualità di Desktop. Desktop e Server non devono essere pubblicati lo stesso giorno.",
+    'Fim de suporte da Lyra OS 1.1':"Fine del supporto di Lyra OS 1.1",'Fim de suporte da Lyra OS Server 1.1':"Fine del supporto di Lyra OS Server 1.1",
+    'Suporte encerra em 31 de outubro de 2027, junto com o fim de vida da base openSUSE Leap 16.x; a migração para a Lyra OS uma release futura (base Leap 16.x) deve ocorrer antes dessa data.':"Il supporto termina il 31 ottobre 2027, insieme alla fine del ciclo di vita della base openSUSE Leap 16.x; la migrazione a Lyra OS uma release futura (base Leap 16.x) deve avvenire prima di tale data.",
+    'Suporte encerra em 31 de outubro de 2027, junto com o fim de vida da base openSUSE Leap 16.x; a migração para a Lyra OS Server uma release futura (base Leap 16.x) deve ocorrer antes dessa data.':"Il supporto termina il 31 ottobre 2027, insieme alla fine del ciclo di vita della base openSUSE Leap 16.x; la migrazione a Lyra OS Server uma release futura (base Leap 16.x) deve avvenire prima di tale data.",
+
+    'Objetivo: repetir a instalação completa e produzir candidato rastreável.':"Obiettivo: ripetere l'installazione completa e produrre un candidato tracciabile.",
+    'Objetivo: fechar Secure Boot, primeiro boot, DHCP, SSH, firewall, vegad e vega-web com evidências.':"Obiettivo: completare Secure Boot, primo avvio, DHCP, SSH, firewall, vegad e vega-web con evidenze.",
+    'Objetivo: resolver bloqueadores restantes e ampliar hardware, sem adicionar novo escopo.':"Obiettivo: risolvere i blocchi rimanenti e ampliare la copertura hardware senza aggiungere nuovo ambito.",
+    'Objetivo: congelamento funcional do fluxo disco inteiro/ext4.':"Obiettivo: feature freeze del flusso disco intero/ext4.",
+    'Objetivo: estabilidade, atualizações, rede e administração remota.':"Obiettivo: stabilità, aggiornamenti, rete e amministrazione remota.",
+    'Objetivo: QA linguístico dos componentes já internacionalizados e correções finais; nenhuma feature nova.':"Obiettivo: QA linguistico dei componenti già internazionalizzati e correzioni finali; nessuna nuova funzionalità.",
+    'Objetivo: candidato completo e assinado, validado em máquina virtual e hardware.':"Obiettivo: candidato completo e firmato, convalidato su macchina virtuale e hardware.",
+    'Objetivo: somente correções bloqueantes e repetição integral do gate.':"Obiettivo: solo correzioni bloccanti e ripetizione integrale del gate.",
+    'Objetivo: publicação e verificação dos artefatos baixados.':"Obiettivo: pubblicazione e verifica degli artefatti scaricati.",
+    'Alvo interno: janeiro; fevereiro é a margem de segurança. Se a fase Alpha terminar na Alpha 2, sem pendências críticas e com todas as evidências do gate, a versão final pode sair por volta de 26 de janeiro de 2027. O Server possui gate independente e não precisa ser publicado no mesmo dia que o Desktop.':"Obiettivo interno: gennaio; febbraio è il margine di sicurezza. Se la fase Alpha termina con Alpha 2, senza questioni critiche aperte e con tutte le evidenze del gate, la versione finale può uscire intorno al 26 gennaio 2027. Server ha un gate indipendente e non deve essere pubblicato lo stesso giorno di Desktop.",
+    'O ciclo começa cerca de um mês após a versão 1.1. A mudança de base exige revalidar pacotes, ABI, shim de Secure Boot e a matriz de hardware.':"Il ciclo inizia circa un mese dopo la versione 1.1. Il cambio di base richiede di riconvalidare pacchetti, ABI, shim di Secure Boot e matrice hardware.",
+    'EOL · ESTIMATIVA':"EOL · STIMA",'Fim de suporte da Lyra OS uma release futura':"Fine del supporto di Lyra OS uma release futura",'Fim de suporte da Lyra OS Server uma release futura':"Fine del supporto di Lyra OS Server uma release futura",
+    'O openSUSE Leap 16.x ainda não tem data oficial de lançamento nem de fim de vida. Esta data é uma projeção baseada no padrão histórico de 24 meses de suporte por versão minor do Leap e está sujeita a confirmação.':"openSUSE Leap 16.x non ha ancora una data ufficiale di rilascio né di fine vita. Questa data è una proiezione basata sullo storico di 24 mesi di supporto per ogni versione minore di Leap ed è soggetta a conferma.",
+    'Ciclo independente do Desktop, com requalificação da base, do boot seguro, da rede e das ferramentas de administração remota.':"Ciclo indipendente da Desktop, con riqualificazione della base, dell'avvio sicuro, della rete e degli strumenti di amministrazione remota.",
+
+    '06 ago 2026':"6 ago 2026",'base openSUSE Leap 16.x':"base openSUSE Leap 16.x",'14 ago 2026':"14 ago 2026",'17 ago 2026':"17 ago 2026",'25 ago 2026':"25 ago 2026",
+    '28 ago – 11 set 2026':"28 ago – 11 set 2026",'11 – 25 set 2026':"11–25 set 2026",'25 set – 13 out 2026':"25 set – 13 ott 2026",'13 out – 10 nov 2026':"13 ott – 10 nov 2026",
+    '10 nov – 08 dez 2026':"10 nov – 8 dic 2026",'08 dez 2026 – 05 jan 2027':"8 dic 2026 – 5 gen 2027",'05 – 19 jan 2027':"5–19 gen 2027",'19 jan – 02 fev 2027':"19 gen – 2 feb 2027",
+    '20 fev 2027':"20 feb 2027",'31 out 2027':"31 ott 2027",'01 – 22 set 2026':"1–22 set 2026",'22 set – 13 out 2026':"22 set – 13 ott 2026",
+    '01 – 15 mar 2027':"1–15 mar 2027",'15 – 29 mar 2027':"15–29 mar 2027",'29 mar – 12 abr 2027':"29 mar – 12 apr 2027",'12 – 26 abr 2027':"12–26 apr 2027",
+    '26 abr – 10 mai 2027':"26 apr – 10 mag 2027",'10 – 24 mai 2027':"10–24 mag 2027",'24 mai – 07 jun 2027':"24 mag – 7 giu 2027",'07 – 21 jun 2027':"7–21 giu 2027",
+    '21 jun – 19 jul 2027':"21 giu – 19 lug 2027",'19 jul – 16 ago 2027':"19 lug – 16 ago 2027",'16 ago – 13 set 2027':"16 ago – 13 set 2027",'13 – 27 set 2027':"13–27 set 2027",
+    '27 set – 11 out 2027':"27 set – 11 ott 2027",'~25 out 2027':"~25 ott 2027",'~out 2028':"~ott 2028",'~out 2027':"~ott 2027",
+    '01 – 22 mar 2027':"1–22 mar 2027",'22 mar – 12 abr 2027':"22 mar – 12 apr 2027",'12 abr – 03 mai 2027':"12 apr – 3 mag 2027",'03 – 31 mai 2027':"3–31 mag 2027",
+    '31 mai – 28 jun 2027':"31 mag – 28 giu 2027",'28 jun – 26 jul 2027':"28 giu – 26 lug 2027",'26 jul – 09 ago 2027':"26 lug – 9 ago 2027",'09 – 23 ago 2027':"9–23 ago 2027",
+    'VERSÃO ATUAL · 3 SEMANAS':"VERSIONE ATTUALE · 3 SETTIMANE",'rebase para openSUSE Leap 16.x':"rebase a openSUSE Leap 16.x",
+
+    'Em publicação':"Pubblicazione in corso",'Tente novamente em instantes.':"Riprova tra qualche istante.",
+    '07 / Uma nova etapa':"07 / Una nuova tappa",'Escolha sua':"Scegli la tua",'edição do Lyra.':"edizione di Lyra.",
+    'O Lyra OS Desktop Alpha 7 com GNOME e o Server Beta 1 já estão disponíveis.':"Lyra OS Desktop Alpha 7 con GNOME e Server Beta 1 sono già disponibili.",
+    'As imagens do Lyra OS para desktop e servidor estão em publicação. Tente novamente em instantes.':"Le immagini di Lyra OS per desktop e server sono in fase di pubblicazione. Riprova tra qualche istante.",
+    'O Lyra OS está disponível para desktop e servidor, com imagens para arquitetura x86_64.':"Lyra OS è disponibile per desktop e server, con immagini per l'architettura x86_64.",
+    'Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.':"Per i computer personali, con ambiente grafico e l'esperienza completa di Lyra OS.",
+    'Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.':"Per server e infrastrutture, con una base essenziale orientata all'amministrazione dei servizi.",
+    'Lyra OS Desktop':"Lyra OS Desktop",'Baixar o Lyra OS':"Scarica Lyra OS",'Baixar Desktop':"Scarica Desktop",'Baixar Server':"Scarica Server",'Downloads hospedados no SourceForge.':"Download ospitati su SourceForge.",
+    'Tutorial de instalação':"Tutorial di installazione",'Instale a Alpha 2 passo a passo.':"Installa Alpha 2 passo dopo passo.",'Assistir no YouTube':"Guarda su YouTube",
+    'Instale o Desktop Alpha 4 passo a passo.':"Installa Desktop Alpha 4 passo dopo passo.",'Como instalar o Lyra OS Desktop Alpha 2':"Come installare Lyra OS Desktop Alpha 2",
+    'Instale o Server Alpha 2 passo a passo.':"Installa Server Alpha 2 passo dopo passo.",'Como instalar o Lyra OS Server Alpha 2':"Come installare Lyra OS Server Alpha 2",
+    'Projeto pessoal independente de Rodrigo Brito.':"Progetto personale indipendente di Rodrigo Brito.",'Feito com curiosidade, cuidado e software livre.':"Realizzato con curiosità, cura e software libero.",
+    'Voltar ao topo':"Torna su",'Voltar ao início':"Torna all'inizio",'Página inicial':"Home",'Contato':"Contatti",'Galeria':"Galleria",
+
+    'Recursos oficiais · 2026':"Risorse ufficiali · 2026",'Tudo o que você precisa para conhecer, testar e divulgar o Lyra OS.':"Tutto ciò che serve per conoscere, provare e raccontare Lyra OS.",
+    'Media Kit':"Media kit",'Versão de avaliação':"Versione di anteprima",'01 / O projeto':"01 / Il progetto",'Linux brasileiro.':"Linux brasiliano.",'Visão global.':"Visione globale.",
+    'O Lyra OS é uma distribuição Linux brasileira baseada no openSUSE Leap 16.x, desenvolvida para oferecer uma experiência moderna, elegante e extremamente estável.':"Lyra OS è una distribuzione Linux brasiliana basata su openSUSE Leap 16.x, sviluppata per offrire un'esperienza moderna, elegante ed estremamente stabile.",
+    'Estabilidade':"Stabilità",'Simplicidade':"Semplicità",'Performance':"Prestazioni",'Elegância':"Eleganza",
+    'Baseado no openSUSE Leap.':"Basato su openSUSE Leap.",'Ferramentas intuitivas.':"Strumenti intuitivi.",'Sistema leve e otimizado.':"Sistema leggero e ottimizzato.",
+    'Experiência visual consistente do início ao fim.':"Esperienza visiva coerente dall'inizio alla fine.",
+    '02 / O nome':"02 / Il nome",'Por que':"Perché",'03 / Para quem':"03 / Per chi",'Feito para trabalhar.':"Fatto per lavorare.",'Pronto para explorar.':"Pronto da esplorare.",
+    'Desenvolvedores':"Sviluppatori",'Profissionais de TI':"Professionisti IT",'Empresas':"Aziende",'Estudantes':"Studenti",'Quem busca estabilidade':"Chi cerca stabilità",
+    '04 / Destaques':"04 / In evidenza",'O essencial,':"L'essenziale,",'Uma base madura, previsível e confiável.':"Una base matura, prevedibile e affidabile.",
+    'GNOME personalizado':"GNOME personalizzato",'Uma experiência coesa, familiar e refinada.':"Un'esperienza coesa, familiare e curata.",'Gerenciamento centralizado e integrado.':"Gestione centralizzata e integrata.",
+    'Tema próprio':"Tema dedicato",'Ícones exclusivos':"Icone esclusive",'Atualizações simples':"Aggiornamenti semplici",'Alta estabilidade':"Elevata stabilità",'Excelente desempenho':"Prestazioni eccellenti",
+    '05 / Conheça o Vega':"05 / Scopri Vega",'em um só lugar.':"in un solo posto.",'O Vega é o centro de gerenciamento do Lyra OS.':"Vega è il centro di gestione di Lyra OS.",
+    'Administração':"Amministrazione",'Configuração':"Configurazione",'Manutenção':"Manutenzione",'VISÃO GERAL':"PANORAMICA",'Tudo em harmonia':"Tutto in armonia",
+    'Seu sistema está atualizado.':"Il tuo sistema è aggiornato.",'Atualizações':"Aggiornamenti",'Sistema em dia':"Sistema aggiornato",'Software':"Software",'Gerenciar apps':"Gestisci le app",
+    'Sistema':"Sistema",'Configurações':"Impostazioni",'06 / Screenshots':"06 / Screenshot",'Veja o Lyra OS':"Guarda Lyra OS",'em contexto.':"in contesto.",
+    'Ficha técnica.':"Scheda tecnica.",'07 / Especificações':"07 / Specifiche",'Sistema de pacotes':"Sistema di pacchetti",'Gerenciador':"Gestore pacchetti",'Arquitetura':"Architettura",'Licença':"Licenza",
+    '08 / Roadmap':"08 / Roadmap",'Próximos passos.':"Prossimi passi.",'Cronograma completo de releases.':"Roadmap completa delle versioni.",'Ver cronograma completo até a versão final':"Vedi la roadmap completa fino alla versione finale",
+    'PUBLICAÇÃO ANTECIPADA':"RILASCIO ANTICIPATO",'CADÊNCIA · 2 SEMANAS':"CADENZA · 2 SETTIMANE",'CADÊNCIA · 2 SEMANAS + HARDENING':"CADENZA · 2 SETTIMANE + HARDENING",
+    'CADÊNCIA · 4 SEMANAS':"CADENZA · 4 SETTIMANE",'CADÊNCIA · 3 SEMANAS':"CADENZA · 3 SETTIMANE",
+    'Fundador e desenvolvedor':"Fondatore e sviluppatore",'09 / Sobre o desenvolvedor':"09 / Sullo sviluppatore",'Uma jornada que':"Un percorso che",'começou em 1998.':"è iniziato nel 1998.",
+    'Perfil no GitHub':"Profilo GitHub",'10 / Imprensa & contato':"10 / Stampa e contatti",'Vamos conversar':"Parliamo",'sobre o Lyra.':"di Lyra.",
+    'Email':"Email",'País':"Paese",'Brasil':"Brasile",'Obrigado pelo interesse no Lyra OS.':"Grazie per l'interesse verso Lyra OS.",'Compartilhar publicação':"Condividi la pubblicazione",
+
+    'Política de melhorias e congelamento funcional':"Politica di miglioramenti e feature freeze",
+    'Melhorias liberadas nas Betas da 1.1 · congelamento estrito na RC1':"Miglioramenti consentiti nelle Beta della 1.1 · freeze rigoroso alla RC1",
+    'Desktop e Server podem receber melhorias durante as Betas quando os ganhos compensarem os riscos, com análise, testes de regressão e plano de reversão. P0/P1 não passa para a etapa seguinte.':"Desktop e Server possono ricevere miglioramenti durante le Beta quando i vantaggi superano i rischi, con analisi, test di regressione e piano di rollback. I P0/P1 non passano alla tappa successiva.",
+    'MELHORIAS QUALIFICADAS · 4 SEMANAS':"MIGLIORAMENTI QUALIFICATI · 4 SETTIMANE",
+    'Estabilização e melhorias com análise de risco, testes e reversão.':"Stabilizzazione e miglioramenti con analisi dei rischi, test e rollback.",
+    'Estabilidade, atualizações e melhorias qualificadas.':"Stabilità, aggiornamenti e miglioramenti qualificati.",
+    'QA linguístico, correções finais e últimas melhorias antes da RC1.':"QA linguistico, correzioni finali e ultimi miglioramenti prima della RC1.",
+    'Objetivo: estabilizar o fluxo disco inteiro/ext4 e qualificar melhorias aprovadas.':"Obiettivo: stabilizzare il flusso disco intero/ext4 e qualificare i miglioramenti approvati.",
+    'A linha Lyra OS baseada em openSUSE Leap 16 terá suporte até uma política formal. Cada release (1.1...) mantém seu próprio ciclo de suporte e pode exigir a migração para um release mais recente.':"La linea Lyra OS basata su openSUSE Leap 16 sarà supportata fino a una politica formale. Ogni versione (1.1...) mantiene il proprio ciclo di supporto e può richiedere la migrazione a una versione più recente.",
+    '“1.1” é a versão canônica do ciclo no padrão MAJOR.MINOR.PATCH (estilo Ubuntu), inclusive nos metadados internos de release. O Lyra OS terá suporte até uma política formal.':"“1.1” è la versione canonica del ciclo secondo lo schema MAJOR.MINOR.PATCH (in stile Ubuntu), inclusi i metadati interni di rilascio. Lyra OS sarà supportato fino a una politica formale.",
+    'migração para openSUSE Leap 16.x na Alpha 7':"migrazione a openSUSE Leap 16.x in Alpha 7",'migração para openSUSE Leap 16.x na Beta 2':"migrazione a openSUSE Leap 16.x in Beta 2",
+    '2 SEMANAS · REBASE + PRODUTO COMPLETO':"2 SETTIMANE · REBASE + PRODOTTO COMPLETO",
+    'Migração para Leap 16.x Beta 1 e requalificação integral; interface e upgrade entre releases; configuração parental e autorização de aplicativos no Vega.':"Migrazione a Leap 16.x Beta 1 e riqualificazione integrale; interfaccia e upgrade tra versioni; configurazione parentale e autorizzazione delle applicazioni in Vega.",
+    '4 SEMANAS · REBASE':"4 SETTIMANE · REBASE",
+    'Objetivo: migrar para Leap 16.x e requalificar build, instalação, Secure Boot, atualizações, rede e administração remota.':"Obiettivo: migrare a Leap 16.x e riqualificare build, installazione, Secure Boot, aggiornamenti, rete e amministrazione remota.",
+    'Estimativa sujeita à confirmação do ciclo de suporte do openSUSE Leap 16.x.':"Stima soggetta alla conferma del ciclo di supporto di openSUSE Leap 16.x.",
+
+    'Requisitos de sistema':"Requisiti di sistema",'Antes de instalar.':"Prima di installare.",
+    'Confira o perfil adequado para cada edição. Os valores mínimos permitem a instalação; os recomendados oferecem margem para atualizações, aplicativos e serviços.':"Consulta il profilo adatto a ogni edizione. I valori minimi consentono l'installazione; quelli consigliati lasciano margine per aggiornamenti, applicazioni e servizi.",
+    'Mínimos':"Minimi",'Recomendados':"Consigliati",'CPU:':"CPU:",'Memória:':"Memoria:",'Armazenamento:':"Archiviazione:",'Vídeo:':"Schermo:",'Rede:':"Rete:",
+    'x86_64, 2 núcleos':"x86_64, 2 core",'4 GiB de RAM':"4 GiB di RAM",'24 GiB':"24 GiB",'tela 1024 × 768':"schermo 1024 × 768",
+    'x86_64, 4 núcleos':"x86_64, 4 core",'8 GiB de RAM':"8 GiB di RAM",'SSD de 40 GiB ou mais':"SSD da 40 GiB o più",'tela Full HD':"schermo Full HD",
+    'x86_64, 1 núcleo':"x86_64, 1 core",'2 GiB de RAM':"2 GiB di RAM",'8 GiB':"8 GiB",'Ethernet com DHCP':"Ethernet con DHCP",
+    'x86_64, 2 ou mais núcleos':"x86_64, 2 core o più",'4 GiB de RAM ou mais':"4 GiB di RAM o più",'SSD de 20 GiB ou mais':"SSD da 20 GiB o più",'Ethernet Gigabit':"Ethernet Gigabit",
+    '20 GiB':"20 GiB",'SSD de 32 GiB ou mais':"SSD da 32 GiB o più",'Para ambas as edições:':"Per entrambe le edizioni:",'Para o Desktop:':"Per il Desktop:",
+    'firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 1.1, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à ampliação da matriz de hardware durante a Beta.':"firmware UEFI, supporto USB per l'installazione e connessione a internet per gli aggiornamenti. Secure Boot è supportato. L'installazione usa l'intero disco; su Server 1.1 l'installer non offre ancora RAID né LVM. Requisiti provvisori, soggetti all'ampliamento della matrice hardware durante la Beta.",
+    'firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 1.1, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à validação do gate e da matriz de hardware.':"firmware UEFI, supporto USB per l'installazione e connessione a internet per gli aggiornamenti. Secure Boot è supportato. L'installazione usa l'intero disco; su Server 1.1 l'installer non offre ancora RAID né LVM. Requisiti provvisori, soggetti alla validazione del gate e della matrice hardware.",
+
+    'Lyra OS 1.1 em desenvolvimento':"Lyra OS 1.1 in sviluppo",'Versão do produto':"Versione del prodotto",'Base tecnológica':"Base tecnologica",'Suporte comunitário':"Supporto della comunità",
+    'O Lyra OS 1.1 terá suporte comunitário. A geração pode evoluir por releases 1.x com caminhos suportados de atualização. O suporte da base openSUSE e o ciclo de cada release Lyra são informações distintas; não há promessa de prazo ou EOL sem uma política formal.':"Lyra OS 1.1 avrà il supporto della comunità. La generazione può evolvere attraverso versioni 1.x con percorsi di aggiornamento supportati. Il supporto della base openSUSE e il ciclo di ogni versione Lyra sono informazioni distinte; non viene promesso alcun termine di supporto o EOL senza una politica formale.",
+    'LANÇAMENTO PREVISTO · SUJEITO AO GATE':"RILASCIO PREVISTO · SOGGETTO AL GATE",'Desktop · GNOME':"Desktop · GNOME",
+    'O Lyra OS usa versionamento próprio MAJOR.MINOR.PATCH. A numeração é independente da versão do openSUSE Leap; Odisseia identifica toda a geração Lyra OS 1.x. Uma versão é publicada quando atende aos critérios de qualidade, não porque uma data chegou.':"Lyra OS usa un proprio versionamento MAJOR.MINOR.PATCH. La numerazione è indipendente dalla versione di openSUSE Leap; Odisseia identifica l'intera generazione Lyra OS 1.x. Una versione viene pubblicata quando soddisfa i criteri di qualità, non perché è arrivata una data.",
+    'quando o gate estiver verde':"quando il gate è verde"
+  });
+
   const readLocale = () => {
     const fromUrl = new URLSearchParams(location.search).get('lang');
     if (LOCALES.includes(fromUrl)) return fromUrl;
@@ -342,7 +531,8 @@
     const titles = {
       'pt-BR': 'Lyra OS — Harmonia. Performance. Liberdade.',
       'en-US': 'Lyra OS — Harmony. Performance. Freedom.',
-      'es-ES': 'Lyra OS — Armonía. Rendimiento. Libertad.'
+      'es-ES': 'Lyra OS — Armonía. Rendimiento. Libertad.',
+      'it-IT': 'Lyra OS — Armonia. Prestazioni. Libertà.'
     };
     document.title = titles[locale];
     document.querySelector('.language-select')?.setAttribute('aria-label', t('Idioma do site'));
