@@ -1,0 +1,8 @@
+<h2 id="sugerir">Encontrou uma lacuna?</h2>
+<p>A documentação acompanha a evolução do Lyra OS. Uma etapa confusa, uma mensagem diferente na sua versão ou um assunto que falta são boas oportunidades de contribuição.</p>
+<p>Abra o <a href="https://github.com/lyra-os-linux/site">repositório do site</a> e use a área de issues para propor uma correção. Informe a página, o trecho, a versão do Lyra usada e o resultado que você observou. Para defeitos do sistema, use os <a href="solucao-de-problemas.html#relatar">repositórios indicados no guia de diagnóstico</a>.</p>
+<h2 id="editar">Proponha uma alteração</h2>
+<ol><li>Crie uma cópia do repositório do site no GitHub e uma branch para a mudança.</li><li>Edite o conteúdo do artigo em <code>docs/content/</code>. O arquivo <code>catalog.json</code> organiza títulos, descrições e categorias.</li><li>Execute <code>python3 scripts/build-docs.py</code> na raiz do projeto para gerar as páginas e o índice de busca.</li><li>Confira a navegação, as instruções e a apresentação em uma tela pequena.</li><li>Abra um pull request com a correção e explique em qual versão você conferiu o procedimento.</li></ol>
+<h2 id="escrever">Escreva para quem vai usar o sistema</h2>
+<ul><li>Comece pelo objetivo e pelos requisitos do procedimento.</li><li>Explique o efeito de comandos antes de pedir que a pessoa os execute.</li><li>Destaque operações que apagam dados ou alteram o armazenamento.</li><li>Separe recursos publicados de planos e funcionalidades em desenvolvimento.</li><li>Inclua uma referência às notas de lançamento ou à documentação do componente.</li></ul>
+<p>Os guias estão disponíveis inicialmente em português. Traduções devem acompanhar o conteúdo e a versão de origem para manter as instruções consistentes.</p>

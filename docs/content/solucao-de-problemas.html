@@ -1,0 +1,29 @@
+<h2 id="boot">A mídia não inicia</h2>
+<ol><li>Confira o checksum da ISO conforme o <a href="instalacao.html#download">guia de instalação</a>.</li><li>Confirme que a imagem foi gravada no pendrive e que o firmware está iniciando pela entrada UEFI correta.</li><li>Em uma VM, confira UEFI, memória e a conexão da ISO à unidade óptica.</li><li>Registre a mensagem exibida, o modelo da máquina e o estado de Secure Boot.</li></ol>
+<h2 id="rede">Sem conexão de rede</h2>
+<p>Confira o cabo ou a conexão Wi-Fi nas configurações. No Server, confirme que a rede fornece DHCP. Para consultar os endereços das interfaces:</p>
+<pre><code>ip -brief address</code></pre>
+<p>Se houver endereço, mas os repositórios não responderem, registre se o erro menciona DNS, conexão ou certificado. Confira também a data e a hora do sistema. Essas informações ajudam a distinguir falhas de rede de indisponibilidade de um repositório.</p>
+<h2 id="pacotes">Uma atualização falhou</h2>
+<p>Espere outras operações de pacotes terminarem e tente novamente. Não apague arquivos de bloqueio nem encerre o gerenciador à força. Copie a mensagem de erro e a identificação do repositório envolvido.</p>
+<p>Confira as orientações sobre <a href="atualizacoes.html#repositorios">origens de pacotes</a> antes de aceitar uma nova chave, remover repositórios ou trocar a base.</p>
+<h2 id="diagnostico">Reúna informações do sistema</h2>
+<p>Para identificar a versão, o kernel e serviços com falha, execute:</p>
+<pre><code>cat /etc/os-release
+uname -r
+systemctl --failed</code></pre>
+<p>Se sua imagem incluir <code>lyra-report</code>, execute como usuário comum:</p>
+<pre><code>lyra-report</code></pre>
+<p>A ferramenta apresenta os dados coletados para revisão antes de criar um arquivo local e não faz upload automático. Se o comando não estiver disponível, use as informações básicas acima; não é necessário instalar componentes de desenvolvimento para relatar uma falha.</p>
+<h2 id="relatar">Relate um problema reproduzível</h2>
+<p>Abra uma issue no repositório correspondente: <a href="https://github.com/lyra-os-linux/lyraos-desktop/issues">Desktop</a>, <a href="https://github.com/lyra-os-linux/lyraos-server/issues">Server</a> ou <a href="https://github.com/lyra-os-linux/vega/issues">Vega</a>. Procure primeiro por um relato semelhante.</p>
+<p>Inclua as informações abaixo:</p>
+<pre><code>Edição e versão do Lyra OS:
+Nome da ISO, se a falha ocorreu na instalação:
+Modelo do computador ou configuração da VM:
+UEFI e estado de Secure Boot:
+Etapas para reproduzir:
+Resultado esperado:
+Resultado observado e mensagem de erro:</code></pre>
+<p>Revise capturas e logs antes de publicar. Remova senhas, tokens, chaves e dados pessoais, mesmo quando a ferramenta aplicar anonimização. Compartilhe apenas os arquivos necessários para explicar o problema.</p>
+<p class="doc-source">Referência: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/diagnostics.md">diagnóstico com lyra-report</a>.</p>

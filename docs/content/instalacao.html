@@ -1,0 +1,18 @@
+<h2 id="preparacao">1. Prepare o computador</h2>
+<p>Confira os <a href="primeiros-passos.html#requisitos">requisitos da edição</a>, uma conexão de rede e um pendrive com capacidade para a ISO. Uma máquina virtual com disco exclusivo também serve para testar.</p>
+<div class="doc-note doc-warning"><strong>A instalação em disco inteiro apaga os dados do disco selecionado.</strong> Faça backup antes de começar e confira modelo e capacidade do destino. O pendrive também será apagado ao gravar a imagem.</div>
+<p>Este guia cobre o Desktop com GNOME. Para o instalador em console e os limites de armazenamento da outra edição, consulte <a href="server.html#instalar">Instalar o Server</a>. Não use este procedimento como instrução de dual boot ou de particionamento manual.</p>
+<h2 id="download">2. Baixe e confira a ISO</h2>
+<p>Entre na <a href="../index.html#download">área de downloads do site</a>. Baixe a ISO e o arquivo de checksum correspondente no diretório da mesma publicação no SourceForge.</p>
+<p>No Linux, abra um terminal na pasta onde estão os dois arquivos. Exemplo para a imagem Desktop Alpha 7:</p>
+<pre><code>sha256sum -c LyraOS-Desktop-1.1-alpha.7-x86_64.iso.sha256</code></pre>
+<p>O nome precisa corresponder exatamente ao arquivo baixado. Continue somente se a verificação indicar <strong>OK</strong>. Se houver divergência, baixe os arquivos novamente. O checksum verifica a integridade; a Alpha 7 não possui assinatura GPG destacada da ISO, conforme suas notas de lançamento.</p>
+<h2 id="midia">3. Grave a mídia e inicie em UEFI</h2>
+<ol><li>Abra uma ferramenta de gravação de imagens de disco. No GNOME Discos, selecione o pendrive e use a opção de restaurar uma imagem de disco.</li><li>Selecione a ISO e confira novamente o dispositivo de destino antes de confirmar. Copiar o arquivo ISO para uma pasta do pendrive não substitui a gravação da imagem.</li><li>Aguarde o término da gravação, ejete a mídia e reinicie o computador.</li><li>Abra o menu de boot do firmware e selecione a entrada UEFI da mídia. A tecla varia conforme o fabricante.</li></ol>
+<p>Em uma máquina virtual, conecte a ISO como unidade óptica e habilite UEFI. Secure Boot faz parte do fluxo previsto pelo projeto; registre qualquer falha de inicialização para investigação.</p>
+<h2 id="instalador">4. Siga o Lyra Installer</h2>
+<ol><li>Aguarde a sessão live e a abertura do Lyra Installer.</li><li>Preencha as opções de idioma, teclado, região e conta apresentadas pelo instalador.</li><li>Escolha o disco dedicado à instalação e revise o resumo, especialmente o destino e as alterações de armazenamento.</li><li>Confirme somente depois de revisar os dados. Mantenha o computador ligado até a conclusão.</li><li>Reinicie quando solicitado e retire a mídia para iniciar pelo disco instalado.</li></ol>
+<p>As telas podem mudar entre candidatas. Os vídeos na <a href="../index.html#download">página de download</a> mostram versões anteriores e servem como referência visual.</p>
+<h2 id="apos-instalar">5. Confira o sistema instalado</h2>
+<p>Entre com a conta criada, teste a rede e abra o Vega. Siga os <a href="primeiros-passos.html#primeiro-acesso">primeiros passos após a instalação</a>. Se o instalador falhar, anote a etapa e a mensagem antes de reiniciar; veja como <a href="solucao-de-problemas.html#relatar">relatar o problema</a>.</p>
+<p class="doc-source">Referência: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-1.1-alpha7.md">notas do Desktop 1.1 Alpha 7</a>.</p>

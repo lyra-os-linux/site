@@ -1,0 +1,20 @@
+<h2 id="perfil">Uma edição para administração de serviços</h2>
+<p>O Lyra OS Server é uma edição sem ambiente gráfico. Sua administração usa o console, o Vega CLI e o Vega Web. A candidata 1.1 Beta 1.1 usa a base openSUSE Leap 16.1 e mantém o escopo funcional da Beta 1.</p>
+<div class="doc-note"><strong>Armazenamento na série Server 1.1:</strong> instalação UEFI em disco inteiro, com GPT, partição EFI e raiz ext4. RAID, LVM, Btrfs, Snapper, BIOS legado e instalação desassistida ficam fora do fluxo documentado dessa candidata.</div>
+<h2 id="instalar">Instalar o Server</h2>
+<ol><li>Confira os <a href="primeiros-passos.html#requisitos">requisitos</a>, prepare um disco exclusivo e faça backup. O conteúdo do disco escolhido será apagado.</li><li>Baixe a imagem Server pela <a href="../index.html#download">área de downloads</a> e confira os arquivos de integridade da mesma publicação.</li><li>Grave a ISO e inicialize em UEFI. O instalador é interativo e funciona em console.</li><li>Informe idioma, teclado, fuso horário, nome da máquina e os dados da conta solicitados.</li><li>Revise o disco escolhido e confirme a instalação somente depois de conferir o resumo.</li><li>Ao concluir, reinicie pelo disco instalado e entre com a conta criada.</li></ol>
+<p>Prepare Ethernet com DHCP para a configuração inicial. Ajustes de rede, como endereço estático, são feitos após a instalação.</p>
+<h2 id="administrar">Administre com o Vega CLI</h2>
+<p>Em um console interativo local ou em uma sessão SSH já configurada, execute como seu usuário:</p>
+<pre><code>vega</code></pre>
+<p>Use os menus para consultar o estado do sistema e administrar as funções disponíveis. A autenticação é solicitada por operação privilegiada.</p>
+<h2 id="verificar">Confira o primeiro boot</h2>
+<p>Estes comandos consultam o estado do sistema sem alterar a configuração:</p>
+<pre><code>cat /etc/os-release
+ip -brief address
+systemctl --failed</code></pre>
+<p>Confira a versão instalada, o endereço recebido pela interface de rede e eventuais serviços com falha. A política inicial descrita pelo projeto libera SSH e Vega Web na porta 9090/tcp; confirme o estado efetivo do firewall e dos serviços na sua instalação antes do acesso remoto.</p>
+<p>O Vega Web é voltado à administração na rede local. Consulte sua documentação para configurar acesso HTTPS e autenticação: <a href="https://github.com/lyra-os-linux/vega-web">guia do Vega Web</a>.</p>
+<h2 id="manutencao">Mantenha uma cópia de recuperação</h2>
+<p>Planeje backups dos dados e das configurações dos serviços. Esta edição não oferece rollback por Snapper nem downgrade automático de uma instalação sobre a nova base. Veja <a href="atualizacoes.html">atualizações</a> e <a href="solucao-de-problemas.html">diagnóstico de problemas</a>.</p>
+<p class="doc-source">Referências: <a href="https://github.com/lyra-os-linux/lyraos-server/blob/main/docs/releases/lyra-os-server-1.1-beta.1.1.md">notas do Server Beta 1.1</a> e <a href="https://github.com/lyra-os-linux/lyraos-server/blob/main/docs/server-edition.md">arquitetura do Server</a>.</p>

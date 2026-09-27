@@ -1,0 +1,73 @@
+<!-- Gerado por scripts/build-docs.py. Edite docs/content/ ou scripts/docs-template.html. -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16191d">
+  <title>Conheça o Vega · Documentação Lyra OS</title>
+  <meta name="description" content="Encontre as configurações de software, rede, hardware e serviços no centro de controle.">
+  <link rel="canonical" href="https://lyraos.com.br/docs/vega.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Conheça o Vega · Documentação Lyra OS">
+  <meta property="og:description" content="Encontre as configurações de software, rede, hardware e serviços no centro de controle.">
+  <meta property="og:image" content="https://lyraos.com.br/assets/press-kit-og.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/docs.css">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script src="../js/main.js" defer></script>
+  <script src="search-index.js" defer></script>
+  <script src="../js/docs.js" defer></script>
+</head>
+<body class="docs-page" id="topo">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html" aria-label="Lyra OS, início"><img class="brand-mark" src="../assets/favicon.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>Lyra <em>OS</em></strong><small>Documentação</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Abrir menu</span><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="../index.html">O projeto</a><a href="index.html" aria-current="true">Documentação</a><a href="../index.html#download" class="nav-cta">Download ↗</a>
+        <span class="docs-language">Português · BR</span>
+        <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Tema</span></button>
+      </nav>
+    </div>
+  </header>
+  <div class="container docs-layout">
+    <aside class="docs-sidebar">
+      <a class="docs-home" href="index.html">Central de documentação</a>
+      <p class="docs-version"><span class="status-dot"></span> Lyra OS 1.1 · Em desenvolvimento</p>
+      <details class="docs-navigation" open><summary>Navegar pelos guias</summary><nav aria-label="Guias da documentação"><p class="docs-nav-group">Comece aqui</p><ul><li><a href="primeiros-passos.html">Primeiros passos</a></li><li><a href="instalacao.html">Instalar o Lyra OS</a></li><li><a href="server.html">Lyra OS Server</a></li></ul><p class="docs-nav-group">Guias práticos</p><ul><li><a href="atualizacoes.html">Aplicativos e atualizações</a></li><li><a href="solucao-de-problemas.html">Solução de problemas</a></li></ul><p class="docs-nav-group">Referência</p><ul><li><a href="referencia.html">Requisitos e termos técnicos</a></li></ul><p class="docs-nav-group">Entenda o Lyra</p><ul><li><a href="vega.html" aria-current="page">Conheça o Vega</a></li><li><a href="versoes.html">Versões e suporte</a></li></ul><p class="docs-nav-group">Contribua</p><ul><li><a href="contribuir.html">Contribuir com a documentação</a></li></ul></nav></details>
+      <a class="docs-help" href="contribuir.html">Ajude a melhorar estes guias ↗</a>
+    </aside>
+    <main id="conteudo" class="docs-main">
+      <div class="docs-search" hidden>
+        <label for="docs-search-input">Buscar na documentação</label>
+        <div class="docs-search-field"><span aria-hidden="true">⌕</span><input id="docs-search-input" type="search" placeholder="Instalação, rede, Vega…" autocomplete="off" maxlength="160" aria-controls="docs-search-results"><kbd aria-hidden="true">/</kbd></div>
+        <div id="docs-search-results" hidden><p id="docs-search-status" role="status" aria-live="polite" aria-atomic="true"></p><ul id="docs-search-list"></ul></div>
+      </div>
+      <noscript><p class="doc-note">A busca precisa de JavaScript. Todos os guias estão disponíveis pela navegação e pelos links desta página.</p></noscript>
+      <nav class="docs-breadcrumb" aria-label="Localização"><a href="../index.html">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentação</a><span aria-hidden="true">/</span><span aria-current="page">Conheça o Vega</span></nav>
+      <header class="docs-heading"><p class="eyebrow">Entenda o Lyra</p><h1>Conheça o Vega</h1><p class="docs-lede">Encontre as configurações de software, rede, hardware e serviços no centro de controle.</p><div class="docs-meta"><span>Explicação</span><span>Vega · Recursos variam por versão</span><span>Revisão documental: <time datetime="2026-09-27">27/09/2026</time></span></div></header>
+      <nav class="docs-toc" aria-label="Nesta página"><strong>Nesta página</strong><ul><li><a href="#abrir">Abra o centro de controle</a></li><li><a href="#encontrar">Onde encontrar cada tarefa</a></li><li><a href="#operacoes">Antes de confirmar uma operação</a></li><li><a href="#terminal">Vega no terminal</a></li></ul></nav>
+      <div class="doc-content"><h2 id="abrir">Abra o centro de controle</h2>
+<p>O Vega reúne tarefas de administração do Lyra OS. No Desktop, procure <strong>Vega</strong> no menu de aplicativos e abra com sua conta normal. A autenticação administrativa é solicitada quando uma operação precisa de autorização.</p>
+<p>As Configurações do GNOME continuam disponíveis para as preferências do ambiente. O Vega complementa essas opções com administração de pacotes, serviços e outros recursos do sistema.</p>
+<h2 id="encontrar">Onde encontrar cada tarefa</h2>
+<ul><li><strong>Painel:</strong> resumo da saúde do sistema e atalhos.</li><li><strong>Software:</strong> pacotes, aplicativos Flatpak, repositórios e atualizações.</li><li><strong>Hardware e sistema:</strong> inventário de dispositivos, kernel, armazenamento, data e hora.</li><li><strong>Rede:</strong> conexões, Wi-Fi, Bluetooth, firewall, VPN e proxy, conforme os componentes disponíveis.</li><li><strong>Administração:</strong> usuários, serviços, logs e processos.</li><li><strong>Backup:</strong> recursos que dependem das ferramentas e da configuração de armazenamento instaladas.</li></ul>
+<p>Os nomes e a disponibilidade das telas podem variar com a versão instalada. Recursos opcionais podem aparecer indisponíveis quando falta uma dependência.</p>
+<h2 id="operacoes">Antes de confirmar uma operação</h2>
+<p>Leia o resumo da ação e confira o que será instalado, removido ou alterado. Espere a operação terminar antes de iniciar outra tarefa de gerenciamento de pacotes. Se ocorrer um erro, registre a mensagem completa e a ação escolhida.</p>
+<p>Para gerenciar programas e manter o sistema em dia, siga <a href="atualizacoes.html">Aplicativos e atualizações</a>.</p>
+<h2 id="terminal">Vega no terminal</h2>
+<p>No Server com Vega CLI instalado, abra um terminal interativo com sua conta e execute:</p>
+<pre><code>vega</code></pre>
+<p>A interface de terminal compartilha o serviço de administração com as outras interfaces do Vega. As consultas não exigem executar toda a aplicação como root; ações privilegiadas solicitam autenticação. Veja também o <a href="server.html">guia do Server</a>.</p>
+<p class="doc-source">Referências: <a href="https://github.com/lyra-os-linux/vega/blob/main/README.pt-br.md">documentação do Vega</a> e <a href="https://github.com/lyra-os-linux/vega-cli">Vega CLI</a>.</p>
+</div>
+      <footer class="doc-article-footer"><p>Este guia pode melhorar com a sua experiência.</p><div><a href="https://github.com/lyra-os-linux/site/edit/main/docs/content/vega.html">Sugerir edição ↗</a><a href="https://github.com/lyra-os-linux/site/commits/main/docs/content/vega.html">Histórico ↗</a><a href="contribuir.html">Como contribuir</a></div></footer>
+    </main>
+  </div>
+  <footer class="docs-footer container"><span>Lyra OS · Harmonia. Performance. Liberdade.</span><a href="#topo">Voltar ao topo ↑</a></footer>
+</body>
+</html>

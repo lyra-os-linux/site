@@ -1,0 +1,71 @@
+<!-- Gerado por scripts/build-docs.py. Edite docs/content/ ou scripts/docs-template.html. -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16191d">
+  <title>Versões e suporte · Documentação Lyra OS</title>
+  <meta name="description" content="Entenda Alpha, Beta, RC, a numeração do Lyra e sua relação com a base openSUSE.">
+  <link rel="canonical" href="https://lyraos.com.br/docs/versoes.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Versões e suporte · Documentação Lyra OS">
+  <meta property="og:description" content="Entenda Alpha, Beta, RC, a numeração do Lyra e sua relação com a base openSUSE.">
+  <meta property="og:image" content="https://lyraos.com.br/assets/press-kit-og.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/docs.css">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script src="../js/main.js" defer></script>
+  <script src="search-index.js" defer></script>
+  <script src="../js/docs.js" defer></script>
+</head>
+<body class="docs-page" id="topo">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html" aria-label="Lyra OS, início"><img class="brand-mark" src="../assets/favicon.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>Lyra <em>OS</em></strong><small>Documentação</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Abrir menu</span><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="../index.html">O projeto</a><a href="index.html" aria-current="true">Documentação</a><a href="../index.html#download" class="nav-cta">Download ↗</a>
+        <span class="docs-language">Português · BR</span>
+        <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Tema</span></button>
+      </nav>
+    </div>
+  </header>
+  <div class="container docs-layout">
+    <aside class="docs-sidebar">
+      <a class="docs-home" href="index.html">Central de documentação</a>
+      <p class="docs-version"><span class="status-dot"></span> Lyra OS 1.1 · Em desenvolvimento</p>
+      <details class="docs-navigation" open><summary>Navegar pelos guias</summary><nav aria-label="Guias da documentação"><p class="docs-nav-group">Comece aqui</p><ul><li><a href="primeiros-passos.html">Primeiros passos</a></li><li><a href="instalacao.html">Instalar o Lyra OS</a></li><li><a href="server.html">Lyra OS Server</a></li></ul><p class="docs-nav-group">Guias práticos</p><ul><li><a href="atualizacoes.html">Aplicativos e atualizações</a></li><li><a href="solucao-de-problemas.html">Solução de problemas</a></li></ul><p class="docs-nav-group">Referência</p><ul><li><a href="referencia.html">Requisitos e termos técnicos</a></li></ul><p class="docs-nav-group">Entenda o Lyra</p><ul><li><a href="vega.html">Conheça o Vega</a></li><li><a href="versoes.html" aria-current="page">Versões e suporte</a></li></ul><p class="docs-nav-group">Contribua</p><ul><li><a href="contribuir.html">Contribuir com a documentação</a></li></ul></nav></details>
+      <a class="docs-help" href="contribuir.html">Ajude a melhorar estes guias ↗</a>
+    </aside>
+    <main id="conteudo" class="docs-main">
+      <div class="docs-search" hidden>
+        <label for="docs-search-input">Buscar na documentação</label>
+        <div class="docs-search-field"><span aria-hidden="true">⌕</span><input id="docs-search-input" type="search" placeholder="Instalação, rede, Vega…" autocomplete="off" maxlength="160" aria-controls="docs-search-results"><kbd aria-hidden="true">/</kbd></div>
+        <div id="docs-search-results" hidden><p id="docs-search-status" role="status" aria-live="polite" aria-atomic="true"></p><ul id="docs-search-list"></ul></div>
+      </div>
+      <noscript><p class="doc-note">A busca precisa de JavaScript. Todos os guias estão disponíveis pela navegação e pelos links desta página.</p></noscript>
+      <nav class="docs-breadcrumb" aria-label="Localização"><a href="../index.html">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentação</a><span aria-hidden="true">/</span><span aria-current="page">Versões e suporte</span></nav>
+      <header class="docs-heading"><p class="eyebrow">Entenda o Lyra</p><h1>Versões e suporte</h1><p class="docs-lede">Entenda Alpha, Beta, RC, a numeração do Lyra e sua relação com a base openSUSE.</p><div class="docs-meta"><span>Explicação</span><span>Lyra OS 1.1</span><span>Revisão documental: <time datetime="2026-09-27">27/09/2026</time></span></div></header>
+      <nav class="docs-toc" aria-label="Nesta página"><strong>Nesta página</strong><ul><li><a href="#numeracao">A versão do Lyra tem numeração própria</a></li><li><a href="#estagios">Alpha, Beta e RC</a></li><li><a href="#notas">Confira as notas da sua imagem</a></li><li><a href="#suporte">Suporte comunitário</a></li></ul></nav>
+      <div class="doc-content"><h2 id="numeracao">A versão do Lyra tem numeração própria</h2>
+<p>O projeto usa o formato <code>MAJOR.MINOR.PATCH</code>: uma geração do produto, uma evolução compatível dentro dessa geração e uma revisão de manutenção. A linha 1.1 está em desenvolvimento.</p>
+<p>A base openSUSE Leap é identificada separadamente. Uma mudança de base não determina automaticamente o número do Lyra OS.</p>
+<h2 id="estagios">Alpha, Beta e RC</h2>
+<ul><li><strong>Alpha:</strong> candidata de desenvolvimento para testar a integração e identificar problemas.</li><li><strong>Beta:</strong> etapa de validação e estabilização, ainda anterior à versão final.</li><li><strong>RC:</strong> candidata a lançamento, sujeita à aprovação dos critérios de qualidade.</li></ul>
+<p>Identificadores como <code>1.1-alpha.7</code> e <code>1.1-beta.1.1</code> distinguem as candidatas. Desktop e Server têm ciclos independentes. O avanço de estágio depende dos testes e da resolução de bloqueadores, não apenas de uma data.</p>
+<h2 id="notas">Confira as notas da sua imagem</h2>
+<p>Consulte sempre a publicação correspondente ao arquivo que você baixou. Estes são os documentos das imagens referenciadas nesta edição dos guias:</p>
+<ul><li><a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-1.1-alpha7.md">Desktop 1.1 Alpha 7</a>: migração da base para Leap 16.1 e limites de instalação e upgrade.</li><li><a href="https://github.com/lyra-os-linux/lyraos-server/blob/main/docs/releases/lyra-os-server-1.1-beta.1.1.md">Server 1.1 Beta 1.1</a>: revisão da base preservando o escopo da Beta 1.</li></ul>
+<h2 id="suporte">Suporte comunitário</h2>
+<p>O Lyra OS é um projeto independente e a versão 1.1 terá suporte comunitário. Não há prazo contratual nem data de fim de suporte prometidos sem uma política formal. O suporte da base openSUSE e o ciclo de uma versão do Lyra são informações distintas.</p>
+<p>Para pedir ajuda, descreva a versão e a situação seguindo o <a href="solucao-de-problemas.html#relatar">guia de relato de problemas</a>. Para detalhes da política mantida no site, consulte o <a href="release-versioning.md">documento de versionamento</a>.</p>
+</div>
+      <footer class="doc-article-footer"><p>Este guia pode melhorar com a sua experiência.</p><div><a href="https://github.com/lyra-os-linux/site/edit/main/docs/content/versoes.html">Sugerir edição ↗</a><a href="https://github.com/lyra-os-linux/site/commits/main/docs/content/versoes.html">Histórico ↗</a><a href="contribuir.html">Como contribuir</a></div></footer>
+    </main>
+  </div>
+  <footer class="docs-footer container"><span>Lyra OS · Harmonia. Performance. Liberdade.</span><a href="#topo">Voltar ao topo ↑</a></footer>
+</body>
+</html>

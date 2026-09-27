@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "primeiros-passos",
+    "title": "Primeiros passos",
+    "description": "Conheça as edições, confira os requisitos e prepare seu primeiro contato com o Lyra OS.",
+    "group": "Comece aqui",
+    "kind": "Tutorial",
+    "scope": "Desktop GNOME · Lyra OS 1.1",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "instalacao",
+    "title": "Instalar o Lyra OS",
+    "description": "Do download da ISO ao primeiro boot: integridade, mídia de instalação e disco de destino.",
+    "group": "Comece aqui",
+    "kind": "Tutorial",
+    "scope": "Desktop GNOME · 1.1 Alpha 7",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "server",
+    "title": "Lyra OS Server",
+    "description": "Instale a edição para servidores e comece a administrar pelo console com o Vega CLI.",
+    "group": "Comece aqui",
+    "kind": "Tutorial",
+    "scope": "Server · 1.1 Beta 1.1",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "atualizacoes",
+    "title": "Aplicativos e atualizações",
+    "description": "Gerencie pacotes e entenda a diferença entre atualizar o sistema e migrar de versão.",
+    "group": "Guias práticos",
+    "kind": "Procedimento",
+    "scope": "Desktop e Server · Lyra OS 1.1",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "solucao-de-problemas",
+    "title": "Solução de problemas",
+    "description": "Investigue falhas de boot, rede e atualizações e prepare um relato útil para o projeto.",
+    "group": "Guias práticos",
+    "kind": "Diagnóstico",
+    "scope": "Desktop e Server · Lyra OS 1.1",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "referencia",
+    "title": "Requisitos e termos técnicos",
+    "description": "Consulte os requisitos de hardware e o significado dos termos usados nos guias.",
+    "group": "Referência",
+    "kind": "Referência técnica",
+    "scope": "Desktop GNOME e Server · Lyra OS 1.1",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "vega",
+    "title": "Conheça o Vega",
+    "description": "Encontre as configurações de software, rede, hardware e serviços no centro de controle.",
+    "group": "Entenda o Lyra",
+    "kind": "Explicação",
+    "scope": "Vega · Recursos variam por versão",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "versoes",
+    "title": "Versões e suporte",
+    "description": "Entenda Alpha, Beta, RC, a numeração do Lyra e sua relação com a base openSUSE.",
+    "group": "Entenda o Lyra",
+    "kind": "Explicação",
+    "scope": "Lyra OS 1.1",
+    "reviewed": "2026-09-27"
+  },
+  {
+    "slug": "contribuir",
+    "title": "Contribuir com a documentação",
+    "description": "Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.",
+    "group": "Contribua",
+    "kind": "Procedimento",
+    "scope": "Documentação do site",
+    "reviewed": "2026-09-27"
+  }
+]

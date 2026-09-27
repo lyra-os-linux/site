@@ -499,6 +499,10 @@
     'quando o gate estiver verde':"quando il gate è verde"
   });
 
+  Object.assign(catalogs['en-US'], { 'Documentação': 'Documentation', 'Ler o guia de instalação': 'Read the installation guide' });
+  Object.assign(catalogs['es-ES'], { 'Documentação': 'Documentación', 'Ler o guia de instalação': 'Leer la guía de instalación' });
+  Object.assign(catalogs['it-IT'], { 'Documentação': 'Documentazione', 'Ler o guia de instalação': 'Leggi la guida di installazione' });
+
   const readLocale = () => {
     const fromUrl = new URLSearchParams(location.search).get('lang');
     if (LOCALES.includes(fromUrl)) return fromUrl;
