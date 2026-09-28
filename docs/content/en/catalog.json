@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "primeiros-passos",
+    "title": "Getting started",
+    "description": "Learn about the editions, check the requirements and prepare for your first contact with Lyra OS.",
+    "group": "Start here",
+    "kind": "Tutorial",
+    "scope": "Desktop GNOME · Lyra OS 1.1",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "instalacao",
+    "title": "Install Lyra OS",
+    "description": "From ISO download to first boot: integrity, installation media and target disk.",
+    "group": "Start here",
+    "kind": "Tutorial",
+    "scope": "Desktop GNOME · 1.1 Alpha 7",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "server",
+    "title": "Lyra OS Server",
+    "description": "Install the server edition and start managing it from the console with Vega CLI.",
+    "group": "Start here",
+    "kind": "Tutorial",
+    "scope": "Server · 1.1 Beta 1.1",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "atualizacoes",
+    "title": "Apps and updates",
+    "description": "Manage packages and understand the difference between updating the system and upgrading to a new version.",
+    "group": "How-to guides",
+    "kind": "Procedure",
+    "scope": "Desktop and Server · Lyra OS 1.1",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "solucao-de-problemas",
+    "title": "Troubleshooting",
+    "description": "Investigate boot, network and update failures and prepare a useful report for the project.",
+    "group": "How-to guides",
+    "kind": "Diagnostics",
+    "scope": "Desktop and Server · Lyra OS 1.1",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "referencia",
+    "title": "Requirements and technical terms",
+    "description": "Look up the hardware requirements and the meaning of the terms used in the guides.",
+    "group": "Reference",
+    "kind": "Technical reference",
+    "scope": "Desktop GNOME and Server · Lyra OS 1.1",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "vega",
+    "title": "Meet Vega",
+    "description": "Find software, network, hardware and service settings in the control center.",
+    "group": "Understand Lyra",
+    "kind": "Explanation",
+    "scope": "Vega · Features vary by version",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "versoes",
+    "title": "Versions and support",
+    "description": "Understand Alpha, Beta, RC, Lyra's version numbers and how they relate to the openSUSE base.",
+    "group": "Understand Lyra",
+    "kind": "Explanation",
+    "scope": "Lyra OS 1.1",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-27"
+  },
+  {
+    "slug": "contribuir",
+    "title": "Contribute to the documentation",
+    "description": "Suggest corrections, report questions and help improve the guides for other people.",
+    "group": "Contribute",
+    "kind": "Procedure",
+    "scope": "Website documentation",
+    "reviewed": "2026-09-28",
+    "source_reviewed": "2026-09-28"
+  }
+]

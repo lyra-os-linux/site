@@ -540,6 +540,11 @@
     };
     document.title = titles[locale];
     document.querySelector('.language-select')?.setAttribute('aria-label', t('Idioma do site'));
+    const docsFolder = { 'en-US': 'en/', 'es-ES': 'es/', 'it-IT': 'it/' }[locale] || '';
+    document.querySelectorAll('a[href^="docs/"]').forEach((link) => {
+      if (!link.dataset.docsHref) link.dataset.docsHref = link.getAttribute('href');
+      link.setAttribute('href', link.dataset.docsHref.replace(/^docs\//, `docs/${docsFolder}`));
+    });
     window.dispatchEvent(new CustomEvent('lyra:locale-changed', { detail: { locale } }));
   };
 

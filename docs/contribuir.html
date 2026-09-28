@@ -8,14 +8,21 @@
   <title>Contribuir com a documentação · Documentação Lyra OS</title>
   <meta name="description" content="Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.">
   <link rel="canonical" href="https://lyraos.com.br/docs/contribuir.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lyraos.com.br/docs/contribuir.html">
+  <link rel="alternate" hreflang="en-US" href="https://lyraos.com.br/docs/en/contribuir.html">
+  <link rel="alternate" hreflang="es-ES" href="https://lyraos.com.br/docs/es/contribuir.html">
+  <link rel="alternate" hreflang="it-IT" href="https://lyraos.com.br/docs/it/contribuir.html">
+  <link rel="alternate" hreflang="x-default" href="https://lyraos.com.br/docs/contribuir.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contribuir com a documentação · Documentação Lyra OS">
   <meta property="og:description" content="Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.">
   <meta property="og:image" content="https://lyraos.com.br/assets/press-kit-og.png">
+  <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/docs.css">
   <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script>window.LyraDocsStrings = {"search_one": "guia encontrado", "search_many": "guias encontrados", "search_none": "Nenhum guia encontrado. Tente outro termo ou navegue pelos assuntos.", "Ativar tema claro": "Ativar tema claro", "Ativar tema escuro": "Ativar tema escuro"}; window.LyraI18n = window.LyraI18n || { t: (value) => window.LyraDocsStrings[value] || value };</script>
   <script src="../js/main.js" defer></script>
   <script src="search-index.js" defer></script>
   <script src="../js/docs.js" defer></script>
@@ -28,7 +35,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Abrir menu</span><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
         <a href="../index.html">O projeto</a><a href="index.html" aria-current="true">Documentação</a><a href="../index.html#download" class="nav-cta">Download ↗</a>
-        <span class="docs-language">Português · BR</span>
+        <div class="docs-language" role="group" aria-label="Idioma da documentação"><a href="contribuir.html" lang="pt-BR" hreflang="pt-BR" title="Português" aria-current="page"><abbr title="Português">PT</abbr></a><a href="en/contribuir.html" lang="en-US" hreflang="en-US" title="English"><abbr title="English">EN</abbr></a><a href="es/contribuir.html" lang="es-ES" hreflang="es-ES" title="Español"><abbr title="Español">ES</abbr></a><a href="it/contribuir.html" lang="it-IT" hreflang="it-IT" title="Italiano"><abbr title="Italiano">IT</abbr></a></div>
         <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Tema</span></button>
       </nav>
     </div>
@@ -48,8 +55,8 @@
       </div>
       <noscript><p class="doc-note">A busca precisa de JavaScript. Todos os guias estão disponíveis pela navegação e pelos links desta página.</p></noscript>
       <nav class="docs-breadcrumb" aria-label="Localização"><a href="../index.html">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentação</a><span aria-hidden="true">/</span><span aria-current="page">Contribuir com a documentação</span></nav>
-      <header class="docs-heading"><p class="eyebrow">Contribua</p><h1>Contribuir com a documentação</h1><p class="docs-lede">Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.</p><div class="docs-meta"><span>Procedimento</span><span>Documentação do site</span><span>Revisão documental: <time datetime="2026-09-27">27/09/2026</time></span></div></header>
-      <nav class="docs-toc" aria-label="Nesta página"><strong>Nesta página</strong><ul><li><a href="#sugerir">Encontrou uma lacuna?</a></li><li><a href="#editar">Proponha uma alteração</a></li><li><a href="#escrever">Escreva para quem vai usar o sistema</a></li></ul></nav>
+      <header class="docs-heading"><p class="eyebrow">Contribua</p><h1>Contribuir com a documentação</h1><p class="docs-lede">Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.</p><div class="docs-meta"><span>Procedimento</span><span>Documentação do site</span><span>Revisão documental: <time datetime="2026-09-28">28/09/2026</time></span></div></header>
+      <nav class="docs-toc" aria-label="Nesta página"><strong>Nesta página</strong><ul><li><a href="#sugerir">Encontrou uma lacuna?</a></li><li><a href="#editar">Proponha uma alteração</a></li><li><a href="#escrever">Escreva para quem vai usar o sistema</a></li><li><a href="#traduzir">Traduza e atualize traduções</a></li></ul></nav>
       <div class="doc-content"><h2 id="sugerir">Encontrou uma lacuna?</h2>
 <p>A documentação acompanha a evolução do Lyra OS. Uma etapa confusa, uma mensagem diferente na sua versão ou um assunto que falta são boas oportunidades de contribuição.</p>
 <p>Abra o <a href="https://github.com/lyra-os-linux/site">repositório do site</a> e use a área de issues para propor uma correção. Informe a página, o trecho, a versão do Lyra usada e o resultado que você observou. Para defeitos do sistema, use os <a href="solucao-de-problemas.html#relatar">repositórios indicados no guia de diagnóstico</a>.</p>
@@ -57,7 +64,9 @@
 <ol><li>Crie uma cópia do repositório do site no GitHub e uma branch para a mudança.</li><li>Edite o conteúdo do artigo em <code>docs/content/</code>. O arquivo <code>catalog.json</code> organiza títulos, descrições e categorias.</li><li>Execute <code>python3 scripts/build-docs.py</code> na raiz do projeto para gerar as páginas e o índice de busca.</li><li>Confira a navegação, as instruções e a apresentação em uma tela pequena.</li><li>Abra um pull request com a correção e explique em qual versão você conferiu o procedimento.</li></ol>
 <h2 id="escrever">Escreva para quem vai usar o sistema</h2>
 <ul><li>Comece pelo objetivo e pelos requisitos do procedimento.</li><li>Explique o efeito de comandos antes de pedir que a pessoa os execute.</li><li>Destaque operações que apagam dados ou alteram o armazenamento.</li><li>Separe recursos publicados de planos e funcionalidades em desenvolvimento.</li><li>Inclua uma referência às notas de lançamento ou à documentação do componente.</li></ul>
-<p>Os guias estão disponíveis inicialmente em português. Traduções devem acompanhar o conteúdo e a versão de origem para manter as instruções consistentes.</p>
+<h2 id="traduzir">Traduza e atualize traduções</h2>
+<p>O português é o idioma de origem dos guias. As versões em inglês, espanhol e italiano ficam em <code>docs/content/en/</code>, <code>docs/content/es/</code> e <code>docs/content/it/</code>, cada uma com o seu <code>catalog.json</code>.</p>
+<ul><li>Mantenha o mesmo nome de arquivo, os mesmos IDs dos títulos <code>h2</code> e os comandos sem alteração.</li><li>Ao revisar um guia em português, atualize também as traduções ou deixe-as marcadas como desatualizadas.</li><li>No catálogo da tradução, <code>source_reviewed</code> registra a data de revisão do original em português usado como base. Quando o original for mais recente, a página traduzida exibe um aviso com link para a versão em português.</li></ul>
 </div>
       <footer class="doc-article-footer"><p>Este guia pode melhorar com a sua experiência.</p><div><a href="https://github.com/lyra-os-linux/site/edit/main/docs/content/contribuir.html">Sugerir edição ↗</a><a href="https://github.com/lyra-os-linux/site/commits/main/docs/content/contribuir.html">Histórico ↗</a><a href="contribuir.html">Como contribuir</a></div></footer>
     </main>

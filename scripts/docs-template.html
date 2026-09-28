@@ -1,58 +1,62 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="$lang">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#16191d">
-  <title>$title · Documentação Lyra OS</title>
+  <title>$title · $site_title</title>
   <meta name="description" content="$description">
-  <link rel="canonical" href="https://lyraos.com.br/docs/$filename">
+  <link rel="canonical" href="$canonical">
+$alternates
   <meta property="og:type" content="website">
-  <meta property="og:title" content="$title · Documentação Lyra OS">
+  <meta property="og:title" content="$title · $site_title">
   <meta property="og:description" content="$description">
   <meta property="og:image" content="https://lyraos.com.br/assets/press-kit-og.png">
-  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/docs.css">
+  <meta property="og:locale" content="$og_locale">
+  <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="${root}css/style.css">
+  <link rel="stylesheet" href="${root}css/docs.css">
   <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
-  <script src="../js/main.js" defer></script>
+  <script>window.LyraDocsStrings = $js_strings; window.LyraI18n = window.LyraI18n || { t: (value) => window.LyraDocsStrings[value] || value };</script>
+  <script src="${root}js/main.js" defer></script>
   <script src="search-index.js" defer></script>
-  <script src="../js/docs.js" defer></script>
+  <script src="${root}js/docs.js" defer></script>
 </head>
 <body class="docs-page" id="topo">
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo">$skip</a>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="../index.html" aria-label="Lyra OS, início"><img class="brand-mark" src="../assets/favicon.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>Lyra <em>OS</em></strong><small>Documentação</small></span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Abrir menu</span><span></span><span></span><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-        <a href="../index.html">O projeto</a><a href="index.html" aria-current="true">Documentação</a><a href="../index.html#download" class="nav-cta">Download ↗</a>
-        <span class="docs-language">Português · BR</span>
-        <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Tema</span></button>
+      <a class="brand" href="$home" aria-label="$brand_label"><img class="brand-mark" src="${root}assets/favicon.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>Lyra <em>OS</em></strong><small>$docs</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">$open_menu</span><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="$main_nav">
+        <a href="$home">$project</a><a href="index.html" aria-current="true">$docs</a><a href="$download" class="nav-cta">Download ↗</a>
+        <div class="docs-language" role="group" aria-label="$language_label">$languages</div>
+        <button class="theme-toggle" type="button" aria-label="$theme_light" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">$theme</span></button>
       </nav>
     </div>
   </header>
   <div class="container docs-layout">
     <aside class="docs-sidebar">
-      <a class="docs-home" href="index.html">Central de documentação</a>
-      <p class="docs-version"><span class="status-dot"></span> Lyra OS 1.1 · Em desenvolvimento</p>
-      <details class="docs-navigation" open><summary>Navegar pelos guias</summary><nav aria-label="Guias da documentação">$navigation</nav></details>
-      <a class="docs-help" href="contribuir.html">Ajude a melhorar estes guias ↗</a>
+      <a class="docs-home" href="index.html">$docs_home</a>
+      <p class="docs-version"><span class="status-dot"></span> $version_status</p>
+      <details class="docs-navigation" open><summary>$browse</summary><nav aria-label="$guides_nav">$navigation</nav></details>
+      <a class="docs-help" href="contribuir.html">$help ↗</a>
     </aside>
     <main id="conteudo" class="docs-main">
       <div class="docs-search" hidden>
-        <label for="docs-search-input">Buscar na documentação</label>
-        <div class="docs-search-field"><span aria-hidden="true">⌕</span><input id="docs-search-input" type="search" placeholder="Instalação, rede, Vega…" autocomplete="off" maxlength="160" aria-controls="docs-search-results"><kbd aria-hidden="true">/</kbd></div>
+        <label for="docs-search-input">$search_label</label>
+        <div class="docs-search-field"><span aria-hidden="true">⌕</span><input id="docs-search-input" type="search" placeholder="$search_placeholder" autocomplete="off" maxlength="160" aria-controls="docs-search-results"><kbd aria-hidden="true">/</kbd></div>
         <div id="docs-search-results" hidden><p id="docs-search-status" role="status" aria-live="polite" aria-atomic="true"></p><ul id="docs-search-list"></ul></div>
       </div>
-      <noscript><p class="doc-note">A busca precisa de JavaScript. Todos os guias estão disponíveis pela navegação e pelos links desta página.</p></noscript>
-      <nav class="docs-breadcrumb" aria-label="Localização"><a href="../index.html">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentação</a>$breadcrumb</nav>
+      <noscript><p class="doc-note">$noscript</p></noscript>
+      <nav class="docs-breadcrumb" aria-label="$breadcrumb_label"><a href="$home">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">$docs</a>$breadcrumb</nav>
       <header class="docs-heading"><p class="eyebrow">$eyebrow</p><h1>$title</h1><p class="docs-lede">$description</p>$metadata</header>
+      $translation_note
       $toc
       <div class="doc-content">$content</div>
       $article_footer
     </main>
   </div>
-  <footer class="docs-footer container"><span>Lyra OS · Harmonia. Performance. Liberdade.</span><a href="#topo">Voltar ao topo ↑</a></footer>
+  <footer class="docs-footer container"><span>$tagline</span><a href="#topo">$back_to_top ↑</a></footer>
 </body>
 </html>

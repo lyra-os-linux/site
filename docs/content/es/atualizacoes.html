@@ -1,0 +1,17 @@
+<h2 id="aplicativos">Instala aplicaciones con Vega</h2>
+<p>Abre Vega y entra en el área de software. Busca la aplicación, comprueba su origen y revisa la operación antes de confirmar. Vega gestiona paquetes RPM mediante Zypper y aplicaciones Flatpak cuando ese soporte está disponible.</p>
+<p>Los RPM forman parte del sistema de paquetes de la distribución. Los Flatpak usan sus propios repositorios y runtimes. Una misma aplicación puede aparecer en más de un origen; elige el que quieras mantener para evitar instalaciones duplicadas.</p>
+<h2 id="atualizar">Actualiza el sistema instalado</h2>
+<ol><li>Conecta el ordenador a la red y a la corriente eléctrica.</li><li>Abre el área de actualizaciones de Vega y actualiza la lista disponible.</li><li>Lee el resumen y confirma los cambios que desees.</li><li>Espera el resultado. Reinicia si la herramienta lo solicita o si una actualización necesita un nuevo arranque para aplicarse.</li></ol>
+<p>Si prefieres la terminal, el flujo de actualización de los paquetes RPM es:</p>
+<pre><code>sudo zypper refresh
+sudo zypper update</code></pre>
+<p>El primer comando actualiza los metadatos de los repositorios; el segundo presenta las actualizaciones para su confirmación. No actualizan las aplicaciones Flatpak. No ejecutes al mismo tiempo otra operación de paquetes desde Vega.</p>
+<h2 id="repositorios">Cuida los orígenes de los paquetes</h2>
+<p>Mantén los repositorios adecuados a la base de tu instalación. No añadas repositorios de otra versión de Leap para obtener un paquete aislado. Si aparece una clave desconocida o un cambio inesperado de origen, consulta el anuncio del proyecto antes de aceptar.</p>
+<h2 id="migracao">Actualizar no es migrar de versión</h2>
+<div class="doc-note"><strong>Cambiar la base requiere un procedimiento específico.</strong> Actualizar paquetes no autoriza a migrar entre versiones de openSUSE Leap ni entre candidatas de Lyra. Espera a que exista una ruta de migración documentada para tu origen y destino.</div>
+<p>Las notas de la Alpha 7 indican que la migración de instalaciones existentes de la base Leap 16.0 a 16.1 depende de una validación específica. No cambies las direcciones de los repositorios ni uses una actualización de distribución como atajo.</p>
+<h2 id="backup">Copia de seguridad y recuperación</h2>
+<p>Guarda tus archivos importantes en otro dispositivo antes de cambios grandes. Las instantáneas (snapshots), cuando están configuradas, ayudan a recuperar el sistema, pero no sustituyen una copia independiente de los datos. Server 1.1 usa ext4 y no ofrece el flujo de rollback con Snapper de Desktop.</p>
+<p class="doc-source">Referencias: <a href="https://github.com/lyra-os-linux/vega">gestión con Vega</a> y <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-1.1-alpha7.md">límites de migración de la Alpha 7</a> (en portugués).</p>

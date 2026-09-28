@@ -1,0 +1,95 @@
+<!-- Gerado por scripts/build-docs.py. Edite docs/content/ ou scripts/docs-template.html. -->
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16191d">
+  <title>Troubleshooting · Lyra OS Documentation</title>
+  <meta name="description" content="Investigate boot, network and update failures and prepare a useful report for the project.">
+  <link rel="canonical" href="https://lyraos.com.br/docs/en/solucao-de-problemas.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lyraos.com.br/docs/solucao-de-problemas.html">
+  <link rel="alternate" hreflang="en-US" href="https://lyraos.com.br/docs/en/solucao-de-problemas.html">
+  <link rel="alternate" hreflang="es-ES" href="https://lyraos.com.br/docs/es/solucao-de-problemas.html">
+  <link rel="alternate" hreflang="it-IT" href="https://lyraos.com.br/docs/it/solucao-de-problemas.html">
+  <link rel="alternate" hreflang="x-default" href="https://lyraos.com.br/docs/solucao-de-problemas.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Troubleshooting · Lyra OS Documentation">
+  <meta property="og:description" content="Investigate boot, network and update failures and prepare a useful report for the project.">
+  <meta property="og:image" content="https://lyraos.com.br/assets/press-kit-og.png">
+  <meta property="og:locale" content="en_US">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/docs.css">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script>window.LyraDocsStrings = {"search_one": "guide found", "search_many": "guides found", "search_none": "No guides found. Try another term or browse the topics.", "Ativar tema claro": "Enable light theme", "Ativar tema escuro": "Enable dark theme"}; window.LyraI18n = window.LyraI18n || { t: (value) => window.LyraDocsStrings[value] || value };</script>
+  <script src="../../js/main.js" defer></script>
+  <script src="search-index.js" defer></script>
+  <script src="../../js/docs.js" defer></script>
+</head>
+<body class="docs-page" id="topo">
+  <a class="skip-link" href="#conteudo">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../../index.html?lang=en-US" aria-label="Lyra OS, home"><img class="brand-mark" src="../../assets/favicon.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>Lyra <em>OS</em></strong><small>Documentation</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="../../index.html?lang=en-US">The project</a><a href="index.html" aria-current="true">Documentation</a><a href="../../index.html?lang=en-US#download" class="nav-cta">Download ↗</a>
+        <div class="docs-language" role="group" aria-label="Documentation language"><a href="../solucao-de-problemas.html" lang="pt-BR" hreflang="pt-BR" title="Português"><abbr title="Português">PT</abbr></a><a href="../en/solucao-de-problemas.html" lang="en-US" hreflang="en-US" title="English" aria-current="page"><abbr title="English">EN</abbr></a><a href="../es/solucao-de-problemas.html" lang="es-ES" hreflang="es-ES" title="Español"><abbr title="Español">ES</abbr></a><a href="../it/solucao-de-problemas.html" lang="it-IT" hreflang="it-IT" title="Italiano"><abbr title="Italiano">IT</abbr></a></div>
+        <button class="theme-toggle" type="button" aria-label="Enable light theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Theme</span></button>
+      </nav>
+    </div>
+  </header>
+  <div class="container docs-layout">
+    <aside class="docs-sidebar">
+      <a class="docs-home" href="index.html">Documentation hub</a>
+      <p class="docs-version"><span class="status-dot"></span> Lyra OS 1.1 · In development</p>
+      <details class="docs-navigation" open><summary>Browse the guides</summary><nav aria-label="Documentation guides"><p class="docs-nav-group">Start here</p><ul><li><a href="primeiros-passos.html">Getting started</a></li><li><a href="instalacao.html">Install Lyra OS</a></li><li><a href="server.html">Lyra OS Server</a></li></ul><p class="docs-nav-group">How-to guides</p><ul><li><a href="atualizacoes.html">Apps and updates</a></li><li><a href="solucao-de-problemas.html" aria-current="page">Troubleshooting</a></li></ul><p class="docs-nav-group">Reference</p><ul><li><a href="referencia.html">Requirements and technical terms</a></li></ul><p class="docs-nav-group">Understand Lyra</p><ul><li><a href="vega.html">Meet Vega</a></li><li><a href="versoes.html">Versions and support</a></li></ul><p class="docs-nav-group">Contribute</p><ul><li><a href="contribuir.html">Contribute to the documentation</a></li></ul></nav></details>
+      <a class="docs-help" href="contribuir.html">Help improve these guides ↗</a>
+    </aside>
+    <main id="conteudo" class="docs-main">
+      <div class="docs-search" hidden>
+        <label for="docs-search-input">Search the documentation</label>
+        <div class="docs-search-field"><span aria-hidden="true">⌕</span><input id="docs-search-input" type="search" placeholder="Installation, network, Vega…" autocomplete="off" maxlength="160" aria-controls="docs-search-results"><kbd aria-hidden="true">/</kbd></div>
+        <div id="docs-search-results" hidden><p id="docs-search-status" role="status" aria-live="polite" aria-atomic="true"></p><ul id="docs-search-list"></ul></div>
+      </div>
+      <noscript><p class="doc-note">Search requires JavaScript. All guides are available through the navigation and the links on this page.</p></noscript>
+      <nav class="docs-breadcrumb" aria-label="Breadcrumb"><a href="../../index.html?lang=en-US">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentation</a><span aria-hidden="true">/</span><span aria-current="page">Troubleshooting</span></nav>
+      <header class="docs-heading"><p class="eyebrow">How-to guides</p><h1>Troubleshooting</h1><p class="docs-lede">Investigate boot, network and update failures and prepare a useful report for the project.</p><div class="docs-meta"><span>Diagnostics</span><span>Desktop and Server · Lyra OS 1.1</span><span>Documentation review: <time datetime="2026-09-28">Sep 28, 2026</time></span><span>Translated from the Portuguese version reviewed on <time datetime="2026-09-27">Sep 27, 2026</time></span></div></header>
+      <nav class="docs-toc" aria-label="On this page"><strong>On this page</strong><ul><li><a href="#boot">The media does not boot</a></li><li><a href="#rede">No network connection</a></li><li><a href="#pacotes">An update failed</a></li><li><a href="#diagnostico">Gather system information</a></li><li><a href="#relatar">Report a reproducible problem</a></li></ul></nav>
+      <div class="doc-content"><h2 id="boot">The media does not boot</h2>
+<ol><li>Check the ISO checksum as described in the <a href="instalacao.html#download">installation guide</a>.</li><li>Confirm that the image was written to the USB drive and that the firmware is booting from the correct UEFI entry.</li><li>In a VM, check UEFI, memory and that the ISO is attached to the optical drive.</li><li>Record the message shown, the machine model and the Secure Boot state.</li></ol>
+<h2 id="rede">No network connection</h2>
+<p>Check the cable or the Wi-Fi connection in the settings. On the Server, confirm that the network provides DHCP. To look up the interface addresses:</p>
+<pre><code>ip -brief address</code></pre>
+<p>If there is an address but the repositories do not respond, note whether the error mentions DNS, connection or certificate. Also check the system date and time. This information helps distinguish network failures from an unavailable repository.</p>
+<h2 id="pacotes">An update failed</h2>
+<p>Wait for other package operations to finish and try again. Do not delete lock files or force the package manager to quit. Copy the error message and the name of the repository involved.</p>
+<p>Read the guidance on <a href="atualizacoes.html#repositorios">package sources</a> before accepting a new key, removing repositories or changing the base.</p>
+<h2 id="diagnostico">Gather system information</h2>
+<p>To identify the version, the kernel and failed services, run:</p>
+<pre><code>cat /etc/os-release
+uname -r
+systemctl --failed</code></pre>
+<p>If your image includes <code>lyra-report</code>, run it as a regular user:</p>
+<pre><code>lyra-report</code></pre>
+<p>The tool shows the collected data for review before creating a local file and does not upload anything automatically. If the command is not available, use the basic information above; you do not need to install development components to report a failure.</p>
+<h2 id="relatar">Report a reproducible problem</h2>
+<p>Open an issue in the corresponding repository: <a href="https://github.com/lyra-os-linux/lyraos-desktop/issues">Desktop</a>, <a href="https://github.com/lyra-os-linux/lyraos-server/issues">Server</a> or <a href="https://github.com/lyra-os-linux/vega/issues">Vega</a>. Search for a similar report first.</p>
+<p>Include the information below:</p>
+<pre><code>Lyra OS edition and version:
+ISO name, if the failure happened during installation:
+Computer model or VM configuration:
+UEFI and Secure Boot state:
+Steps to reproduce:
+Expected result:
+Observed result and error message:</code></pre>
+<p>Review screenshots and logs before publishing. Remove passwords, tokens, keys and personal data, even when the tool applies anonymization. Share only the files needed to explain the problem.</p>
+<p class="doc-source">Reference: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/diagnostics.md">diagnostics with lyra-report</a>.</p>
+</div>
+      <footer class="doc-article-footer"><p>This guide can get better with your experience.</p><div><a href="https://github.com/lyra-os-linux/site/edit/main/docs/content/en/solucao-de-problemas.html">Suggest an edit ↗</a><a href="https://github.com/lyra-os-linux/site/commits/main/docs/content/en/solucao-de-problemas.html">History ↗</a><a href="contribuir.html">How to contribute</a></div></footer>
+    </main>
+  </div>
+  <footer class="docs-footer container"><span>Lyra OS · Harmony. Performance. Freedom.</span><a href="#topo">Back to top ↑</a></footer>
+</body>
+</html>

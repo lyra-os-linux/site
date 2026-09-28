@@ -86,8 +86,9 @@ Fluxo: editar fonte → gerar → verificar links e navegação → revisar a al
 oferece edição e histórico. A mudança de uma funcionalidade deve trazer a revisão
 do guia afetado; cada candidata deve revisar instalação, atualização e recuperação.
 
-Português é o idioma inicial. Novas traduções devem registrar sua versão de
-origem e ser revisadas junto dela. Quando houver mais de uma linha efetivamente
+Português é o idioma de origem. As traduções para inglês, espanhol e italiano
+registram no catálogo a revisão do original usada (`source_reviewed`) e são
+sinalizadas quando o original fica mais recente; devem ser revisadas junto dele. Quando houver mais de uma linha efetivamente
 documentada, introduzir seleção de versão e arquivo histórico, preservando links.
 Não criar seletores sem conteúdo correspondente.
 

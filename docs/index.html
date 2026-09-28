@@ -8,14 +8,21 @@
   <title>Um lugar para aprender e consultar. · Documentação Lyra OS</title>
   <meta name="description" content="Instale, conheça e cuide do seu Lyra OS. Guias para os primeiros passos, tarefas do dia a dia e administração do sistema.">
   <link rel="canonical" href="https://lyraos.com.br/docs/index.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://lyraos.com.br/docs/index.html">
+  <link rel="alternate" hreflang="en-US" href="https://lyraos.com.br/docs/en/index.html">
+  <link rel="alternate" hreflang="es-ES" href="https://lyraos.com.br/docs/es/index.html">
+  <link rel="alternate" hreflang="it-IT" href="https://lyraos.com.br/docs/it/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://lyraos.com.br/docs/index.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Um lugar para aprender e consultar. · Documentação Lyra OS">
   <meta property="og:description" content="Instale, conheça e cuide do seu Lyra OS. Guias para os primeiros passos, tarefas do dia a dia e administração do sistema.">
   <meta property="og:image" content="https://lyraos.com.br/assets/press-kit-og.png">
+  <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/docs.css">
   <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script>window.LyraDocsStrings = {"search_one": "guia encontrado", "search_many": "guias encontrados", "search_none": "Nenhum guia encontrado. Tente outro termo ou navegue pelos assuntos.", "Ativar tema claro": "Ativar tema claro", "Ativar tema escuro": "Ativar tema escuro"}; window.LyraI18n = window.LyraI18n || { t: (value) => window.LyraDocsStrings[value] || value };</script>
   <script src="../js/main.js" defer></script>
   <script src="search-index.js" defer></script>
   <script src="../js/docs.js" defer></script>
@@ -28,7 +35,7 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Abrir menu</span><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
         <a href="../index.html">O projeto</a><a href="index.html" aria-current="true">Documentação</a><a href="../index.html#download" class="nav-cta">Download ↗</a>
-        <span class="docs-language">Português · BR</span>
+        <div class="docs-language" role="group" aria-label="Idioma da documentação"><a href="index.html" lang="pt-BR" hreflang="pt-BR" title="Português" aria-current="page"><abbr title="Português">PT</abbr></a><a href="en/index.html" lang="en-US" hreflang="en-US" title="English"><abbr title="English">EN</abbr></a><a href="es/index.html" lang="es-ES" hreflang="es-ES" title="Español"><abbr title="Español">ES</abbr></a><a href="it/index.html" lang="it-IT" hreflang="it-IT" title="Italiano"><abbr title="Italiano">IT</abbr></a></div>
         <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">Tema</span></button>
       </nav>
     </div>
@@ -49,9 +56,7 @@
       <noscript><p class="doc-note">A busca precisa de JavaScript. Todos os guias estão disponíveis pela navegação e pelos links desta página.</p></noscript>
       <nav class="docs-breadcrumb" aria-label="Localização"><a href="../index.html">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentação</a></nav>
       <header class="docs-heading"><p class="eyebrow">Documentação / Lyra OS</p><h1>Um lugar para aprender e consultar.</h1><p class="docs-lede">Instale, conheça e cuide do seu Lyra OS. Guias para os primeiros passos, tarefas do dia a dia e administração do sistema.</p></header>
-
       <div class="doc-content"><a class="docs-start" href="instalacao.html"><span><small>SEU PRIMEIRO LYRA</small><strong>Da imagem ISO ao primeiro boot.</strong><span>Comece pelo guia de instalação do Desktop.</span></span><span aria-hidden="true">→</span></a><section class="doc-category"><h2>Comece aqui</h2><div class="doc-cards"><a class="doc-card" href="primeiros-passos.html"><span class="doc-card-type">Tutorial</span><h3>Primeiros passos</h3><p>Conheça as edições, confira os requisitos e prepare seu primeiro contato com o Lyra OS.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a><a class="doc-card" href="instalacao.html"><span class="doc-card-type">Tutorial</span><h3>Instalar o Lyra OS</h3><p>Do download da ISO ao primeiro boot: integridade, mídia de instalação e disco de destino.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a><a class="doc-card" href="server.html"><span class="doc-card-type">Tutorial</span><h3>Lyra OS Server</h3><p>Instale a edição para servidores e comece a administrar pelo console com o Vega CLI.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a></div></section><section class="doc-category"><h2>Guias práticos</h2><div class="doc-cards"><a class="doc-card" href="atualizacoes.html"><span class="doc-card-type">Procedimento</span><h3>Aplicativos e atualizações</h3><p>Gerencie pacotes e entenda a diferença entre atualizar o sistema e migrar de versão.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a><a class="doc-card" href="solucao-de-problemas.html"><span class="doc-card-type">Diagnóstico</span><h3>Solução de problemas</h3><p>Investigue falhas de boot, rede e atualizações e prepare um relato útil para o projeto.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a></div></section><section class="doc-category"><h2>Referência</h2><div class="doc-cards"><a class="doc-card" href="referencia.html"><span class="doc-card-type">Referência técnica</span><h3>Requisitos e termos técnicos</h3><p>Consulte os requisitos de hardware e o significado dos termos usados nos guias.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a></div></section><section class="doc-category"><h2>Entenda o Lyra</h2><div class="doc-cards"><a class="doc-card" href="vega.html"><span class="doc-card-type">Explicação</span><h3>Conheça o Vega</h3><p>Encontre as configurações de software, rede, hardware e serviços no centro de controle.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a><a class="doc-card" href="versoes.html"><span class="doc-card-type">Explicação</span><h3>Versões e suporte</h3><p>Entenda Alpha, Beta, RC, a numeração do Lyra e sua relação com a base openSUSE.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a></div></section><section class="doc-category"><h2>Contribua</h2><div class="doc-cards"><a class="doc-card" href="contribuir.html"><span class="doc-card-type">Procedimento</span><h3>Contribuir com a documentação</h3><p>Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.</p><span class="doc-card-arrow" aria-hidden="true">↗</span></a></div></section></div>
-
     </main>
   </div>
   <footer class="docs-footer container"><span>Lyra OS · Harmonia. Performance. Liberdade.</span><a href="#topo">Voltar ao topo ↑</a></footer>

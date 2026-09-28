@@ -1,0 +1,29 @@
+<h2 id="boot">El medio no arranca</h2>
+<ol><li>Comprueba el checksum de la ISO según la <a href="instalacao.html#download">guía de instalación</a>.</li><li>Confirma que la imagen se grabó en la memoria USB y que el firmware arranca desde la entrada UEFI correcta.</li><li>En una VM, revisa UEFI, la memoria y la conexión de la ISO a la unidad óptica.</li><li>Anota el mensaje mostrado, el modelo de la máquina y el estado de Secure Boot.</li></ol>
+<h2 id="rede">Sin conexión de red</h2>
+<p>Revisa el cable o la conexión Wi-Fi en la configuración. En Server, confirma que la red proporciona DHCP. Para consultar las direcciones de las interfaces:</p>
+<pre><code>ip -brief address</code></pre>
+<p>Si hay dirección, pero los repositorios no responden, anota si el error menciona DNS, conexión o certificado. Comprueba también la fecha y la hora del sistema. Esta información ayuda a distinguir fallos de red de la indisponibilidad de un repositorio.</p>
+<h2 id="pacotes">Una actualización falló</h2>
+<p>Espera a que terminen otras operaciones de paquetes e inténtalo de nuevo. No borres archivos de bloqueo ni cierres el gestor a la fuerza. Copia el mensaje de error y la identificación del repositorio implicado.</p>
+<p>Consulta las indicaciones sobre <a href="atualizacoes.html#repositorios">orígenes de paquetes</a> antes de aceptar una clave nueva, eliminar repositorios o cambiar la base.</p>
+<h2 id="diagnostico">Reúne información del sistema</h2>
+<p>Para identificar la versión, el kernel y los servicios con fallos, ejecuta:</p>
+<pre><code>cat /etc/os-release
+uname -r
+systemctl --failed</code></pre>
+<p>Si tu imagen incluye <code>lyra-report</code>, ejecútalo como usuario normal:</p>
+<pre><code>lyra-report</code></pre>
+<p>La herramienta muestra los datos recopilados para su revisión antes de crear un archivo local y no los sube automáticamente. Si el comando no está disponible, usa la información básica anterior; no es necesario instalar componentes de desarrollo para informar de un fallo.</p>
+<h2 id="relatar">Informa de un problema reproducible</h2>
+<p>Abre una issue en el repositorio correspondiente: <a href="https://github.com/lyra-os-linux/lyraos-desktop/issues">Desktop</a>, <a href="https://github.com/lyra-os-linux/lyraos-server/issues">Server</a> o <a href="https://github.com/lyra-os-linux/vega/issues">Vega</a>. Busca primero un informe similar.</p>
+<p>Incluye la información siguiente:</p>
+<pre><code>Edición y versión de Lyra OS:
+Nombre de la ISO, si el fallo ocurrió en la instalación:
+Modelo del ordenador o configuración de la VM:
+UEFI y estado de Secure Boot:
+Pasos para reproducir:
+Resultado esperado:
+Resultado observado y mensaje de error:</code></pre>
+<p>Revisa las capturas y los registros antes de publicarlos. Elimina contraseñas, tokens, claves y datos personales, incluso cuando la herramienta aplique anonimización. Comparte solo los archivos necesarios para explicar el problema.</p>
+<p class="doc-source">Referencia: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/diagnostics.md">diagnóstico con lyra-report</a>.</p>

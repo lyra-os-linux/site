@@ -2,9 +2,12 @@
 
 Leia [o estudo e a direção editorial](documentation-strategy.md) antes de criar
 novos guias. O conteúdo público está em `content/*.html`; títulos, categorias,
-escopo e revisão ficam em `content/catalog.json`. O template compartilhado está
-em `scripts/docs-template.html`. As páginas HTML diretamente em `docs/` e
-`search-index.js` são geradas e devem acompanhar as fontes no commit.
+escopo e revisão ficam em `content/catalog.json`. O português é a origem; as
+traduções ficam em `content/en/`, `content/es/` e `content/it/`, com catálogos
+próprios, e os textos da interface de cada idioma em `content/locales.json`.
+O template compartilhado está em `scripts/docs-template.html`. As páginas HTML
+em `docs/`, `docs/en/`, `docs/es/` e `docs/it/` e os arquivos `search-index.js`
+são gerados e devem acompanhar as fontes no commit.
 
 Na raiz do repositório, execute:
 
@@ -23,3 +26,9 @@ Para adicionar um guia, crie um fragmento HTML e uma entrada no catálogo. Use
 `h2` com IDs estáveis para o sumário automático; o título principal vem do
 catálogo. Atualize `reviewed` quando revisar o texto e suas fontes. Não remova
 URLs ou IDs publicados sem preservar o acesso anterior.
+
+Ao revisar um guia em português, atualize as traduções no mesmo commit ou deixe
+o `source_reviewed` delas como está: o build avisa e as páginas traduzidas
+exibem um alerta com link para o original. Ao traduzir, preserve nomes de
+arquivo, IDs dos `h2` e comandos, e atualize `source_reviewed` para a data de
+`reviewed` do original usado.

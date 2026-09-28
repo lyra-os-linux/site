@@ -1,0 +1,17 @@
+<h2 id="aplicativos">Install apps with Vega</h2>
+<p>Open Vega and go to the software area. Search for the app, check its source and review the operation before confirming. Vega manages RPM packages via Zypper and Flatpak apps when that support is available.</p>
+<p>RPMs are part of the distribution's package system. Flatpaks use their own repositories and runtimes. The same app may appear from more than one source; choose the one you intend to keep to avoid duplicate installations.</p>
+<h2 id="atualizar">Update the installed system</h2>
+<ol><li>Connect the computer to the network and to a power source.</li><li>Open the Vega updates area and refresh the list of available updates.</li><li>Read the summary and confirm the changes you want.</li><li>Wait for the result. Restart if the tool asks you to or if an update needs a new boot to take effect.</li></ol>
+<p>If you prefer the terminal, the update flow for RPM packages is:</p>
+<pre><code>sudo zypper refresh
+sudo zypper update</code></pre>
+<p>The first command refreshes the repository metadata; the second presents the updates for confirmation. They do not update Flatpak apps. Do not run another package operation through Vega at the same time.</p>
+<h2 id="repositorios">Take care of package sources</h2>
+<p>Keep the repositories that match the base of your installation. Do not add repositories from another Leap version to get a single package. If an unknown key or an unexpected change of source appears, check the project's announcement before accepting.</p>
+<h2 id="migracao">Updating is not upgrading to a new version</h2>
+<div class="doc-note"><strong>Changing the base requires a specific procedure.</strong> Updating packages does not mean you can migrate between openSUSE Leap versions or between Lyra candidates. Wait for a documented migration path for your source and target.</div>
+<p>The Alpha 7 notes state that migrating existing installations from the Leap 16.0 base to 16.1 depends on specific validation. Do not change the repository addresses or use a distribution upgrade as a shortcut.</p>
+<h2 id="backup">Backup and recovery</h2>
+<p>Keep your important files on another device before major changes. Snapshots, when configured, help recover the system, but they do not replace an independent copy of the data. Server 1.1 uses ext4 and does not offer the Desktop's Snapper rollback flow.</p>
+<p class="doc-source">References: <a href="https://github.com/lyra-os-linux/vega">management with Vega</a> and <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-1.1-alpha7.md">Alpha 7 migration limits</a> (in Portuguese).</p>

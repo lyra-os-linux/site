@@ -1,0 +1,29 @@
+<h2 id="boot">The media does not boot</h2>
+<ol><li>Check the ISO checksum as described in the <a href="instalacao.html#download">installation guide</a>.</li><li>Confirm that the image was written to the USB drive and that the firmware is booting from the correct UEFI entry.</li><li>In a VM, check UEFI, memory and that the ISO is attached to the optical drive.</li><li>Record the message shown, the machine model and the Secure Boot state.</li></ol>
+<h2 id="rede">No network connection</h2>
+<p>Check the cable or the Wi-Fi connection in the settings. On the Server, confirm that the network provides DHCP. To look up the interface addresses:</p>
+<pre><code>ip -brief address</code></pre>
+<p>If there is an address but the repositories do not respond, note whether the error mentions DNS, connection or certificate. Also check the system date and time. This information helps distinguish network failures from an unavailable repository.</p>
+<h2 id="pacotes">An update failed</h2>
+<p>Wait for other package operations to finish and try again. Do not delete lock files or force the package manager to quit. Copy the error message and the name of the repository involved.</p>
+<p>Read the guidance on <a href="atualizacoes.html#repositorios">package sources</a> before accepting a new key, removing repositories or changing the base.</p>
+<h2 id="diagnostico">Gather system information</h2>
+<p>To identify the version, the kernel and failed services, run:</p>
+<pre><code>cat /etc/os-release
+uname -r
+systemctl --failed</code></pre>
+<p>If your image includes <code>lyra-report</code>, run it as a regular user:</p>
+<pre><code>lyra-report</code></pre>
+<p>The tool shows the collected data for review before creating a local file and does not upload anything automatically. If the command is not available, use the basic information above; you do not need to install development components to report a failure.</p>
+<h2 id="relatar">Report a reproducible problem</h2>
+<p>Open an issue in the corresponding repository: <a href="https://github.com/lyra-os-linux/lyraos-desktop/issues">Desktop</a>, <a href="https://github.com/lyra-os-linux/lyraos-server/issues">Server</a> or <a href="https://github.com/lyra-os-linux/vega/issues">Vega</a>. Search for a similar report first.</p>
+<p>Include the information below:</p>
+<pre><code>Lyra OS edition and version:
+ISO name, if the failure happened during installation:
+Computer model or VM configuration:
+UEFI and Secure Boot state:
+Steps to reproduce:
+Expected result:
+Observed result and error message:</code></pre>
+<p>Review screenshots and logs before publishing. Remove passwords, tokens, keys and personal data, even when the tool applies anonymization. Share only the files needed to explain the problem.</p>
+<p class="doc-source">Reference: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/diagnostics.md">diagnostics with lyra-report</a>.</p>

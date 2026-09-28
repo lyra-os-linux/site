@@ -1,0 +1,20 @@
+<h2 id="perfil">An edition for service administration</h2>
+<p>Lyra OS Server is an edition without a graphical environment. It is administered through the console, Vega CLI and Vega Web. The 1.1 Beta 1.1 candidate uses the openSUSE Leap 16.1 base and keeps the functional scope of Beta 1.</p>
+<div class="doc-note"><strong>Storage in the Server 1.1 series:</strong> whole-disk UEFI installation, with GPT, an EFI partition and an ext4 root. RAID, LVM, Btrfs, Snapper, legacy BIOS and unattended installation are outside the documented flow for this candidate.</div>
+<h2 id="instalar">Install the Server</h2>
+<ol><li>Check the <a href="primeiros-passos.html#requisitos">requirements</a>, prepare a dedicated disk and back up. The contents of the chosen disk will be erased.</li><li>Download the Server image from the <a href="../../index.html?lang=en-US#download">downloads section</a> and verify the integrity files from the same release.</li><li>Write the ISO and boot in UEFI mode. The installer is interactive and runs in the console.</li><li>Enter the language, keyboard, time zone, hostname and account details requested.</li><li>Review the chosen disk and confirm the installation only after checking the summary.</li><li>When it finishes, restart from the installed disk and log in with the account you created.</li></ol>
+<p>Prepare Ethernet with DHCP for the initial setup. Network adjustments, such as a static address, are made after installation.</p>
+<h2 id="administrar">Manage with Vega CLI</h2>
+<p>On a local interactive console or in an already configured SSH session, run as your user:</p>
+<pre><code>vega</code></pre>
+<p>Use the menus to check the system state and manage the available functions. Authentication is requested for each privileged operation.</p>
+<h2 id="verificar">Check the first boot</h2>
+<p>These commands query the system state without changing the configuration:</p>
+<pre><code>cat /etc/os-release
+ip -brief address
+systemctl --failed</code></pre>
+<p>Check the installed version, the address received by the network interface and any failed services. The initial policy described by the project allows SSH and Vega Web on port 9090/tcp; confirm the actual state of the firewall and services on your installation before remote access.</p>
+<p>Vega Web is intended for administration on the local network. See its documentation to configure HTTPS access and authentication: <a href="https://github.com/lyra-os-linux/vega-web">Vega Web guide</a>.</p>
+<h2 id="manutencao">Keep a recovery copy</h2>
+<p>Plan backups of the data and of the service configurations. This edition does not offer Snapper rollback or automatic downgrade of an installation on the new base. See <a href="atualizacoes.html">updates</a> and <a href="solucao-de-problemas.html">troubleshooting</a>.</p>
+<p class="doc-source">References: <a href="https://github.com/lyra-os-linux/lyraos-server/blob/main/docs/releases/lyra-os-server-1.1-beta.1.1.md">Server Beta 1.1 release notes</a> and <a href="https://github.com/lyra-os-linux/lyraos-server/blob/main/docs/server-edition.md">Server architecture</a> (in Portuguese).</p>

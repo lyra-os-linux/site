@@ -28,7 +28,7 @@ class Page(HTMLParser):
             self.links.append(attrs['src'])
 
 
-pages = {path: Page(path) for path in [ROOT / 'index.html', *sorted((ROOT / 'docs').glob('*.html'))]}
+pages = {path: Page(path) for path in [ROOT / 'index.html', *sorted(p for p in (ROOT / 'docs').rglob('*.html') if 'content' not in p.relative_to(ROOT / 'docs').parts)]}
 count = 0
 for path, page in list(pages.items()):
     assert page.h1 == 1, f'{path}: expected one h1, found {page.h1}'

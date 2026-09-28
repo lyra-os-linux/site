@@ -3,6 +3,8 @@
   const results = document.querySelector('#docs-search-results');
   const list = document.querySelector('#docs-search-list');
   const status = document.querySelector('#docs-search-status');
+  const strings = { search_one: 'guia encontrado', search_many: 'guias encontrados',
+    search_none: 'Nenhum guia encontrado. Tente outro termo ou navegue pelos assuntos.', ...window.LyraDocsStrings };
   const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const entries = (window.LyraDocsIndex || []).map((entry) => ({ ...entry,
     normalizedTitle: normalize(entry.title),
@@ -18,7 +20,7 @@
       const terms = query.split(/\s+/);
       const matches = entries.filter((entry) => terms.every((term) => entry.haystack.includes(term)))
         .sort((a, b) => Number(b.normalizedTitle.includes(query)) - Number(a.normalizedTitle.includes(query)));
-      status.textContent = matches.length ? `${matches.length} ${matches.length === 1 ? 'guia encontrado' : 'guias encontrados'}.` : 'Nenhum guia encontrado. Tente outro termo ou navegue pelos assuntos.';
+      status.textContent = matches.length ? `${matches.length} ${matches.length === 1 ? strings.search_one : strings.search_many}.` : strings.search_none;
       for (const entry of matches) {
         const item = document.createElement('li');
         const link = document.createElement('a');
