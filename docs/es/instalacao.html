@@ -55,7 +55,7 @@
       </div>
       <noscript><p class="doc-note">La búsqueda necesita JavaScript. Todas las guías están disponibles en la navegación y en los enlaces de esta página.</p></noscript>
       <nav class="docs-breadcrumb" aria-label="Ubicación"><a href="../../index.html?lang=es-ES">Lyra OS</a><span aria-hidden="true">/</span><a href="index.html">Documentación</a><span aria-hidden="true">/</span><span aria-current="page">Instalar Lyra OS</span></nav>
-      <header class="docs-heading"><p class="eyebrow">Empieza aquí</p><h1>Instalar Lyra OS</h1><p class="docs-lede">De la descarga de la ISO al primer arranque: integridad, medio de instalación y disco de destino.</p><div class="docs-meta"><span>Tutorial</span><span>Desktop GNOME · 1.1 Alpha 7</span><span>Revisión documental: <time datetime="2026-09-28">28/09/2026</time></span><span>Traducido de la versión en portugués revisada el <time datetime="2026-09-27">27/09/2026</time></span></div></header>
+      <header class="docs-heading"><p class="eyebrow">Empieza aquí</p><h1>Instalar Lyra OS</h1><p class="docs-lede">De la descarga de la ISO al primer arranque: integridad, medio de instalación y disco de destino.</p><div class="docs-meta"><span>Tutorial</span><span>Desktop GNOME · 1.1 Alpha 8</span><span>Revisión documental: <time datetime="2026-09-28">28/09/2026</time></span><span>Traducido de la versión en portugués revisada el <time datetime="2026-09-27">27/09/2026</time></span></div></header>
       <nav class="docs-toc" aria-label="En esta página"><strong>En esta página</strong><ul><li><a href="#preparacao">1. Prepara el ordenador</a></li><li><a href="#download">2. Descarga y verifica la ISO</a></li><li><a href="#midia">3. Graba el medio y arranca en UEFI</a></li><li><a href="#instalador">4. Sigue el Lyra Installer</a></li><li><a href="#apos-instalar">5. Revisa el sistema instalado</a></li></ul></nav>
       <div class="doc-content"><h2 id="preparacao">1. Prepara el ordenador</h2>
 <p>Revisa los <a href="primeiros-passos.html#requisitos">requisitos de la edición</a>, una conexión de red y una memoria USB con capacidad para la ISO. Una máquina virtual con un disco exclusivo también sirve para probar.</p>
@@ -63,9 +63,9 @@
 <p>Esta guía cubre Desktop con GNOME. Para el instalador en consola y los límites de almacenamiento de la otra edición, consulta <a href="server.html#instalar">Instalar Server</a>. No uses este procedimiento como instrucciones de arranque dual ni de particionado manual.</p>
 <h2 id="download">2. Descarga y verifica la ISO</h2>
 <p>Ve a la <a href="../../index.html?lang=es-ES#download">sección de descargas del sitio</a>. Descarga la ISO y el archivo de checksum correspondiente del directorio de la misma publicación en SourceForge.</p>
-<p>En Linux, abre una terminal en la carpeta donde están los dos archivos. Ejemplo para la imagen Desktop Alpha 7:</p>
-<pre><code>sha256sum -c LyraOS-Desktop-1.1-alpha.7-x86_64.iso.sha256</code></pre>
-<p>El nombre debe coincidir exactamente con el archivo descargado. Continúa solo si la verificación indica <strong>OK</strong>. Si hay diferencias, vuelve a descargar los archivos. El checksum verifica la integridad; según sus notas de lanzamiento, la Alpha 7 no tiene una firma GPG separada de la ISO.</p>
+<p>En Linux, abre una terminal en la carpeta donde están los dos archivos. Ejemplo para la imagen Desktop Alpha 8:</p>
+<pre><code>sha256sum -c LyraOS-Desktop-1.1-alpha.8-x86_64.iso.sha256</code></pre>
+<p>El nombre debe coincidir exactamente con el archivo descargado. Continúa solo si la verificación indica <strong>OK</strong>. Si hay diferencias, vuelve a descargar los archivos. El checksum verifica la integridad; según sus notas de lanzamiento, la Alpha 8 no tiene una firma GPG separada de la ISO.</p>
 <h2 id="midia">3. Graba el medio y arranca en UEFI</h2>
 <ol><li>Abre una herramienta para grabar imágenes de disco. En Discos de GNOME, selecciona la memoria USB y usa la opción de restaurar una imagen de disco.</li><li>Selecciona la ISO y vuelve a comprobar el dispositivo de destino antes de confirmar. Copiar el archivo ISO a una carpeta de la memoria USB no sustituye la grabación de la imagen.</li><li>Espera a que termine la grabación, expulsa el medio y reinicia el ordenador.</li><li>Abre el menú de arranque del firmware y selecciona la entrada UEFI del medio. La tecla varía según el fabricante.</li></ol>
 <p>En una máquina virtual, conecta la ISO como unidad óptica y habilita UEFI. Secure Boot forma parte del flujo previsto por el proyecto; registra cualquier fallo de arranque para su investigación.</p>
@@ -74,7 +74,7 @@
 <p>Las pantallas pueden cambiar entre candidatas. Los vídeos de la <a href="../../index.html?lang=es-ES#download">página de descargas</a> muestran versiones anteriores y sirven como referencia visual.</p>
 <h2 id="apos-instalar">5. Revisa el sistema instalado</h2>
 <p>Inicia sesión con la cuenta creada, prueba la red y abre Vega. Sigue los <a href="primeiros-passos.html#primeiro-acesso">primeros pasos después de la instalación</a>. Si el instalador falla, anota la etapa y el mensaje antes de reiniciar; consulta cómo <a href="solucao-de-problemas.html#relatar">informar del problema</a>.</p>
-<p class="doc-source">Referencia: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-1.1-alpha7.md">notas de Desktop 1.1 Alpha 7</a> (en portugués).</p>
+<p class="doc-source">Referencia: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-1.1-alpha.8.md">notas de Desktop 1.1 Alpha 8</a> (en portugués).</p>
 </div>
       <footer class="doc-article-footer"><p>Esta guía puede mejorar con tu experiencia.</p><div><a href="https://github.com/lyra-os-linux/site/edit/main/docs/content/es/instalacao.html">Sugerir una edición ↗</a><a href="https://github.com/lyra-os-linux/site/commits/main/docs/content/es/instalacao.html">Historial ↗</a><a href="contribuir.html">Cómo contribuir</a></div></footer>
     </main>
