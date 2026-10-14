@@ -49,7 +49,7 @@ estiver formalmente definida. A geração poderá evoluir por releases 1.x com
 caminhos suportados de atualização.
 
 O Lyra OS 1.1 terá suporte comunitário, sem prazo contratual ou EOL prometido.
-Seu lançamento está previsto para **20 de fevereiro de 2027**, condicionado ao
+Seu lançamento está previsto para **5 de novembro de 2026**, condicionado ao
 gate completo; a data não promove uma candidata que ainda tenha bloqueadores.
 
 ## Histórico
