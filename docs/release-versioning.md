@@ -1,62 +1,59 @@
-# Versionamento e roadmap do Lyra OS
+# Versionamento de releases do Lyra OS
 
-## Identidade da geração atual
+## Política oficial
 
-- Produto: **Lyra OS 1 — Odisseia**
-- Primeira versão estável planejada: **Lyra OS 1.1**
-- Base tecnológica da 1.1: **openSUSE Leap 16.x**
-- Estado: em desenvolvimento
+Desde a decisão do mantenedor em 13/10/2026, a versão do Lyra OS segue a
+versão do openSUSE Leap usado como base. O formato é `MAJOR.MINOR[.PATCH]`:
 
-Desktop e Server pertencem à mesma geração Odisseia. Cada edição conserva seu
-próprio gate e pode publicar candidatas em momentos diferentes, mas não recebe
-codename próprio.
+- `MAJOR.MINOR`: idêntico ao Leap base (`16.1`, `16.2`, ...);
+- `PATCH`: correção, manutenção ou respin da mesma release, de uso
+  exclusivo do Lyra.
 
-## Política de versão
+Uma versão nova do Leap determina a próxima versão minor do Lyra. Datas
+pertencem ao roadmap ou ao `BUILD_ID`, nunca à versão comercial.
 
-O Lyra OS usa versionamento próprio `MAJOR.MINOR.PATCH`:
+Até outubro de 2026 o ciclo era numerado `1.1`, com versionamento independente
+do Leap. As imagens já publicadas com esse número (`1.1-alpha.8` do Desktop e
+`1.1-beta.1.1` do Server) permanecem como registro histórico e não são
+renomeadas; nenhuma candidata nova usa o esquema antigo.
 
-- `MAJOR` identifica uma nova geração do produto;
-- `MINOR` identifica evolução relevante e compatível na mesma geração;
-- `PATCH` identifica manutenção ou respin sem mudança da geração funcional.
+## Geração atual
 
-A versão do openSUSE Leap é registrada separadamente como base tecnológica.
-Uma atualização do Leap pode motivar uma release minor, mas não determina
-automaticamente o número do Lyra OS.
+- geração: **Lyra OS 16** — Odisseia no Desktop, Delos no Server;
+- primeira versão estável planejada: **Lyra OS 16.1**;
+- base tecnológica da 16.1: **openSUSE Leap 16.1**;
+- arquitetura inicial: **x86_64**.
 
-Pré-releases usam `1.1-alpha.1`, `1.1-beta.1` e `1.1-rc.1` em identificadores
-técnicos; a comunicação usa “Lyra OS 1.1 Alpha 1”, “Beta 1” e “RC1”. Datas
-identificam builds e janelas do roadmap, nunca a versão comercial.
+O codename identifica toda a geração: qualquer release `16.x` continua sendo
+Odisseia (Desktop) ou Delos (Server). Desktop e Server compartilham a versão,
+mas possuem gates, tags e ciclos de publicação independentes.
 
-## Roadmap atual
+## Pré-releases
 
-| Lyra OS | Geração | Base | Status |
+Pré-releases usam `16.1-alpha.1`, `16.1-beta.1` e `16.1-rc.1` em identificadores
+técnicos; a comunicação usa “Lyra OS 16.1 Alpha 1”, “Beta 1” e “RC1”. Datas
+não fazem parte da versão. Uma revisão dentro do mesmo estágio acrescenta um
+componente, como `16.1-beta.1.1`.
+
+| Versão | Codename | Base | Situação |
 |---|---|---|---|
-| 1.1 | Odisseia | openSUSE Leap 16.x | Em desenvolvimento |
+| 16.1 | Odisseia (Desktop) / Delos (Server) | openSUSE Leap 16.1 | Em desenvolvimento (RC 1) |
 
-Não há versões posteriores anunciadas. Elas não serão inferidas a partir das
-futuras versões do Leap.
+## Calendário
 
-As etapas Alpha, Beta e RC continuam promovidas por critérios de saída. Uma
-data prevista não autoriza publicar uma candidata incompleta; se o gate não
-estiver verde, a versão mantém o mesmo número e o lançamento é adiado.
+- Desktop 16.1 RC 1 e Server 16.1 RC 1: publicação até 31/10/2026;
+- openSUSE Leap 16.1 GA: 03/11/2026;
+- Lyra OS Desktop 16.1: 05/11/2026;
+- Lyra OS Server 16.1: 19/11/2026 (a RC 1 é promovida por tag quando o gate
+  passa, sem novo build).
 
-## Suporte e EOL
+Uma versão é publicada quando passa pelos critérios de qualidade, não porque
+uma data chegou.
 
-O suporte da base openSUSE, o suporte de uma release Lyra e o ciclo de vida da
-geração 1.x são políticas distintas. O projeto não publica promessa de EOL ou
-de suporte prolongado para o Lyra OS enquanto a capacidade correspondente não
-estiver formalmente definida. A geração poderá evoluir por releases 1.x com
-caminhos suportados de atualização.
+## Suporte
 
-O Lyra OS 1.1 terá suporte comunitário, sem prazo contratual ou EOL prometido.
-Seu lançamento está previsto para **5 de novembro de 2026**, condicionado ao
-gate completo; a data não promove uma candidata que ainda tenha bloqueadores.
-
-## Histórico
-
-Artefatos, tags, evidências e release notes já publicados com identificadores
-calendário permanecem como registros históricos. Eles serão republicados sob
-nomes semânticos, preservando checksums, assinaturas e proveniência para deixar
-explícito quando dois nomes representam o mesmo conteúdo. Eles não definem a política
-das novas candidatas e não devem ser usados para inferir uma equivalência entre
-versões do Lyra OS e do openSUSE Leap.
+O Lyra OS 16.1 terá suporte comunitário, sem prazo contratual ou EOL prometido.
+O suporte da base openSUSE, o suporte de uma release Lyra e o ciclo da geração
+16.x são políticas distintas. Artefatos legados serão preservados e republicados
+com nomes semânticos, mantendo checksums, assinaturas e proveniência
+verificáveis.

@@ -5,7 +5,7 @@
     "description": "Scopri le edizioni, verifica i requisiti e prepara il tuo primo contatto con Lyra OS.",
     "group": "Inizia qui",
     "kind": "Tutorial",
-    "scope": "Desktop GNOME · Lyra OS 1.1",
+    "scope": "Desktop GNOME · Lyra OS 16.1",
     "reviewed": "2026-09-28",
     "source_reviewed": "2026-09-27"
   },
@@ -35,7 +35,7 @@
     "description": "Gestisci i pacchetti e comprendi la differenza tra aggiornare il sistema e migrare a una nuova versione.",
     "group": "Guide pratiche",
     "kind": "Procedura",
-    "scope": "Desktop e Server · Lyra OS 1.1",
+    "scope": "Desktop e Server · Lyra OS 16.1",
     "reviewed": "2026-09-28",
     "source_reviewed": "2026-09-27"
   },
@@ -45,7 +45,7 @@
     "description": "Indaga sui problemi di avvio, rete e aggiornamento e prepara una segnalazione utile per il progetto.",
     "group": "Guide pratiche",
     "kind": "Diagnostica",
-    "scope": "Desktop e Server · Lyra OS 1.1",
+    "scope": "Desktop e Server · Lyra OS 16.1",
     "reviewed": "2026-09-28",
     "source_reviewed": "2026-09-27"
   },
@@ -55,7 +55,7 @@
     "description": "Consulta i requisiti hardware e il significato dei termini usati nelle guide.",
     "group": "Riferimento",
     "kind": "Riferimento tecnico",
-    "scope": "Desktop GNOME e Server · Lyra OS 1.1",
+    "scope": "Desktop GNOME e Server · Lyra OS 16.1",
     "reviewed": "2026-09-28",
     "source_reviewed": "2026-09-27"
   },
@@ -75,7 +75,7 @@
     "description": "Comprendi Alpha, Beta, RC, la numerazione di Lyra e il suo rapporto con la base openSUSE.",
     "group": "Comprendere Lyra",
     "kind": "Spiegazione",
-    "scope": "Lyra OS 1.1",
+    "scope": "Lyra OS 16.1",
     "reviewed": "2026-09-28",
     "source_reviewed": "2026-09-27"
   },
