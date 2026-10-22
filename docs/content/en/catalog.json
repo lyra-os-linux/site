@@ -25,9 +25,9 @@
     "description": "Install the server edition and start managing it from the console with Vega CLI.",
     "group": "Start here",
     "kind": "Tutorial",
-    "scope": "Server · 1.1 Beta 1.1",
-    "reviewed": "2026-09-28",
-    "source_reviewed": "2026-09-27"
+    "scope": "Server · 16.1 RC 2",
+    "reviewed": "2026-10-22",
+    "source_reviewed": "2026-10-22"
   },
   {
     "slug": "atualizacoes",
@@ -76,8 +76,8 @@
     "group": "Understand Lyra",
     "kind": "Explanation",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-09-28",
-    "source_reviewed": "2026-09-27"
+    "reviewed": "2026-10-22",
+    "source_reviewed": "2026-10-22"
   },
   {
     "slug": "contribuir",
