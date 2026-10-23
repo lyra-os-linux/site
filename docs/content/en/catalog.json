@@ -15,9 +15,9 @@
     "description": "From ISO download to first boot: integrity, installation media and target disk.",
     "group": "Start here",
     "kind": "Tutorial",
-    "scope": "Desktop GNOME · 1.1 Alpha 8",
-    "reviewed": "2026-09-28",
-    "source_reviewed": "2026-09-27"
+    "scope": "Desktop GNOME · 16.1 RC 1",
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
   },
   {
     "slug": "server",
@@ -56,8 +56,8 @@
     "group": "Reference",
     "kind": "Technical reference",
     "scope": "Desktop GNOME and Server · Lyra OS 16.1",
-    "reviewed": "2026-09-28",
-    "source_reviewed": "2026-09-27"
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
   },
   {
     "slug": "vega",
@@ -76,8 +76,28 @@
     "group": "Understand Lyra",
     "kind": "Explanation",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-10-22",
-    "source_reviewed": "2026-10-22"
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
+  },
+  {
+    "slug": "notas-desktop",
+    "title": "Desktop 16.1 RC 1",
+    "description": "What is new, limits, qualification and integrity of the GNOME Desktop candidate.",
+    "group": "Releases",
+    "kind": "Release notes",
+    "scope": "Desktop GNOME · 16.1 RC 1",
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
+  },
+  {
+    "slug": "notas-server",
+    "title": "Server 16.1 RC 2",
+    "description": "Vega changes, schedule, limits and integrity of the Server candidate.",
+    "group": "Releases",
+    "kind": "Release notes",
+    "scope": "Server · 16.1 RC 2",
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
   },
   {
     "slug": "contribuir",
