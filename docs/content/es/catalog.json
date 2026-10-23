@@ -15,9 +15,9 @@
     "description": "De la descarga de la ISO al primer arranque: integridad, medio de instalación y disco de destino.",
     "group": "Empieza aquí",
     "kind": "Tutorial",
-    "scope": "Desktop GNOME · 1.1 Alpha 8",
-    "reviewed": "2026-09-28",
-    "source_reviewed": "2026-09-27"
+    "scope": "Desktop GNOME · 16.1 RC 1",
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
   },
   {
     "slug": "server",
@@ -56,8 +56,8 @@
     "group": "Referencia",
     "kind": "Referencia técnica",
     "scope": "Desktop GNOME y Server · Lyra OS 16.1",
-    "reviewed": "2026-09-28",
-    "source_reviewed": "2026-09-27"
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
   },
   {
     "slug": "vega",
@@ -76,8 +76,8 @@
     "group": "Entiende Lyra",
     "kind": "Explicación",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-10-22",
-    "source_reviewed": "2026-10-22"
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
   },
   {
     "slug": "contribuir",
