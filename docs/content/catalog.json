@@ -72,6 +72,24 @@
     "reviewed": "2026-10-23"
   },
   {
+    "slug": "notas-desktop",
+    "title": "Desktop 16.1 RC 1",
+    "description": "Novidades, limites, qualificação e integridade da candidata Desktop com GNOME.",
+    "group": "Lançamentos",
+    "kind": "Notas de lançamento",
+    "scope": "Desktop GNOME · 16.1 RC 1",
+    "reviewed": "2026-10-23"
+  },
+  {
+    "slug": "notas-server",
+    "title": "Server 16.1 RC 2",
+    "description": "Novidades do Vega, cronograma, limites e integridade da candidata Server.",
+    "group": "Lançamentos",
+    "kind": "Notas de lançamento",
+    "scope": "Server · 16.1 RC 2",
+    "reviewed": "2026-10-23"
+  },
+  {
     "slug": "contribuir",
     "title": "Contribuir com a documentação",
     "description": "Sugira correções, relate dúvidas e ajude a melhorar os guias para outras pessoas.",

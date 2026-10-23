@@ -80,6 +80,26 @@
     "source_reviewed": "2026-10-23"
   },
   {
+    "slug": "notas-desktop",
+    "title": "Desktop 16.1 RC 1",
+    "description": "What is new, limits, qualification and integrity of the GNOME Desktop candidate.",
+    "group": "Releases",
+    "kind": "Release notes",
+    "scope": "Desktop GNOME · 16.1 RC 1",
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
+  },
+  {
+    "slug": "notas-server",
+    "title": "Server 16.1 RC 2",
+    "description": "Vega changes, schedule, limits and integrity of the Server candidate.",
+    "group": "Releases",
+    "kind": "Release notes",
+    "scope": "Server · 16.1 RC 2",
+    "reviewed": "2026-10-23",
+    "source_reviewed": "2026-10-23"
+  },
+  {
     "slug": "contribuir",
     "title": "Contribute to the documentation",
     "description": "Suggest corrections, report questions and help improve the guides for other people.",
