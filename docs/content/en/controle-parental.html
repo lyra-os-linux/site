@@ -1,0 +1,13 @@
+<h2 id="o-que-e">What it is</h2>
+<p>Lyra OS parental controls are <strong>basic</strong>: they let a child use the computer in their own account, with rules set by a parent or guardian. They use the GNOME <strong>Parental Controls</strong> application and a <strong>supervised account</strong> created in Vega.</p>
+<h2 id="criar">Create the supervised account</h2>
+<ol><li>Open <strong>Vega</strong> and go to <strong>Users</strong>.</li><li>Click <strong>New user</strong> (or <strong>Edit</strong> on an existing account) and turn on <strong>Supervised account</strong>. A supervised account is never an administrator.</li><li>Review what supervision covers and does not cover, then save.</li></ol>
+<h2 id="regras">Set the rules</h2>
+<p>On the account card, click <strong>Parental Controls</strong>. The application opens for that account and asks for the administrator password. There you can restrict web browsers, block applications, prevent application installation and choose the age rating. The same rules appear in Settings → System → Users.</p>
+<h2 id="cobre">What the supervised account cannot do</h2>
+<ul><li>Administer the system or install software system-wide: all of that asks for an administrator password.</li><li>Log in on the text console or over SSH, or run commands with Alt+F2.</li><li>See the terminals or Vega in the menus and search.</li><li>Change or remove the rules set by the parent.</li></ul>
+<h2 id="limites">Limits</h2>
+<ul><li>The controls do not resist a tech-savvy child: shortcuts, scripts or programs they create or download can still run.</li><li>Blocked browsers and applications disappear from the menus, but remain installed on the system.</li><li>The controls do not filter websites or keep browsing history.</li><li>Anyone with the administrator password, a bootable USB drive or access to the disk can undo the rules.</li></ul>
+<h2 id="flatpak">Flatpak</h2>
+<p>Flatpak is not installed by default. To use Flathub applications, open Vega in <strong>Software</strong> and click <strong>Enable Flatpak</strong>. With Flatpak enabled, a tech-savvy child can install Flatpak applications in their own account and open blocked Flatpak applications; Vega warns about this before enabling it. The other rules still apply.</p>
+<p class="doc-source">References: <a href="https://help.gnome.org/gnome-help/parental-controls.html">GNOME help on parental controls</a> and <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/adr/0019-basic-parental-controls.md">ADR 0019</a>.</p>
