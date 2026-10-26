@@ -40,6 +40,16 @@
     "source_reviewed": "2026-09-27"
   },
   {
+    "slug": "controle-parental",
+    "title": "Control parental",
+    "description": "Crea una cuenta supervisada para un niño, define las reglas y conoce los límites del control.",
+    "group": "Guías prácticas",
+    "kind": "Procedimiento",
+    "scope": "Desktop GNOME · Lyra OS 16.1",
+    "reviewed": "2026-10-26",
+    "source_reviewed": "2026-10-26"
+  },
+  {
     "slug": "solucao-de-problemas",
     "title": "Solución de problemas",
     "description": "Investiga fallos de arranque, red y actualizaciones y prepara un informe útil para el proyecto.",

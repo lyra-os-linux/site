@@ -1,0 +1,13 @@
+<h2 id="o-que-e">Qué es</h2>
+<p>El control parental de Lyra OS es <strong>básico</strong>: permite que un niño use el equipo en su propia cuenta, con reglas definidas por un responsable. Usa la aplicación <strong>Control parental</strong> de GNOME y una <strong>cuenta supervisada</strong> creada en Vega.</p>
+<h2 id="criar">Crear la cuenta supervisada</h2>
+<ol><li>Abre <strong>Vega</strong> y ve a <strong>Usuarios</strong>.</li><li>Haz clic en <strong>Nuevo usuario</strong> (o <strong>Editar</strong> en una cuenta existente) y activa <strong>Cuenta supervisada</strong>. Una cuenta supervisada nunca es administradora.</li><li>Revisa lo que la supervisión cubre y no cubre, y guarda.</li></ol>
+<h2 id="regras">Definir las reglas</h2>
+<p>En la tarjeta de la cuenta, haz clic en <strong>Control parental</strong>. La aplicación se abre para esa cuenta y pide la contraseña de administrador. Allí puedes restringir navegadores, bloquear aplicaciones, impedir la instalación de aplicaciones y elegir la clasificación por edad. Las mismas reglas aparecen en Configuración → Sistema → Usuarios.</p>
+<h2 id="cobre">Lo que la cuenta supervisada no hace</h2>
+<ul><li>No administra el sistema ni instala programas en el sistema: todo eso pide la contraseña de un administrador.</li><li>No inicia sesión en la consola de texto ni por SSH, y no ejecuta comandos con Alt+F2.</li><li>No ve las terminales ni Vega en los menús y la búsqueda.</li><li>No cambia ni elimina las reglas definidas por el responsable.</li></ul>
+<h2 id="limites">Límites</h2>
+<ul><li>El control no resiste a un niño con conocimientos técnicos: accesos directos, scripts o programas creados o descargados por él aún pueden ejecutarse.</li><li>Los navegadores y aplicaciones bloqueados desaparecen de los menús, pero siguen instalados en el sistema.</li><li>El control no filtra sitios web ni guarda historial de navegación.</li><li>Quien tenga la contraseña de administrador, una memoria USB de arranque o acceso al disco puede deshacer las reglas.</li></ul>
+<h2 id="flatpak">Flatpak</h2>
+<p>Flatpak no viene instalado. Para usar aplicaciones de Flathub, abre Vega en <strong>Programas</strong> (Software) y haz clic en <strong>Habilitar Flatpak</strong>. Con Flatpak activo, un niño con conocimientos técnicos puede instalar aplicaciones Flatpak en su propia cuenta y abrir aplicaciones Flatpak bloqueadas; Vega lo advierte antes de habilitarlo. Las demás reglas siguen vigentes.</p>
+<p class="doc-source">Referencias: <a href="https://help.gnome.org/gnome-help/parental-controls.html">ayuda de GNOME sobre control parental</a> y <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/adr/0019-basic-parental-controls.md">ADR 0019</a>.</p>
