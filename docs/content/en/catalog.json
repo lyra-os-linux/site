@@ -15,9 +15,9 @@
     "description": "From ISO download to first boot: integrity, installation media and target disk.",
     "group": "Start here",
     "kind": "Tutorial",
-    "scope": "Desktop GNOME · 16.1 RC 1",
-    "reviewed": "2026-10-23",
-    "source_reviewed": "2026-10-23"
+    "scope": "Desktop GNOME · 16.1 RC 2",
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "server",
@@ -66,8 +66,8 @@
     "group": "Reference",
     "kind": "Technical reference",
     "scope": "Desktop GNOME and Server · Lyra OS 16.1",
-    "reviewed": "2026-10-23",
-    "source_reviewed": "2026-10-23"
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "vega",
@@ -86,18 +86,18 @@
     "group": "Understand Lyra",
     "kind": "Explanation",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-10-23",
-    "source_reviewed": "2026-10-23"
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "notas-desktop",
-    "title": "Desktop 16.1 RC 1",
+    "title": "Desktop 16.1 RC 2",
     "description": "What is new, limits, qualification and integrity of the GNOME Desktop candidate.",
     "group": "Releases",
     "kind": "Release notes",
-    "scope": "Desktop GNOME · 16.1 RC 1",
-    "reviewed": "2026-10-23",
-    "source_reviewed": "2026-10-23"
+    "scope": "Desktop GNOME · 16.1 RC 2",
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "notas-server",
