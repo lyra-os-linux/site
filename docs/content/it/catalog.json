@@ -16,8 +16,8 @@
     "group": "Inizia qui",
     "kind": "Tutorial",
     "scope": "Desktop GNOME · 16.1 RC 2",
-    "reviewed": "2026-10-29",
-    "source_reviewed": "2026-10-29"
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "server",
@@ -66,8 +66,8 @@
     "group": "Riferimento",
     "kind": "Riferimento tecnico",
     "scope": "Desktop GNOME e Server · Lyra OS 16.1",
-    "reviewed": "2026-10-29",
-    "source_reviewed": "2026-10-29"
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "vega",
@@ -86,8 +86,8 @@
     "group": "Comprendere Lyra",
     "kind": "Spiegazione",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-10-29",
-    "source_reviewed": "2026-10-29"
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "notas-desktop",
@@ -96,8 +96,8 @@
     "group": "Rilasci",
     "kind": "Note di rilascio",
     "scope": "Desktop GNOME · 16.1 RC 2",
-    "reviewed": "2026-10-29",
-    "source_reviewed": "2026-10-29"
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
   },
   {
     "slug": "notas-server",
