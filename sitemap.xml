@@ -37,6 +37,9 @@
     <loc>https://lyraos.com.br/docs/versoes.html</loc>
   </url>
   <url>
+    <loc>https://lyraos.com.br/docs/anuncios.html</loc>
+  </url>
+  <url>
     <loc>https://lyraos.com.br/docs/notas-desktop.html</loc>
   </url>
   <url>
@@ -74,6 +77,9 @@
   </url>
   <url>
     <loc>https://lyraos.com.br/docs/en/versoes.html</loc>
+  </url>
+  <url>
+    <loc>https://lyraos.com.br/docs/en/anuncios.html</loc>
   </url>
   <url>
     <loc>https://lyraos.com.br/docs/en/notas-desktop.html</loc>
@@ -115,6 +121,9 @@
     <loc>https://lyraos.com.br/docs/es/versoes.html</loc>
   </url>
   <url>
+    <loc>https://lyraos.com.br/docs/es/anuncios.html</loc>
+  </url>
+  <url>
     <loc>https://lyraos.com.br/docs/es/notas-desktop.html</loc>
   </url>
   <url>
@@ -152,6 +161,9 @@
   </url>
   <url>
     <loc>https://lyraos.com.br/docs/it/versoes.html</loc>
+  </url>
+  <url>
+    <loc>https://lyraos.com.br/docs/it/anuncios.html</loc>
   </url>
   <url>
     <loc>https://lyraos.com.br/docs/it/notas-desktop.html</loc>

@@ -90,6 +90,16 @@
     "source_reviewed": "2026-10-28"
   },
   {
+    "slug": "anuncios",
+    "title": "Anuncios",
+    "description": "Anuncios de las versiones publicadas de Lyra OS, de la más reciente a la más antigua.",
+    "group": "Lanzamientos",
+    "kind": "Anuncio",
+    "scope": "Desktop GNOME · 16.1 RC 2",
+    "reviewed": "2026-10-28",
+    "source_reviewed": "2026-10-28"
+  },
+  {
     "slug": "notas-desktop",
     "title": "Desktop 16.1 RC 2",
     "description": "Novedades, límites, calificación e integridad de la candidata Desktop con GNOME.",
