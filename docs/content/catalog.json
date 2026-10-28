@@ -82,12 +82,12 @@
   },
   {
     "slug": "notas-desktop",
-    "title": "Desktop 16.1 RC 1",
+    "title": "Desktop 16.1 RC 2",
     "description": "Novidades, limites, qualificação e integridade da candidata Desktop com GNOME.",
     "group": "Lançamentos",
     "kind": "Notas de lançamento",
-    "scope": "Desktop GNOME · 16.1 RC 1",
-    "reviewed": "2026-10-23"
+    "scope": "Desktop GNOME · 16.1 RC 2",
+    "reviewed": "2026-10-29"
   },
   {
     "slug": "notas-server",
