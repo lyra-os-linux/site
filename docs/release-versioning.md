@@ -44,8 +44,8 @@ componente, como `16.1-beta.1.1`.
 - Desktop 16.1 RC 1 e Server 16.1 RC 1: publicação até 31/10/2026;
 - openSUSE Leap 16.1 GA: 03/11/2026;
 - Lyra OS Desktop 16.1: 05/11/2026;
-- Lyra OS Server 16.1: 19/11/2026 (a RC 1 é promovida por tag quando o gate
-  passa, sem novo build).
+- Lyra OS Server 16.1: 19/11/2026 (a RC 3, publicada em 30/10/2026, é
+  promovida por tag quando o gate passa, sem novo build).
 
 Uma versão é publicada quando passa pelos critérios de qualidade, não porque
 uma data chegou.

@@ -25,9 +25,9 @@
     "description": "Instala la edición para servidores y empieza a administrarla desde la consola con Vega CLI.",
     "group": "Empieza aquí",
     "kind": "Tutorial",
-    "scope": "Server · 16.1 RC 2",
-    "reviewed": "2026-10-22",
-    "source_reviewed": "2026-10-22"
+    "scope": "Server · 16.1 RC 3",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "atualizacoes",
@@ -96,8 +96,8 @@
     "group": "Entiende Lyra",
     "kind": "Explicación",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-10-28",
-    "source_reviewed": "2026-10-28"
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "anuncios",
@@ -121,13 +121,13 @@
   },
   {
     "slug": "notas-server",
-    "title": "Server 16.1 RC 2",
+    "title": "Server 16.1 RC 3",
     "description": "Cambios de Vega, calendario, límites e integridad de la candidata Server.",
     "group": "Lanzamientos",
     "kind": "Notas de lanzamiento",
-    "scope": "Server · 16.1 RC 2",
-    "reviewed": "2026-10-23",
-    "source_reviewed": "2026-10-23"
+    "scope": "Server · 16.1 RC 3",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "contribuir",
