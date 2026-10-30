@@ -499,9 +499,9 @@
     'quando o gate estiver verde':"quando il gate è verde"
   });
 
-  Object.assign(catalogs['en-US'], { 'Notas de lançamento': 'Release notes', 'Documentação': 'Documentation', 'Ler o guia de instalação': 'Read the installation guide' });
-  Object.assign(catalogs['es-ES'], { 'Notas de lançamento': 'Notas de lanzamiento', 'Documentação': 'Documentación', 'Ler o guia de instalação': 'Leer la guía de instalación' });
-  Object.assign(catalogs['it-IT'], { 'Notas de lançamento': 'Note di rilascio', 'Documentação': 'Documentazione', 'Ler o guia de instalação': 'Leggi la guida di installazione' });
+  Object.assign(catalogs['en-US'], { 'Fórum': 'Forum', 'Notas de lançamento': 'Release notes', 'Documentação': 'Documentation', 'Ler o guia de instalação': 'Read the installation guide' });
+  Object.assign(catalogs['es-ES'], { 'Fórum': 'Foro', 'Notas de lançamento': 'Notas de lanzamiento', 'Documentação': 'Documentación', 'Ler o guia de instalação': 'Leer la guía de instalación' });
+  Object.assign(catalogs['it-IT'], { 'Fórum': 'Forum', 'Notas de lançamento': 'Note di rilascio', 'Documentação': 'Documentazione', 'Ler o guia de instalação': 'Leggi la guida di installazione' });
 
   const readLocale = () => {
     const fromUrl = new URLSearchParams(location.search).get('lang');
