@@ -4,9 +4,9 @@
 <p>Este guia cobre o Desktop com GNOME. Para o instalador em console e os limites de armazenamento da outra edição, consulte <a href="server.html#instalar">Instalar o Server</a>. Não use este procedimento como instrução de dual boot ou de particionamento manual.</p>
 <h2 id="download">2. Baixe e confira a ISO</h2>
 <p>Entre na <a href="../index.html#download">área de downloads do site</a>. Baixe a ISO e o arquivo de checksum correspondente no diretório da mesma publicação no SourceForge.</p>
-<p>No Linux, abra um terminal na pasta onde estão os dois arquivos. Exemplo para a imagem Desktop 16.1 RC 2:</p>
-<pre><code>sha256sum -c LyraOS-Desktop-16.1-rc.2-x86_64.iso.sha256
-gpg --verify LyraOS-Desktop-16.1-rc.2-x86_64.iso.sha256.asc LyraOS-Desktop-16.1-rc.2-x86_64.iso.sha256</code></pre>
+<p>No Linux, abra um terminal na pasta onde estão os dois arquivos. Exemplo para a imagem Desktop 16.1 RC 3:</p>
+<pre><code>sha256sum -c LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256
+gpg --verify LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256.asc LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256</code></pre>
 <p>O nome precisa corresponder exatamente ao arquivo baixado. Continue somente se a verificação indicar <strong>OK</strong>. Se houver divergência, baixe os arquivos novamente. O checksum verifica a integridade; a assinatura <code>.asc</code> do checksum confirma a origem. Importe antes a <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/release-signing-key.asc">chave oficial de release</a> (impressão digital <code>01B6 3EED BE6B 0791 26A0 116E FA73 53A1 31EC EFEB</code>); o resultado deve ser uma assinatura válida dessa chave.</p>
 <h2 id="midia">3. Grave a mídia e inicie em UEFI</h2>
 <ol><li>Abra uma ferramenta de gravação de imagens de disco. No GNOME Discos, selecione o pendrive e use a opção de restaurar uma imagem de disco.</li><li>Selecione a ISO e confira novamente o dispositivo de destino antes de confirmar. Copiar o arquivo ISO para uma pasta do pendrive não substitui a gravação da imagem.</li><li>Aguarde o término da gravação, ejete a mídia e reinicie o computador.</li><li>Abra o menu de boot do firmware e selecione a entrada UEFI da mídia. A tecla varia conforme o fabricante.</li></ol>
@@ -16,4 +16,4 @@ gpg --verify LyraOS-Desktop-16.1-rc.2-x86_64.iso.sha256.asc LyraOS-Desktop-16.1-
 <p>As telas podem mudar entre candidatas.</p>
 <h2 id="apos-instalar">5. Confira o sistema instalado</h2>
 <p>Entre com a conta criada, teste a rede e abra o Vega. Siga os <a href="primeiros-passos.html#primeiro-acesso">primeiros passos após a instalação</a>. Se o instalador falhar, anote a etapa e a mensagem antes de reiniciar; veja como <a href="solucao-de-problemas.html#relatar">relatar o problema</a>.</p>
-<p class="doc-source">Referência: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-16.1-rc.2.md">notas do Desktop 16.1 RC 2</a>.</p>
+<p class="doc-source">Referência: <a href="https://github.com/lyra-os-linux/lyraos-desktop/blob/main/docs/releases/lyra-os-desktop-16.1-rc.3.md">notas do Desktop 16.1 RC 3</a>.</p>

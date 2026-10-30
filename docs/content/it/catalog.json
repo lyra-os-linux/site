@@ -15,9 +15,9 @@
     "description": "Dal download della ISO al primo avvio: integrità, supporto di installazione e disco di destinazione.",
     "group": "Inizia qui",
     "kind": "Tutorial",
-    "scope": "Desktop GNOME · 16.1 RC 2",
-    "reviewed": "2026-10-28",
-    "source_reviewed": "2026-10-28"
+    "scope": "Desktop GNOME · 16.1 RC 3",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "server",
@@ -76,8 +76,8 @@
     "group": "Riferimento",
     "kind": "Riferimento tecnico",
     "scope": "Desktop GNOME e Server · Lyra OS 16.1",
-    "reviewed": "2026-10-28",
-    "source_reviewed": "2026-10-28"
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "vega",
@@ -105,19 +105,19 @@
     "description": "Annunci delle versioni pubblicate di Lyra OS, dalla più recente alla più vecchia.",
     "group": "Rilasci",
     "kind": "Annuncio",
-    "scope": "Desktop GNOME · 16.1 RC 2",
-    "reviewed": "2026-10-28",
-    "source_reviewed": "2026-10-28"
+    "scope": "Desktop GNOME · 16.1 RC 3",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "notas-desktop",
-    "title": "Desktop 16.1 RC 2",
+    "title": "Desktop 16.1 RC 3",
     "description": "Novità, limiti, qualificazione e integrità della candidata Desktop con GNOME.",
     "group": "Rilasci",
     "kind": "Note di rilascio",
-    "scope": "Desktop GNOME · 16.1 RC 2",
-    "reviewed": "2026-10-28",
-    "source_reviewed": "2026-10-28"
+    "scope": "Desktop GNOME · 16.1 RC 3",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
   },
   {
     "slug": "notas-server",
