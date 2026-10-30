@@ -63,6 +63,24 @@
     "reviewed": "2026-10-30"
   },
   {
+    "slug": "reportar-problema",
+    "title": "Como reportar um problema",
+    "description": "Atualize, procure relatos parecidos e abra uma issue útil no repositório certo. Falhas de segurança vão por canal privado.",
+    "group": "Guias práticos",
+    "kind": "Procedimento",
+    "scope": "Desktop e Server · Lyra OS 16.1",
+    "reviewed": "2026-10-30"
+  },
+  {
+    "slug": "contribuir-projeto",
+    "title": "Contribuir",
+    "description": "Formas de ajudar o Lyra OS, os princípios do projeto e como enviar código.",
+    "group": "Guias práticos",
+    "kind": "Procedimento",
+    "scope": "Projeto Lyra OS",
+    "reviewed": "2026-10-30"
+  },
+  {
     "slug": "referencia",
     "title": "Requisitos e termos técnicos",
     "description": "Consulte os requisitos de hardware e o significado dos termos usados nos guias.",

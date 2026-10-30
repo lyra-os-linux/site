@@ -70,6 +70,26 @@
     "source_reviewed": "2026-10-30"
   },
   {
+    "slug": "reportar-problema",
+    "title": "How to report a problem",
+    "description": "Update, look for similar reports and open a useful issue in the right repository. Security flaws go through a private channel.",
+    "group": "How-to guides",
+    "kind": "Procedure",
+    "scope": "Desktop and Server · Lyra OS 16.1",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
+  },
+  {
+    "slug": "contribuir-projeto",
+    "title": "Contribute",
+    "description": "Ways to help Lyra OS, the project principles and how to submit code.",
+    "group": "How-to guides",
+    "kind": "Procedure",
+    "scope": "Lyra OS project",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
+  },
+  {
     "slug": "referencia",
     "title": "Requirements and technical terms",
     "description": "Look up the hardware requirements and the meaning of the terms used in the guides.",
