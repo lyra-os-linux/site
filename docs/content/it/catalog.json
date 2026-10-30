@@ -60,6 +60,16 @@
     "source_reviewed": "2026-09-27"
   },
   {
+    "slug": "pedir-ajuda",
+    "title": "Chiedere aiuto",
+    "description": "Prepara una richiesta di aiuto con la diagnostica di Vega, senza dati personali, e pubblicala nel forum o in una issue.",
+    "group": "Guide pratiche",
+    "kind": "Procedura",
+    "scope": "Desktop GNOME · Lyra OS 16.1",
+    "reviewed": "2026-10-30",
+    "source_reviewed": "2026-10-30"
+  },
+  {
     "slug": "referencia",
     "title": "Requisiti e termini tecnici",
     "description": "Consulta i requisiti hardware e il significato dei termini usati nelle guide.",
