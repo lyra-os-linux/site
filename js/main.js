@@ -28,7 +28,7 @@
   updateThemeButton();
   window.addEventListener('lyra:locale-changed', updateThemeButton);
 
-  const launch = document.querySelector('.launch-countdown');
+  const launch = document.querySelector('.launch-countdown[data-launch]');
   if (launch) {
     const target = Date.parse(launch.dataset.launch);
     const units = {

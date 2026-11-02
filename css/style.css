@@ -82,6 +82,7 @@ button { color: inherit; font: inherit; }
 .launch-clock b { font-size: 1.55rem; font-variant-numeric: tabular-nums; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
 .launch-clock small { font-size: .62rem; font-weight: 700; letter-spacing: .12em; opacity: .75; text-transform: uppercase; }
 .launch-countdown.is-live .launch-clock { display: none; }
+.launch-cta { border-bottom: 1px solid currentColor; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 @keyframes launch-pulse { 50% { opacity: .35; } }
 @media (prefers-reduced-motion: reduce) { .launch-label .status-dot { animation: none; } }
 h1, h2, h3, p { margin-top: 0; }

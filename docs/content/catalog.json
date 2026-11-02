@@ -14,8 +14,8 @@
     "description": "Do download da ISO ao primeiro boot: integridade, mídia de instalação e disco de destino.",
     "group": "Comece aqui",
     "kind": "Tutorial",
-    "scope": "Desktop GNOME · 16.1 RC 3",
-    "reviewed": "2026-10-30"
+    "scope": "Desktop GNOME · Lyra OS 16.1",
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "server",
@@ -23,8 +23,8 @@
     "description": "Instale a edição para servidores e comece a administrar pelo console com o Vega CLI.",
     "group": "Comece aqui",
     "kind": "Tutorial",
-    "scope": "Server · 16.1 RC 3",
-    "reviewed": "2026-10-30"
+    "scope": "Server · Lyra OS 16.1",
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "atualizacoes",
@@ -87,7 +87,7 @@
     "group": "Referência",
     "kind": "Referência técnica",
     "scope": "Desktop GNOME e Server · Lyra OS 16.1",
-    "reviewed": "2026-10-30"
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "vega",
@@ -105,7 +105,7 @@
     "group": "Entenda o Lyra",
     "kind": "Explicação",
     "scope": "Lyra OS 16.1",
-    "reviewed": "2026-10-30"
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "anuncios",
@@ -113,26 +113,26 @@
     "description": "Anúncios das versões publicadas do Lyra OS, da mais recente para a mais antiga.",
     "group": "Lançamentos",
     "kind": "Anúncio",
-    "scope": "Desktop GNOME · 16.1 RC 3",
-    "reviewed": "2026-10-30"
+    "scope": "Desktop GNOME e Server · Lyra OS 16.1",
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "notas-desktop",
-    "title": "Desktop 16.1 RC 3",
-    "description": "Novidades, limites, qualificação e integridade da candidata Desktop com GNOME.",
+    "title": "Desktop 16.1",
+    "description": "Novidades, limites, qualificação e integridade da versão estável do Desktop com GNOME.",
     "group": "Lançamentos",
     "kind": "Notas de lançamento",
-    "scope": "Desktop GNOME · 16.1 RC 3",
-    "reviewed": "2026-10-30"
+    "scope": "Desktop GNOME · Lyra OS 16.1",
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "notas-server",
-    "title": "Server 16.1 RC 3",
-    "description": "Novidades do Vega, cronograma, limites e integridade da candidata Server.",
+    "title": "Server 16.1",
+    "description": "Novidades do Vega, cronograma, limites e integridade da versão estável do Server.",
     "group": "Lançamentos",
     "kind": "Notas de lançamento",
-    "scope": "Server · 16.1 RC 3",
-    "reviewed": "2026-10-30"
+    "scope": "Server · Lyra OS 16.1",
+    "reviewed": "2026-11-03"
   },
   {
     "slug": "contribuir",
