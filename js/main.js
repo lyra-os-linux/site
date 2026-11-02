@@ -42,7 +42,7 @@
       if (left === 0) {
         clearInterval(timer);
         launch.classList.add('is-live');
-        launch.querySelector('.launch-text').textContent = (window.LyraI18n?.t || ((value) => value))('Lyra OS 16.1 já está disponível');
+        launch.querySelector('.launch-text').textContent = (window.LyraI18n?.t || ((value) => value))('Lyra OS 16.1 chega em instantes');
         return;
       }
       units.hours.textContent = String(Math.floor(left / 3600));
