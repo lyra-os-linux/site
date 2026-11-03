@@ -503,6 +503,10 @@
   Object.assign(catalogs['es-ES'], { 'Fórum': 'Foro', 'Notas de lançamento': 'Notas de lanzamiento', 'Documentação': 'Documentación', 'Ler o guia de instalação': 'Leer la guía de instalación' });
   Object.assign(catalogs['it-IT'], { 'Fórum': 'Forum', 'Notas de lançamento': 'Note di rilascio', 'Documentação': 'Documentazione', 'Ler o guia de instalação': 'Leggi la guida di installazione' });
 
+  Object.assign(catalogs['en-US'], { 'Lyra OS chegou!!!!': 'Lyra OS is here!!!!', 'Fechar': 'Close' });
+  Object.assign(catalogs['es-ES'], { 'Lyra OS chegou!!!!': '¡¡¡¡Llegó Lyra OS!!!!', 'Fechar': 'Cerrar' });
+  Object.assign(catalogs['it-IT'], { 'Lyra OS chegou!!!!': 'Lyra OS è arrivato!!!!', 'Fechar': 'Chiudi' });
+
   const readLocale = () => {
     const fromUrl = new URLSearchParams(location.search).get('lang');
     if (LOCALES.includes(fromUrl)) return fromUrl;
