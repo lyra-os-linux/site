@@ -101,7 +101,12 @@
   };
 
   const previousFocus = document.activeElement;
+  let autoClose;
+  let closed = false;
   const close = () => {
+    if (closed) return;
+    closed = true;
+    clearTimeout(autoClose);
     clearInterval(launcher);
     cancelAnimationFrame(animation);
     window.removeEventListener('resize', resize);
@@ -128,13 +133,15 @@
     overlay.addEventListener('click', (event) => { if (event.target === overlay || event.target === canvas) close(); });
     document.addEventListener('keydown', onKey);
     window.addEventListener('lyra:locale-changed', setTexts);
+    autoClose = setTimeout(close, 10000);
     if (reduceMotion) return;
     resize();
     window.addEventListener('resize', resize);
     launch();
     launcher = setInterval(() => { launch(); if (Math.random() < 0.5) launch(); }, 650);
     draw();
-    setTimeout(() => { clearInterval(launcher); }, 7000);
+    // Os últimos foguetes saem a tempo de apagar antes do fechamento.
+    setTimeout(() => { clearInterval(launcher); }, 8500);
   };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
