@@ -1,3 +1,13 @@
+<h2 id="lyra-os-16-1">03/11/2026 · Lyra OS 16.1 “Odisseia” e Server 16.1 “Delos” stabili</h2>
+<p>Lyra OS 16.1 è arrivato alla versione stabile nello stesso giorno di openSUSE Leap 16.1. Il Desktop con GNOME “Odisseia” e il Server “Delos” sono le stesse ISO della RC 3, promosse tramite tag (<code>v16.1</code> e <code>server-v16.1</code>) senza ricostruzione: file, checksum e firme sono gli stessi. Gli aggiornamenti di Leap 16.1 finale arrivano dal repository <code>update</code> dopo l'installazione.</p>
+<p><a href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/desktop/">Scarica il Desktop</a> · <a href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/server/">Scarica il Server</a> · <a href="notas-desktop.html">Note del Desktop</a> · <a href="notas-server.html">Note del Server</a></p>
+<h3 id="estavel-rc3">Se hai già installato la RC 3</h3>
+<p>Chi ha installato la RC 3 ha già il sistema della versione stabile e non deve reinstallare: basta continuare a ricevere gli aggiornamenti normalmente.</p>
+<h3 id="estavel-verificacao">Verifica</h3>
+<p>I file mantengono il nome della RC 3. SHA-256 del Desktop: <code>50211bcf31271d232ea4326fc46704cad79a729d1bb363679ce32829d7794a3a</code>; del Server: <code>1bcb55a7842487ee463bf40640b882f34dd00e1a9a1a31d539a8de39919b7a45</code>. I checksum sono firmati con la chiave ufficiale di rilascio, impronta <code>01B6 3EED BE6B 0791 26A0 116E FA73 53A1 31EC EFEB</code>.</p>
+<pre><code>gpg --verify LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256.asc LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256
+sha256sum -c LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256</code></pre>
+<p>Per il Server, sostituisci <code>Desktop</code> con <code>Server</code> nei nomi dei file. Segnala quello che trovi nelle issue del <a href="https://github.com/lyra-os-linux/lyraos-desktop/issues">Desktop</a> o del <a href="https://github.com/lyra-os-linux/lyraos-server/issues">Server</a>.</p>
 <h2 id="desktop-16-1-rc-3">30/10/2026 · Lyra OS 16.1 RC 3 “Odisseia”, la candidata finale</h2>
 <p>La terza e ultima candidata di rilascio di Lyra OS Desktop 16.1, con GNOME su openSUSE Leap 16.1, è pronta da scaricare. È congelata: la stessa ISO viene promossa tramite tag a versione stabile 16.1 il <strong>3 novembre 2026</strong>, senza ricostruzione.</p>
 <p><a href="https://sourceforge.net/projects/lyra/files/releases/16.1/rc3/desktop/">Scarica da SourceForge</a> · <a href="notas-desktop.html">Note di rilascio</a></p>
