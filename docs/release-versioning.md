@@ -53,8 +53,11 @@ uma data chegou.
 
 ## Suporte
 
-O Lyra OS 16.1 terá suporte comunitário, sem prazo contratual ou EOL prometido.
-O suporte da base openSUSE, o suporte de uma release Lyra e o ciclo da geração
-16.x são políticas distintas. Artefatos legados serão preservados e republicados
-com nomes semânticos, mantendo checksums, assinaturas e proveniência
-verificáveis.
+O Lyra OS **não é uma rolling release**: cada versão `MAJOR.MINOR` é uma
+release fixa. **Cada release da geração 16.x tem 2 anos de suporte**, contados
+da publicação da versão estável. O suporte da base openSUSE e o suporte de uma
+release Lyra são políticas distintas. Ver a
+[política de releases e suporte](https://github.com/lyra-os-linux/.github/blob/main/SUPPORT.md#ciclo-de-releases-e-suporte).
+
+Artefatos legados serão preservados e republicados com nomes semânticos,
+mantendo checksums, assinaturas e proveniência verificáveis.
