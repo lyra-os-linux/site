@@ -168,3 +168,18 @@ h1 { font-size: clamp(4rem, 9vw, 7.6rem); letter-spacing: -.09em; line-height: .
 @media (max-width: 480px) { .container { width: calc(100% - 32px); } h1 { font-size: clamp(3.7rem, 18vw, 5rem); }.hero { padding-top: 200px; }.hero-art { height: 370px; }.orbit-a { height: 260px; width: 360px; }.orbit-b { height: 370px; width: 220px; }.release-card { bottom: 0; right: 0; }.hero-meta { gap: 20px; }.hero-meta strong { font-size: .7rem; }.section-heading h2, .base-copy h2, .preview-copy h2, .download-inner h2 { font-size: 2.8rem; }.base-visual { transform: scale(.82); margin: -30px -40px; }.vega-title h3 { font-size: 2.4rem; }.preview-grid { gap: 42px; }.desktop-frame { border-width: 5px; }.requirement-card { padding: 24px 20px; }.requirement-columns { grid-template-columns: 1fr; }.footer-grid { display: block; }.footer-grid > p { margin: 25px 0; }.footer-links { align-items: flex-start; }.footer-bottom { gap: 10px; flex-wrap: wrap; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }.reveal { opacity: 1; transform: none; transition: none; }.button { transition: none; } }
+
+.celebration { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; background: rgba(10, 12, 18, .82); animation: celebration-in .4s ease-out; }
+.celebration.is-leaving { opacity: 0; transition: opacity .4s ease; }
+.celebration-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.celebration-message { position: relative; padding: 2rem; text-align: center; color: #f0f1f7; }
+.celebration-title { margin: 0; font-family: var(--serif); font-size: clamp(2.6rem, 9vw, 6rem); line-height: 1.05; animation: celebration-pop .9s cubic-bezier(.2, 1.4, .4, 1) both; }
+.celebration-subtitle { margin: 1rem 0 2rem; color: #ced3f3; font-size: clamp(1.05rem, 2.6vw, 1.4rem); }
+.celebration-actions { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; }
+.celebration-cta, .celebration-close { padding: .8rem 1.4rem; border: 1px solid rgba(220, 225, 255, .24); border-radius: 999px; font: inherit; cursor: pointer; text-decoration: none; }
+.celebration-cta { background: #8c9cf4; color: #16191d; font-weight: 600; }
+.celebration-close { background: transparent; color: #f0f1f7; }
+.celebration-cta:focus-visible, .celebration-close:focus-visible { outline: 3px solid #ced3f3; outline-offset: 3px; }
+@keyframes celebration-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes celebration-pop { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .celebration, .celebration-title { animation: none; } }
