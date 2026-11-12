@@ -90,7 +90,6 @@ def build_locale(locale, locales, articles, template):
     home = {"slug": "index", "title": s["home_title"], "description": s["home_description"],
             "content": intro + ''.join(cards), "group": s["home_eyebrow"], "headings": []}
     js_strings = {key: s[key] for key in ("search_one", "search_many", "search_none")}
-    js_strings.update({"Ativar tema claro": s["theme_light"], "Ativar tema escuro": s["theme_dark"]})
 
     for article in [home, *articles]:
         slug = article["slug"]

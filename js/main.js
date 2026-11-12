@@ -1,32 +1,8 @@
 (() => {
   const root = document.documentElement;
-  const storage = {
-    get(key, fallback) {
-      try { return localStorage.getItem(key) || fallback; } catch { return fallback; }
-    },
-    set(key, value) {
-      try { localStorage.setItem(key, value); } catch { /* file:// e navegadores restritivos */ }
-    },
-  };
-  const themeToggle = document.querySelector('.theme-toggle');
+  // Só tema claro (12/11/2026): sem botão de tema.
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-
-  const updateThemeButton = () => {
-    const isLight = root.dataset.theme === 'light';
-    const translate = window.LyraI18n?.t || ((value) => value);
-    themeToggle.setAttribute('aria-pressed', String(isLight));
-    themeToggle.setAttribute('aria-label', translate(isLight ? 'Ativar tema escuro' : 'Ativar tema claro'));
-    themeToggle.querySelector('.theme-icon').textContent = isLight ? '☾' : '☼';
-  };
-
-  themeToggle?.addEventListener('click', () => {
-    root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
-    storage.set('lyra-theme', root.dataset.theme);
-    updateThemeButton();
-  });
-  updateThemeButton();
-  window.addEventListener('lyra:locale-changed', updateThemeButton);
 
   const launch = document.querySelector('.launch-countdown[data-launch]');
   if (launch) {
@@ -77,4 +53,33 @@
   } else {
     revealItems.forEach((item) => item.classList.add('is-visible'));
   }
+
+  // Contador de downloads: total do projeto no SourceForge, todas as versões
+  // e edições (a API responde com CORS aberto). Sem resposta, fica oculto.
+  const downloadCount = document.querySelector('.download-count');
+  if (downloadCount && window.fetch) {
+    const today = new Date().toISOString().slice(0, 10);
+    fetch(`https://sourceforge.net/projects/lyra/files/stats/json?start_date=2020-01-01&end_date=${today}`)
+      .then((response) => (response.ok ? response.json() : Promise.reject(response.status)))
+      .then((stats) => {
+        if (!Number.isFinite(stats.total) || stats.total <= 0) return;
+        const show = () => {
+          // Arredonda para baixo, na centena, com "+" (como "2.700+").
+          const shown = stats.total >= 1000 ? Math.floor(stats.total / 100) * 100 : stats.total;
+          const number = shown.toLocaleString(window.LyraI18n?.locale || 'pt-BR');
+          downloadCount.querySelector('.download-count-number').textContent = stats.total >= 1000 ? `${number}+` : number;
+        };
+        show();
+        window.addEventListener('lyra:locale-changed', show);
+        downloadCount.hidden = false;
+      })
+      .catch(() => { /* sem contador */ });
+  }
+
+  // Requisitos ficam num <details>: o link #requisitos abre o bloco.
+  const openRequirements = () => {
+    if (location.hash === '#requisitos') document.getElementById('requisitos')?.setAttribute('open', '');
+  };
+  openRequirements();
+  window.addEventListener('hashchange', openRequirements);
 })();

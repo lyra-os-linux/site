@@ -79,11 +79,24 @@
 .doc-card-arrow { position: absolute; top: 20px; right: 22px; color: var(--doc-accent); }
 .doc-article-footer { border-top: 1px solid var(--line-strong); margin-top: 55px; padding-top: 22px; font-size: .75rem; color: var(--text-soft); }
 .doc-article-footer div { display: flex; gap: 20px; flex-wrap: wrap; color: var(--doc-accent); }
-.docs-footer { border-top: 1px solid var(--line); display: flex; gap: 20px; justify-content: space-between; padding: 25px 0; color: var(--text-soft); font-size: .65rem; }
+.docs-footer { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 14px 32px; justify-content: space-between; padding: 40px 0 48px; color: var(--text-soft); font-size: .85rem; line-height: 1.7; }
 .docs-page :focus-visible { outline: 2px solid var(--doc-accent); outline-offset: 4px; }
 .docs-page [hidden] { display: none !important; }
-@media (min-width: 901px) { .docs-page .menu-toggle { display: none; } .docs-page .site-nav { display: flex; position: static; background: transparent; flex-direction: row; padding: 0; border: 0; overflow: visible; } .docs-page .site-nav > a, .docs-page .theme-toggle { border: 0; padding: 8px 0; } }
+@media (min-width: 1181px) { .docs-page .menu-toggle { display: none; } .docs-page .site-nav { display: flex; position: static; background: transparent; flex-direction: row; padding: 0; border: 0; overflow: visible; } .docs-page .site-nav > a, .docs-page .theme-toggle { border: 0; padding: 8px 0; } }
 @media (max-width: 1000px) { .docs-page .container { width: calc(100% - 40px); } .docs-layout { grid-template-columns: 200px minmax(0, 1fr); gap: 30px; } .doc-cards { grid-template-columns: 1fr; } }
 @media (max-width: 900px) { .docs-page .site-nav { gap: 0; } .docs-language { padding: 12px 0; } }
 @media (max-width: 700px) { .docs-layout { display: block; } .docs-sidebar { position: static; max-height: none; margin-top: 24px; padding: 0 0 20px; border-bottom: 1px solid var(--line); } .docs-version { margin: 8px 0 18px; } .docs-help { display: none; } .docs-navigation nav { display: grid; grid-template-columns: 1fr; } .docs-navigation summary { color: var(--doc-accent); } .docs-main { padding-top: 24px; } .docs-heading h1 { font-size: 2.4rem; } .docs-start { padding: 22px; } .docs-start strong { font-size: 1.15rem; } .docs-footer { flex-direction: column; } }
 @media print { .site-header, .docs-sidebar, .docs-search, .docs-breadcrumb, .doc-article-footer, .docs-footer, .skip-link { display: none !important; } .docs-layout { display: block; } .docs-page { background: white; color: black; --text: black; --text-soft: #222; --doc-accent: #222; --bg-raised: white; --bg-panel: white; --surface: #eee; } .docs-main { padding: 0; max-width: none; } .doc-content pre { white-space: pre-wrap; } }
+
+/* Camada suave (12/11/2026), a mesma do style.css: as linhas e sombras já
+   vêm mais leves pelas variáveis; aqui, cantos, rótulos e tabelas. Para
+   voltar ao visual anterior, basta apagar este bloco. */
+.docs-nav-group { font-size: .7rem; font-weight: 600; letter-spacing: .02em; text-transform: none; }
+.doc-card, .docs-start { border-color: var(--line); border-radius: 18px; box-shadow: var(--shadow); }
+.docs-search-field { border-color: var(--line); border-radius: 14px; }
+.doc-note { border-left-width: 2px; border-radius: 0 14px 14px 0; }
+.doc-table-wrap { border: 1px solid var(--line); border-radius: 14px; }
+.doc-content table { border-style: hidden; }
+.doc-content th, .doc-content td { border-color: var(--line); }
+.doc-content th { font-weight: 600; }
+.doc-article-footer { border-top-color: var(--line); }

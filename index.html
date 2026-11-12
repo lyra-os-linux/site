@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#16191d">
+    <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Lyra OS 16 — Odisseia. Geração 16 do Lyra OS, com versão 16.1 baseada no openSUSE Leap 16.1.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Lyra OS 16 — Odisseia">
@@ -11,10 +11,10 @@
     <meta property="og:image" content="assets/press-kit-og.png">
     <title>Lyra OS 16 — Odisseia</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="stylesheet" href="css/style.css">
     <script>
-      try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; }
-      catch { document.documentElement.dataset.theme = 'dark'; }
+      document.documentElement.dataset.theme = 'light';
     </script>
     <script src="js/i18n.js" defer></script>
     <script src="js/main.js" defer></script>
@@ -25,14 +25,7 @@
   </head>
   <body id="topo">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
     <header class="site-header">
-      <div class="launch-countdown is-live">
-        <div class="container launch-inner">
-          <span class="launch-label"><span class="status-dot"></span> <span class="launch-text">Lyra OS 16.1 já está disponível</span></span>
-          <a class="launch-cta" href="#download">Baixar o Lyra OS <span aria-hidden="true">↓</span></a>
-        </div>
-      </div>
       <div class="container nav-wrap">
         <a class="brand" href="#topo" aria-label="Lyra OS, início">
           <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
@@ -43,52 +36,141 @@
           </svg>
           <span class="brand-copy"><strong>Lyra <em>OS</em></strong><small>Harmonia · Performance · Liberdade</small></span>
         </a>
-
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="sr-only">Abrir menu</span>
           <span></span><span></span><span></span>
         </button>
-
         <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-          <a href="#sobre">Sobre</a>
-          <a href="#homenagem">Homenagem</a>
-          <a href="#base">A base</a>
-          <a href="#ecossistema">Ecossistema</a>
-          <a href="#experiencia">Experiência</a>
+          <a href="#experiencia">Recursos</a>
+          <a href="#ecossistema">Vega</a>
+          <a href="#aplicativos">Aplicativos</a>
           <a href="docs/index.html">Documentação</a>
           <a href="https://github.com/lyra-os-linux/lyraos-desktop/discussions" target="_blank" rel="noreferrer">Fórum</a>
-          <a href="#requisitos">Requisitos</a>
           <a href="#download" class="nav-cta">Download <span aria-hidden="true">↗</span></a>
-          <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false">
-            <span class="theme-icon" aria-hidden="true">☼</span>
-            <span class="theme-label">Tema</span>
-          </button>
         </nav>
       </div>
     </header>
-
     <main id="conteudo">
-      <section class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <h1 id="hero-title">Lyra OS<br><span class="gradient-text">Odisseia.</span></h1>
-            <p class="hero-lede">Um sistema feito para encontrar o equilíbrio entre potência, estabilidade e liberdade — no desktop e no servidor.</p>
-            <p class="slogan">Harmonia. Performance. Liberdade.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#download">Escolher edição <span aria-hidden="true">↓</span></a>
-              <a class="button button-secondary" href="docs/index.html">Documentação <span aria-hidden="true">↗</span></a>
-            </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <a class="hero-chip reveal" href="#download"><span class="status-dot"></span> <span class="launch-text">Lyra OS 16.1 já está disponível</span> <span aria-hidden="true">→</span></a>
+          <h1 id="hero-title" class="reveal">Lyra OS <span class="gradient-text">Odisseia.</span></h1>
+          <p class="hero-lede reveal">Um sistema feito para encontrar o equilíbrio entre potência, estabilidade e liberdade — no desktop e no servidor.</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#download">Escolher edição <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="docs/index.html">Documentação <span aria-hidden="true">↗</span></a>
           </div>
-
-          <div class="hero-art reveal" role="img" aria-label="Marca Lyra OS 16 — Odisseia">
-            <div class="art-orbit orbit-a"></div>
-            <div class="art-orbit orbit-b"></div>
-            <div class="art-star star-a">✦</div>
-            <div class="art-star star-b">✧</div>
-            <div class="lyra-emblem">
-              <svg viewBox="0 0 180 180" aria-hidden="true">
+          <p class="download-count reveal" hidden><svg class="download-laurel" viewBox="0 0 40 64" aria-hidden="true"><path d="M30 60C14 52 8 36 12 6"/><ellipse cx="9" cy="14" rx="3" ry="7" transform="rotate(-20 9 14)"/><ellipse cx="18" cy="16" rx="3" ry="7" transform="rotate(35 18 16)"/><ellipse cx="7" cy="27" rx="3" ry="7" transform="rotate(-35 7 27)"/><ellipse cx="17" cy="30" rx="3" ry="7" transform="rotate(30 17 30)"/><ellipse cx="9" cy="40" rx="3" ry="7" transform="rotate(-50 9 40)"/><ellipse cx="19" cy="44" rx="3" ry="7" transform="rotate(20 19 44)"/><ellipse cx="16" cy="53" rx="3" ry="7" transform="rotate(-65 16 53)"/></svg><span class="download-count-text"><span class="muted">Faça parte dos</span> <strong class="download-count-number"></strong> <span class="muted">downloads do Lyra OS</span></span><svg class="download-laurel download-laurel-right" viewBox="0 0 40 64" aria-hidden="true"><path d="M30 60C14 52 8 36 12 6"/><ellipse cx="9" cy="14" rx="3" ry="7" transform="rotate(-20 9 14)"/><ellipse cx="18" cy="16" rx="3" ry="7" transform="rotate(35 18 16)"/><ellipse cx="7" cy="27" rx="3" ry="7" transform="rotate(-35 7 27)"/><ellipse cx="17" cy="30" rx="3" ry="7" transform="rotate(30 17 30)"/><ellipse cx="9" cy="40" rx="3" ry="7" transform="rotate(-50 9 40)"/><ellipse cx="19" cy="44" rx="3" ry="7" transform="rotate(20 19 44)"/><ellipse cx="16" cy="53" rx="3" ry="7" transform="rotate(-65 16 53)"/></svg></p>
+          <figure class="hero-shot reveal">
+            <img src="assets/lyra-desktop-16.1.webp" width="1920" height="1080" decoding="async" fetchpriority="high" alt="Área de trabalho do Lyra OS Desktop 16.1: GNOME com painel superior, dock lateral de aplicativos e o papel de parede Odisseia.">
+            <figcaption>Lyra OS Desktop · GNOME com o papel de parede Odisseia</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="section" id="sobre" aria-labelledby="sobre-title">
+        <div class="container split">
+          <div class="reveal">
+            <p class="eyebrow">A ideia</p>
+            <h2 id="sobre-title">Um sistema que<br><span class="muted-gradient">não fica no caminho.</span></h2>
+          </div>
+          <div class="prose reveal">
+            <p>Lyra OS é um projeto pessoal independente de <strong>Rodrigo Brito</strong>, criado para transformar o desktop Linux em um lugar mais coerente, acolhedor e confiável.</p>
+            <p>O nome vem da constelação de Lyra: um pequeno desenho no céu com uma identidade marcante. É dessa mesma ideia de clareza e proporção que nasce cada escolha do sistema.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-tint" id="experiencia" aria-labelledby="preview-title">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">A experiência</p>
+            <h2 id="preview-title">Familiar por natureza.<br><span class="muted-gradient">Lyra por escolha.</span></h2>
+            <p>Um GNOME limpo, com o branding do Lyra aplicado com intenção. Menos ruído visual, mais espaço para aquilo que você quer fazer.</p>
+          </div>
+          <div class="feature-grid reveal">
+            <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 9v11"/></svg></span><h3>Interface clara e consistente</h3><p>GNOME limpo, com tema, ícones e tipografia afinados para que tudo pareça parte do mesmo sistema.</p></article>
+            <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.2 2.2 2.2 4.4-4.6"/></svg></span><h3>Base sólida para o seu dia a dia</h3><p>openSUSE Leap com snapshots do Btrfs: uma atualização que não deu certo pode ser desfeita pelo Snapper.</p></article>
+            <article class="feature"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2.2"/><circle cx="10" cy="17" r="2.2"/></svg></span><h3>Liberdade para personalizar</h3><p>Cores de destaque, papéis de parede e extensões do Sheliak, sem perder a coerência do conjunto.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="base" aria-labelledby="base-title">
+        <div class="container split split-media">
+          <figure class="base-figure reveal">
+            <div class="base-badge" aria-hidden="true"><img src="assets/opensuse-geeko.svg" width="120" height="78" alt=""><span>openSUSE</span><small>LEAP</small><em>ciclo previsível · estabilidade · open source</em></div>
+            <figcaption>Logo do openSUSE: <a href="https://github.com/openSUSE/artwork" target="_blank" rel="noreferrer">openSUSE Artwork</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a></figcaption>
+          </figure>
+          <div class="prose reveal">
+            <p class="eyebrow">A fundação</p>
+            <h2 id="base-title">A estabilidade<br>como ponto de partida.</h2>
+            <p>O <strong>Lyra OS</strong> usa o <strong>openSUSE Leap</strong> como base tecnológica. A versão do Lyra acompanha a numeração do Leap: o Lyra OS 16.1 é construído sobre o Leap 16.1.</p>
+            <p>Em um cenário dominado por bases Arch, Ubuntu e Fedora, o Leap traz uma alternativa sólida para quem quer usar o desktop com tranquilidade — sem abrir mão de performance ou liberdade.</p>
+            <a class="arrow-link" href="https://www.opensuse.org/" target="_blank" rel="noreferrer">Conhecer o openSUSE <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="section section-tint" id="ecossistema" aria-labelledby="ecosistema-title">
+        <div class="container split split-media">
+          <div class="prose reveal">
+            <p class="eyebrow">O coração</p>
+            <h2 id="ecosistema-title">Tudo encontra seu centro.</h2>
+            <p>O Vega organiza o essencial e dá ao sistema um ponto de partida simples, claro e humano.</p>
+            <h3>Vega</h3>
+            <p>O centro de controle do Lyra OS, pré-instalado e desenhado para deixar as decisões importantes sempre ao alcance.</p>
+            <p class="note"><span aria-hidden="true">✦</span> Vega é a estrela mais brilhante da constelação de Lyra — o coração que orienta todo o sistema.</p>
+          </div>
+          <figure class="vega-stage reveal">
+            <img class="vega-shot" src="assets/vega-painel.webp" width="1280" height="837" loading="lazy" decoding="async" alt="Painel do Vega: visão geral do sistema com processador, memória, rede e disco, e o resumo de atualizações, backup, pontos de restauração e serviços.">
+            <figcaption>Vega · Painel</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="section" id="aplicativos" aria-labelledby="apps-title">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">Feito pelo Lyra</p>
+            <h2 id="apps-title">Aplicativos que <span class="gradient-text">já vêm prontos.</span></h2>
+            <p>Além do Vega, o Lyra OS traz ferramentas próprias, pensadas para o dia a dia no desktop.</p>
+          </div>
+          <div class="feature-grid apps-grid reveal">
+            <article class="feature app"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V6M6.5 11.5 12 6l5.5 5.5"/><path d="M5 20h14"/></svg></span><h3>Lyra Upgrade</h3><p>Atualizações da versão do sistema com ponto de restauração e volta segura.</p></article>
+            <article class="feature app"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><h3>Beam</h3><p>Acesso remoto a computadores Windows por RDP, com senhas guardadas no chaveiro.</p></article>
+            <article class="feature app"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 8 4 4-4 4M11 16h8"/></svg></span><h3>Sulafat</h3><p>Cliente SSH que usa o seu ~/.ssh/config, com terminal completo.</p></article>
+            <article class="feature app"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5"/><path d="M5 20h14"/></svg></span><h3>Lyra Downloads</h3><p>Gerenciador de downloads integrado ao Firefox.</p></article>
+            <article class="feature app"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></span><h3>Sheliak</h3><p>Extensões do GNOME: dock, painel, menus, busca e ícones na área de trabalho.</p></article>
+            <article class="feature app"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></span><h3>Boas-vindas</h3><p>O primeiro passo depois da instalação, em português, inglês e espanhol.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-tint" id="homenagem" aria-labelledby="tribute-title">
+        <div class="container split split-media tribute">
+          <figure class="tribute-photo">
+            <img src="assets/jon-maddog-hall-cafeconf-2005.webp" width="1280" height="960" loading="lazy" decoding="async" alt="Jon “maddog” Hall no palco diante do público durante uma palestra na CaFeCONF 2005">
+            <figcaption>
+              <span>Jon “maddog” Hall na CaFeCONF 2005</span>
+              Foto: <a href="https://commons.wikimedia.org/wiki/File:John_Maddog_hall_cafeconf_2005.jpg" target="_blank" rel="noreferrer">CaFeLUG / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a> · imagem redimensionada
+            </figcaption>
+          </figure>
+          <div class="prose reveal">
+            <p class="eyebrow">Uma faísca em 2005</p>
+            <h2 id="tribute-title">Algumas ideias levam anos<br><span class="muted-gradient">para encontrar sua forma.</span></h2>
+            <p>Em 2005, assisti a uma palestra de <strong>Jon “maddog” Hall</strong>. Sua defesa apaixonada do software livre mudou a maneira como eu enxergava tecnologia, comunidade e liberdade.</p>
+            <p>O Lyra OS nasceu muitos anos depois, mas carrega algo daquele encontro. <strong>Obrigado, maddog, por acender essa estrela.</strong></p>
+            <a class="arrow-link" href="https://www.lpi.org/blog/2024/05/17/why-i-joined-the-lpi-board-of-directors-jon-maddog-hall/" target="_blank" rel="noreferrer">Conhecer a trajetória de Jon “maddog” Hall <span aria-hidden="true">↗</span></a>
+            <p class="tribute-signature">— Rodrigo Brito</p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="download" aria-labelledby="download-title">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">Uma nova etapa</p>
+            <h2 id="download-title">Escolha sua <span class="gradient-text">edição do Lyra.</span></h2>
+            <p>O Lyra OS Desktop 16.1 com GNOME e o Server 16.1 já estão disponíveis.</p>
+          </div>
+          <div class="download-options reveal">
+            <article class="download-option featured">
+              <div class="edition-icon" aria-hidden="true"><svg viewBox="0 0 180 180" aria-hidden="true">
                 <defs>
                   <linearGradient id="emblemGradient" x1="0" x2="1" y1="1" y2="0">
                     <stop offset="0" stop-color="#8c9cf4" />
@@ -99,144 +181,44 @@
                 <path d="M32 103c12 22 31 33 58 33s46-11 58-33" fill="none" stroke="url(#emblemGradient)" stroke-linecap="round" stroke-width="9" />
                 <path d="M69 38v57M90 38v57M111 38v57" fill="none" stroke="#f5f5ff" stroke-linecap="round" stroke-opacity=".86" stroke-width="3" />
                 <path d="m139 21 3.2 10.2 10.4 3.2-10.4 3.2-3.2 10.2-3.2-10.2-10.4-3.2 10.4-3.2z" fill="#fff" />
-              </svg>
-            </div>
-            <div class="release-card">
-              <strong>16.1 <small>Disponível</small></strong>
-              <div class="countdown">
-                <a class="text-link" href="#download">Baixar o Lyra OS <span aria-hidden="true">↓</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="intro-section section-shell" id="sobre" aria-labelledby="sobre-title">
-        <div class="container intro-grid">
-          <div class="section-heading reveal">
-            <p class="eyebrow">01 / A ideia</p>
-            <h2 id="sobre-title">Um sistema que<br><span class="muted-gradient">não fica no caminho.</span></h2>
-          </div>
-          <div class="intro-copy reveal">
-            <p>Lyra OS é um projeto pessoal independente de <strong>Rodrigo Brito</strong>, criado para transformar o desktop Linux em um lugar mais coerente, acolhedor e confiável.</p>
-            <p>O nome vem da constelação de Lyra: um pequeno desenho no céu com uma identidade marcante. É dessa mesma ideia de clareza e proporção que nasce cada escolha do sistema.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="tribute-section" id="homenagem" aria-labelledby="tribute-title">
-        <div class="container tribute-grid reveal">
-          <figure class="tribute-photo">
-            <img src="assets/jon-maddog-hall-cafeconf-2005.webp" width="1280" height="960" loading="lazy" decoding="async" alt="Jon “maddog” Hall no palco diante do público durante uma palestra na CaFeCONF 2005">
-            <figcaption>
-              <span>Jon “maddog” Hall na CaFeCONF 2005</span>
-              Foto: <a href="https://commons.wikimedia.org/wiki/File:John_Maddog_hall_cafeconf_2005.jpg" target="_blank" rel="noreferrer">CaFeLUG / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a> · imagem redimensionada
-            </figcaption>
-          </figure>
-          <div class="tribute-copy">
-            <p class="eyebrow">Uma faísca em 2005</p>
-            <h2 id="tribute-title">Algumas ideias levam anos<br><span class="muted-gradient">para encontrar sua forma.</span></h2>
-            <p>Em 2005, assisti a uma palestra de <strong>Jon “maddog” Hall</strong>. Sua defesa apaixonada do software livre mudou a maneira como eu enxergava tecnologia, comunidade e liberdade.</p>
-            <p>O Lyra OS nasceu muitos anos depois, mas carrega algo daquele encontro. <strong>Obrigado, maddog, por acender essa estrela.</strong></p>
-            <a class="arrow-link" href="https://www.lpi.org/blog/2024/05/17/why-i-joined-the-lpi-board-of-directors-jon-maddog-hall/" target="_blank" rel="noreferrer">Conhecer a trajetória de Jon “maddog” Hall <span aria-hidden="true">↗</span></a>
-            <p class="tribute-signature">— Rodrigo Brito</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="base-section section-shell" id="base" aria-labelledby="base-title">
-        <div class="container base-grid">
-          <div class="base-visual reveal" aria-hidden="true">
-            <div class="base-ring ring-one"></div><div class="base-ring ring-two"></div>
-            <div class="base-core"><span>openSUSE</span><small>LEAP</small></div>
-            <span class="visual-label label-top">ciclo previsível</span>
-            <span class="visual-label label-right">estabilidade</span>
-            <span class="visual-label label-bottom">open source</span>
-          </div>
-          <div class="base-copy reveal">
-            <p class="eyebrow">02 / A fundação</p>
-            <h2 id="base-title">A estabilidade<br>como ponto de partida.</h2>
-            <p>O <strong>Lyra OS</strong> usa o <strong>openSUSE Leap</strong> como base tecnológica. A versão do Lyra acompanha a numeração do Leap: o Lyra OS 16.1 é construído sobre o Leap 16.1.</p>
-            <p>Em um cenário dominado por bases Arch, Ubuntu e Fedora, o Leap traz uma alternativa sólida para quem quer usar o desktop com tranquilidade — sem abrir mão de performance ou liberdade.</p>
-            <a class="arrow-link" href="https://www.opensuse.org/" target="_blank" rel="noreferrer">Conhecer o openSUSE <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="ecosystem-section section-shell" id="ecossistema" aria-labelledby="ecosistema-title">
-        <div class="container">
-          <div class="section-heading centered reveal">
-            <p class="eyebrow">03 / O coração</p>
-            <h2 id="ecosistema-title">Tudo encontra seu centro.</h2>
-            <p>O Vega organiza o essencial e dá ao sistema um ponto de partida simples, claro e humano.</p>
-          </div>
-          <div class="vega-card reveal">
-            <div class="vega-art" aria-hidden="true">
-              <div class="vega-glow"></div>
-              <div class="vega-orbit orbit-large"></div><div class="vega-orbit orbit-small"></div>
-              <div class="vega-symbol">
-                <svg viewBox="0 0 100 100"><path d="M27 18v34c0 13 10 23 23 23s23-10 23-23V18M19 56c6 12 16 18 31 18s25-6 31-18M39 19v31M50 19v31M61 19v31" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"/><path d="m76 13 1.8 5.6 5.7 1.8-5.7 1.8-1.8 5.6-1.8-5.6-5.7-1.8 5.7-1.8z" fill="currentColor"/></svg>
-              </div>
-            </div>
-            <div class="vega-content">
-              <div class="vega-title"><span class="number-tag">01</span><h3>Vega</h3></div>
-              <p>O centro de controle do Lyra OS, pré-instalado e desenhado para deixar as decisões importantes sempre ao alcance.</p>
-              <div class="vega-note"><span class="note-icon">✦</span><span>Vega é a estrela mais brilhante da constelação de Lyra — o coração que orienta todo o sistema.</span></div>
-            </div>
-          </div>
-          <p class="ecosystem-footnote reveal">O ecossistema cresce com cuidado. Os demais componentes seguem em desenvolvimento e validação para versões futuras.</p>
-        </div>
-      </section>
-
-      <section class="preview-section section-shell" id="experiencia" aria-labelledby="preview-title">
-        <div class="container preview-grid">
-          <div class="preview-copy reveal">
-            <p class="eyebrow">04 / A experiência</p>
-            <h2 id="preview-title">Familiar por natureza.<br><span class="muted-gradient">Lyra por escolha.</span></h2>
-            <p>Um GNOME limpo, com o branding do Lyra aplicado com intenção. Menos ruído visual, mais espaço para aquilo que você quer fazer.</p>
-            <div class="feature-list">
-              <div><span>01</span><p>Interface clara e consistente</p></div>
-              <div><span>02</span><p>Base sólida para o seu dia a dia</p></div>
-              <div><span>03</span><p>Liberdade para personalizar</p></div>
-            </div>
-          </div>
-          <figure class="desktop-shot reveal">
-            <div class="desktop-frame">
-              <img src="assets/lyra-desktop-gnome.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Área de trabalho do Lyra OS Desktop Alpha 6: GNOME com painel superior, dock lateral de aplicativos e o papel de parede Odisseia.">
-            </div>
-            <figcaption>Lyra OS Desktop · GNOME com o papel de parede Odisseia</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="download-section section-shell" id="download" aria-labelledby="download-title">
-        <div class="download-shape" aria-hidden="true"></div>
-        <div class="container download-inner reveal">
-          <p class="eyebrow">05 / Uma nova etapa</p>
-          <h2 id="download-title">Escolha sua<br><span class="gradient-text">edição do Lyra.</span></h2>
-          <p>O Lyra OS Desktop 16.1 com GNOME e o Server 16.1 já estão disponíveis.</p>
-          <div class="download-options">
-            <article class="download-option">
+              </svg></div>
               <span class="download-edition">Desktop</span>
               <h3>16.1</h3>
               <p>Para computadores pessoais, com ambiente gráfico e experiência completa do Lyra OS.</p>
               <a class="button button-primary desktop-download-button" href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/desktop/LyraOS-Desktop-16.1-rc.3-x86_64.iso/download" target="_blank" rel="noreferrer"><svg class="lyra-button-icon" viewBox="0 0 44 46" aria-hidden="true"><path d="M10 11v17.4c0 7 5.7 12.6 12.7 12.6s12.7-5.6 12.7-12.6V11M7.5 31.4c3.6 5.5 8.8 8.4 15.2 8.4 6.4 0 11.7-2.9 15.3-8.4"/><path d="M16 12v16M23 12v16M30 12v16"/><path class="lyra-button-star" d="m38 5 .9 2.8 3.1.9-3.1.9-.9 2.9-.9-2.9-3.1-.9 3.1-.9z"/></svg><span class="button-label">Baixar Desktop</span> <span aria-hidden="true">↗</span></a>
               <a class="text-link" href="docs/notas-desktop.html">Notas de lançamento <span aria-hidden="true">↗</span></a>
+              <p class="release-meta"><span>03.11.2026</span><span>x86_64</span><a href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/desktop/LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256/download" target="_blank" rel="noreferrer">SHA-256</a><a href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/desktop/LyraOS-Desktop-16.1-rc.3-x86_64.iso.sha256.asc/download" target="_blank" rel="noreferrer">Assinatura</a></p>
             </article>
             <article class="download-option">
+              <div class="edition-icon" aria-hidden="true"><svg class="server-edition-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg></div>
               <span class="download-edition">Server · Delos</span>
               <h3>16.1</h3>
               <p>Para servidores e infraestrutura, com uma base enxuta voltada à administração de serviços.</p>
               <a class="button button-primary server-download-button" href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/server/LyraOS-Server-16.1-rc.3-x86_64.iso/download" target="_blank" rel="noreferrer"><svg class="server-button-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg>Baixar Server <span aria-hidden="true">↗</span></a>
               <a class="text-link" href="docs/notas-server.html">Notas de lançamento <span aria-hidden="true">↗</span></a>
+              <p class="release-meta"><span>03.11.2026</span><span>x86_64</span><a href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/server/LyraOS-Server-16.1-rc.3-x86_64.iso.sha256/download" target="_blank" rel="noreferrer">SHA-256</a><a href="https://sourceforge.net/projects/lyra/files/releases/16.1/stable/server/LyraOS-Server-16.1-rc.3-x86_64.iso.sha256.asc/download" target="_blank" rel="noreferrer">Assinatura</a></p>
             </article>
           </div>
-          <section class="requirements" id="requisitos" aria-labelledby="requirements-title">
-            <div class="requirements-heading">
-              <p class="eyebrow">Requisitos de sistema</p>
-              <h3 id="requirements-title">Antes de instalar.</h3>
-              <p>Confira o perfil adequado para cada edição. Os valores mínimos permitem a instalação; os recomendados oferecem margem para atualizações, aplicativos e serviços.</p>
-            </div>
+          <div class="verify-note reveal">
+            <span class="verify-icon" aria-hidden="true">✓</span>
+            <p><strong>Confira o download.</strong> <span>Compare o SHA-256 da ISO e valide a assinatura com a chave Lyra OS Release:</span> <code>01B6 3EED BE6B 0791 26A0  116E FA73 53A1 31EC EFEB</code> <a class="text-link" href="docs/instalacao.html">Como verificar <span aria-hidden="true">↗</span></a></p>
+          </div>
+          <div class="compare reveal">
+            <table>
+              <caption class="sr-only">Desktop ou Server</caption>
+              <thead><tr><th scope="col"><span class="sr-only">Característica</span></th><th scope="col">Desktop</th><th scope="col">Server</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Para quem</th><td>Computadores pessoais</td><td>Servidores e infraestrutura</td></tr>
+                <tr><th scope="row">Interface</th><td>GNOME</td><td>Sem interface gráfica</td></tr>
+                <tr><th scope="row">Instalador</th><td>Gráfico</td><td>Em console</td></tr>
+                <tr><th scope="row">Administração</th><td>Vega</td><td>Vega no terminal e na web</td></tr>
+                <tr><th scope="row">Codinome</th><td>Odisseia</td><td>Delos</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <details class="requirements reveal" id="requisitos">
+            <summary><span class="eyebrow">Requisitos de sistema</span> <strong id="requirements-title">Antes de instalar.</strong></summary>
+            <p>Confira o perfil adequado para cada edição. Os valores mínimos permitem a instalação; os recomendados oferecem margem para atualizações, aplicativos e serviços.</p>
             <div class="requirements-grid">
               <article class="requirement-card">
                 <span class="download-edition">Desktop · GNOME</span>
@@ -285,15 +267,36 @@
                 </div>
               </article>
             </div>
-            <p class="requirements-note"><strong>Para o Desktop:</strong> firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 16.1, o instalador ainda não oferece RAID nem LVM. Requisitos provisórios, sujeitos à validação do gate e da matriz de hardware.</p>
-          </section>
-          <div class="release-line"><span>Desktop · 16.1</span><span>03.11.2026</span><span>x86_64</span></div>
-          <div class="release-line"><span>Server · 16.1</span><span>03.11.2026</span><span>x86_64</span></div>
-          <p class="documentation-link"><a class="text-link" href="docs/instalacao.html">Ler o guia de instalação <span aria-hidden="true">↗</span></a></p>
+            <p class="requirements-note"><strong>Para o Desktop:</strong> firmware UEFI, mídia USB para instalação e conexão com a internet para atualizações. Secure Boot é suportado. A instalação usa o disco inteiro; no Server 16.1, o instalador ainda não oferece RAID nem LVM.</p>
+          </details>
+          <p class="documentation-link reveal"><a class="text-link" href="docs/instalacao.html">Ler o guia de instalação <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </section>
+      <section class="section section-tint" id="comunidade" aria-labelledby="community-title">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">Comunidade</p>
+            <h2 id="community-title">Feito em conjunto.</h2>
+            <p>Tire dúvidas, relate problemas e ajude o Lyra OS a crescer.</p>
+          </div>
+          <div class="feature-grid reveal">
+            <a class="feature community" href="https://github.com/lyra-os-linux/lyraos-desktop/discussions" target="_blank" rel="noreferrer"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4z"/></svg></span><h3>Fórum</h3><p>Perguntas, ideias e conversas com quem usa o Lyra OS.</p></a>
+            <a class="feature community" href="https://github.com/lyra-os-linux" target="_blank" rel="noreferrer"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg></span><h3>GitHub</h3><p>Código, issues e o andamento de cada componente.</p></a>
+            <a class="feature community" href="docs/contribuir-projeto.html"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span><h3>Como contribuir</h3><p>Traduções, testes, documentação e código: veja por onde começar.</p></a>
+          </div>
+        </div>
+      </section>
+      <section class="cta-band" aria-labelledby="cta-title">
+        <div class="container cta-inner reveal">
+          <h2 id="cta-title">Pronto para experimentar?</h2>
+          <p>Baixe o Lyra OS, grave num pendrive e teste sem compromisso.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Baixar o Lyra OS <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="docs/instalacao.html">Ler o guia de instalação <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
     </main>
-
     <footer class="site-footer">
       <div class="container footer-grid">
         <a class="brand" href="#topo" aria-label="Voltar ao início">
