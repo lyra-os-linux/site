@@ -33,7 +33,7 @@
     "group": "Guias práticos",
     "kind": "Procedimento",
     "scope": "Desktop e Server · Lyra OS 16.1",
-    "reviewed": "2026-10-31"
+    "reviewed": "2026-11-12"
   },
   {
     "slug": "controle-parental",
@@ -123,7 +123,7 @@
     "group": "Lançamentos",
     "kind": "Notas de lançamento",
     "scope": "Desktop GNOME · Lyra OS 16.1",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-12"
   },
   {
     "slug": "notas-server",
@@ -132,7 +132,7 @@
     "group": "Lançamentos",
     "kind": "Notas de lançamento",
     "scope": "Server · Lyra OS 16.1",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-12"
   },
   {
     "slug": "contribuir",
