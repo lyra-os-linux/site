@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#16191d">
+  <meta name="theme-color" content="#ffffff">
   <title>$title · $site_title</title>
   <meta name="description" content="$description">
   <link rel="canonical" href="$canonical">
@@ -16,7 +16,7 @@ $alternates
   <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${root}css/style.css">
   <link rel="stylesheet" href="${root}css/docs.css">
-  <script>try { document.documentElement.dataset.theme = localStorage.getItem('lyra-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script>document.documentElement.dataset.theme = 'light';</script>
   <script>window.LyraDocsStrings = $js_strings; window.LyraI18n = window.LyraI18n || { t: (value) => window.LyraDocsStrings[value] || value };</script>
   <script src="${root}js/main.js" defer></script>
   <script src="search-index.js" defer></script>
@@ -31,7 +31,6 @@ $alternates
       <nav class="site-nav" id="site-nav" aria-label="$main_nav">
         <a href="$home">$project</a><a href="index.html" aria-current="true">$docs</a><a href="$download" class="nav-cta">Download ↗</a>
         <div class="docs-language" role="group" aria-label="$language_label">$languages</div>
-        <button class="theme-toggle" type="button" aria-label="$theme_light" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">$theme</span></button>
       </nav>
     </div>
   </header>
