@@ -37,16 +37,16 @@ componente, como `16.1-beta.1.1`.
 
 | Versão | Codename | Base | Situação |
 |---|---|---|---|
-| 16.1 | Odisseia (Desktop) / Delos (Server) | openSUSE Leap 16.1 | Em desenvolvimento (RC 3) |
+| 16.1 | Odisseia (Desktop) / Delos (Server) | openSUSE Leap 16.1 | Estável desde 03/11/2026 |
 
 ## Calendário
 
 - Desktop 16.1 RC 1 e Server 16.1 RC 1: publicação até 31/10/2026;
 - openSUSE Leap 16.1 GA: 03/11/2026;
-- Lyra OS Desktop 16.1: 03/11/2026 (a RC 3, publicada em 30/10/2026, é
-  promovida por tag quando o gate passa, sem novo build);
-- Lyra OS Server 16.1: 03/11/2026 (a RC 3, publicada em 30/10/2026, é
-  promovida por tag quando o gate passa, sem novo build).
+- Lyra OS Desktop 16.1: 03/11/2026 (a RC 3, publicada em 30/10/2026, é seguida por uma imagem estável
+  reconstruída, nomeada e assinada);
+- Lyra OS Server 16.1: 03/11/2026 (a RC 3, publicada em 30/10/2026, é seguida por uma imagem estável
+  reconstruída, nomeada e assinada).
 
 Uma versão é publicada quando passa pelos critérios de qualidade, não porque
 uma data chegou.
