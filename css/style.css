@@ -205,6 +205,65 @@ a.feature { color: inherit; display: block; }
   .button { transition: none; }
 }
 
+/* Euri, a mascote */
+.euri-section { padding-bottom: 90px; }
+.euri-stage { align-items: end; background: radial-gradient(90% 80% at 85% 105%, #6a35d0 0%, transparent 58%), radial-gradient(70% 60% at 0% 0%, #23308f 0%, transparent 62%), linear-gradient(155deg, #0b0a24 0%, #171046 55%, #28135f 100%); border-radius: 32px; box-shadow: 0 40px 90px rgba(58, 32, 140, .32); color: #fff; display: grid; gap: 24px; grid-template-columns: 1.05fr .95fr; isolation: isolate; min-height: 560px; overflow: hidden; padding: 72px 0 0 64px; position: relative; }
+.euri-sky, .euri-stars, .euri-aurora { inset: 0; pointer-events: none; position: absolute; }
+.euri-sky { z-index: -1; }
+.euri-stars-a { background-image: radial-gradient(1.4px 1.4px at 12% 18%, #fff, transparent), radial-gradient(1px 1px at 28% 72%, #fff, transparent), radial-gradient(1.6px 1.6px at 44% 12%, #e9e2ff, transparent), radial-gradient(1px 1px at 63% 38%, #fff, transparent), radial-gradient(1.3px 1.3px at 82% 22%, #dfe8ff, transparent), radial-gradient(1px 1px at 92% 64%, #fff, transparent), radial-gradient(1.2px 1.2px at 6% 58%, #fff, transparent), radial-gradient(1px 1px at 52% 88%, #fff, transparent); background-size: 340px 340px; opacity: .8; animation: euri-twinkle 5s ease-in-out infinite; }
+.euri-stars-b { background-image: radial-gradient(1px 1px at 20% 40%, #fff, transparent), radial-gradient(1.8px 1.8px at 70% 10%, #f3eeff, transparent), radial-gradient(1px 1px at 40% 60%, #fff, transparent), radial-gradient(1.2px 1.2px at 88% 82%, #fff, transparent), radial-gradient(1px 1px at 8% 92%, #fff, transparent); background-size: 520px 460px; opacity: .55; animation: euri-twinkle 7s ease-in-out -3s infinite; }
+.euri-aurora { background: radial-gradient(40% 30% at 30% 20%, rgba(94, 230, 205, .22), transparent 70%), radial-gradient(45% 35% at 60% 12%, rgba(170, 120, 255, .28), transparent 70%); filter: blur(30px); animation: euri-drift 18s ease-in-out infinite alternate; }
+.euri-lyra { height: auto; left: 41%; opacity: .9; position: absolute; top: 34px; width: 150px; }
+.euri-lyra-lines path { fill: none; stroke: rgba(205, 195, 255, .35); stroke-dasharray: 3 5; stroke-width: 1.2; }
+.euri-lyra-stars { fill: #eae4ff; filter: drop-shadow(0 0 6px rgba(200, 180, 255, .9)); }
+.euri-vega { fill: #fff; }
+.euri-copy { align-self: center; max-width: 470px; padding-bottom: 72px; }
+.euri-eyebrow { color: #c3b8ff; letter-spacing: .02em; }
+.euri-copy h2 { color: #fff; }
+.euri-name { background: linear-gradient(100deg, #d6c6ff, #a98bff 45%, #7fd6ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.euri-copy p:not(.eyebrow) { color: rgba(236, 233, 255, .78); font-size: 1.04rem; margin-top: 18px; }
+.euri-traits { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 28px 0 0; padding: 0; }
+.euri-traits li { backdrop-filter: blur(6px); background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .16); border-radius: 999px; color: #f1eeff; font-size: .84rem; font-weight: 550; padding: 8px 16px; }
+.euri-traits span { color: #b9a6ff; margin-right: 4px; }
+.euri-figure { align-self: end; justify-self: center; margin: 0; max-width: 520px; position: relative; width: 100%; }
+.euri-img { animation: euri-float 6s ease-in-out infinite; filter: drop-shadow(0 18px 40px rgba(140, 90, 255, .45)); margin: 0 auto -6px; width: 100%; }
+.euri-figure::after { background: radial-gradient(closest-side, rgba(160, 110, 255, .55), transparent); bottom: -40px; content: ""; height: 90px; left: 10%; position: absolute; width: 80%; z-index: -1; }
+.euri-bubble { animation: euri-pop .5s cubic-bezier(.2, 1.4, .4, 1) both; background: #fff; border: 0; border-radius: 18px 18px 18px 4px; box-shadow: 0 14px 34px rgba(20, 10, 60, .35); color: #241a4a; cursor: pointer; font: inherit; font-size: .9rem; font-weight: 600; left: -6%; line-height: 1.35; max-width: 250px; padding: 12px 16px; position: absolute; text-align: left; top: 4%; transition: transform .2s ease; z-index: 2; }
+.euri-bubble:hover { transform: translateY(-2px) rotate(-1deg); }
+.euri-bubble:focus-visible { outline: 3px solid #c3b8ff; outline-offset: 3px; }
+.euri-bubble.is-changing { animation: euri-pop .45s cubic-bezier(.2, 1.4, .4, 1) both; }
+.euri-walls { margin-top: 56px; }
+.euri-walls-head { align-items: baseline; display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; margin-bottom: 22px; }
+.euri-walls-head p { color: var(--text-soft); margin: 0; }
+.euri-wall-grid { display: grid; gap: 16px; grid-template-columns: repeat(6, 1fr); list-style: none; margin: 0; padding: 0; }
+.euri-wall { background: var(--bg-raised); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-soft); display: block; overflow: hidden; position: relative; transition: transform .25s ease, box-shadow .25s ease; }
+.euri-wall:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+.euri-wall img { aspect-ratio: 16 / 9; object-fit: cover; width: 100%; }
+.euri-wall-name { display: flex; flex-direction: column; font-size: .8rem; line-height: 1.3; padding: 10px 12px 12px; }
+.euri-wall-name span { color: var(--text-muted); font-size: .74rem; }
+.euri-wall-get { align-items: center; background: rgba(255, 255, 255, .92); border-radius: 999px; color: var(--blue); display: flex; font-size: .85rem; font-weight: 700; height: 28px; justify-content: center; opacity: 0; position: absolute; right: 10px; top: 10px; transition: opacity .2s; width: 28px; }
+.euri-wall:hover .euri-wall-get, .euri-wall:focus-visible .euri-wall-get { opacity: 1; }
+.cta-inner { position: relative; }
+.cta-euri { filter: drop-shadow(0 10px 24px rgba(120, 80, 230, .35)); left: 50%; position: absolute; top: -78px; transform: translateX(-50%); width: 110px; }
+.cta-band .cta-inner { margin-top: 70px; }
+@keyframes euri-float { 50% { transform: translateY(-12px); } }
+@keyframes euri-twinkle { 50% { opacity: .35; } }
+@keyframes euri-drift { to { transform: translate3d(6%, 4%, 0) scale(1.08); } }
+@keyframes euri-pop { from { opacity: 0; transform: scale(.85) translateY(6px); } to { opacity: 1; transform: none; } }
+@media (max-width: 1080px) { .euri-wall-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) {
+  .euri-stage { grid-template-columns: 1fr; padding: 52px 28px 0; }
+  .euri-copy { padding-bottom: 0; }
+  .euri-figure { max-width: 380px; }
+  .euri-bubble { left: 0; top: -2%; }
+  .euri-lyra { left: auto; right: 24px; top: 20px; width: 110px; }
+}
+@media (max-width: 520px) { .euri-wall-grid { grid-template-columns: repeat(2, 1fr); } .euri-stage { border-radius: 24px; } }
+@media (prefers-reduced-motion: reduce) {
+  .euri-img, .euri-stars, .euri-aurora, .euri-bubble, .euri-bubble.is-changing { animation: none; }
+  .euri-wall, .euri-bubble { transition: none; }
+}
+
 /* Herdado: celebração de lançamento e seletor de idioma. */
 .language-picker { align-items: center; color: var(--text-muted); display: inline-flex; font-size: .82rem; gap: 8px; }
 .language-select { background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: 999px; color: var(--text-soft); cursor: pointer; font: inherit; max-width: 112px; padding: 7px 9px; }
