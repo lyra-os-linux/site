@@ -82,4 +82,26 @@
   };
   openRequirements();
   window.addEventListener('hashchange', openRequirements);
+
+  // Euri: o balão troca de dica a cada clique.
+  const euriBubble = document.getElementById('euri-bubble');
+  const euriText = document.getElementById('euri-bubble-text');
+  if (euriBubble && euriText) {
+    const tips = [
+      'Oi! Eu sou a Euri.',
+      'Deu errado? O Snapper volta o sistema no tempo.',
+      'Precisa ajustar algo? O Vega deixa tudo à mão.',
+      'Pode instalar e ficar tranquilo.',
+      'Psiu: os wallpapers aqui embaixo são meus.'
+    ];
+    let tip = 0;
+    const tr = (text) => (window.LyraI18n ? window.LyraI18n.t(text) : text);
+    const show = () => { euriText.textContent = tr(tips[tip]); };
+    euriBubble.addEventListener('click', () => {
+      tip = (tip + 1) % tips.length;
+      show();
+      euriBubble.classList.remove('is-changing'); void euriBubble.offsetWidth; euriBubble.classList.add('is-changing');
+    });
+    window.addEventListener('lyra:locale-changed', show);
+  }
 })();
